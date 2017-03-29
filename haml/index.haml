@@ -1,0 +1,290 @@
+!!! 5
+%html
+  %head
+    %title Codeanywhere Dashboard
+
+    %meta(charset="utf-8")
+    %meta(name="description" content="")
+    %meta(name="author" content="")
+    %meta(name="keywords" content="Codeanywhere, Dashboard, CA, Editor")
+    %meta(id="meta" name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1.0")
+
+    %link(rel="stylesheet" href="css/main.css")
+    %link(rel="stylesheet" href="css/query.css")
+    / Fonts
+    %link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext")
+
+    %script(type="text/javascript" src="js/script.js")
+
+  %body
+    //Top Nav
+    %nav.top-nav
+      .top-nav__dashboard
+        %a(href="#")
+          %img(src="" alt="")
+      .top-nav__search
+        %input(placehoder="Search")
+      .top-nav__user
+
+    //Side Nav
+    %nav.side-nav
+      %ul
+        %li
+          %a(href="#") Account
+        %li
+          %a(href="#") Billing
+        %li
+          %a(href="#") Projects
+        %li
+          %a(href="#") Shared with me
+        %li
+          %a(href="#") My shares
+        %li
+          %a(href="#") SSH keys
+        %li
+          %a(href="#") Custom stacks
+        %li
+          %a(href="#") Custom domains
+        %li
+          %a(href="#") Refer a friend
+
+    //Main section
+    .main.account
+      .main__col2
+
+        //ACCOUNT INFORMATION ===========================================
+        .card-wrap
+          %h1 Account information
+          .card.information
+            .card__section.col
+
+              //user
+              .user
+                .user__image
+                  %img(src="images/avatar.png")
+                  %a(href="#") Edit photo
+                .user__details
+                  .user__name
+                    %span.title--large Mate Lopata
+                  .user__email
+                    %span mate.lopata@gmail.com
+                  .user__company
+                    %span Codeanywhere
+              //user-details
+              .user-details
+                .input-wrap.first-name
+                .input-wrap.last-name
+                .input-wrap.company
+
+            .card__section.col
+              .email
+                %span.title--gray
+                .input-wrap.new-email
+                .input-wrap.repeat-email
+
+            .card__section
+              .card-footer
+                .card__button
+                  %a(href="#") Cancel
+                .card__button
+                  %a(href="#") Save
+
+
+        //CONNECTED ACCOUNTS ===========================================
+        .card-wrap
+          %h1 Connected accounts
+          .card.accounts
+            .card__section.col
+
+              //account-item GITHUB
+              .acc-item.github
+
+                .acc-item__acc
+                  .acc-item__image
+                    %img(src="images/accounts/github.png")
+                  .acc-item__name
+                    Github
+                  .acc-item__button
+                    %a.pink(href="#") Connect
+
+                .acc-item__list
+                  %div
+                    .acc-item__name
+                      mate.lopata@gmail.com
+                    .acc-item__button
+                      %a.pink(href="#") Disconnect
+                  %div
+                    .acc-item__name
+                      mate.lopata123@gmail.com
+                    .acc-item__button
+                      %a.pink(href="#") Disconnect
+
+
+              //account-item BITBUCKET
+              .acc-item.bitbucket
+
+                .acc-item__acc
+                  .acc-item__image
+                    %img(src="images/accounts/github.png")
+                  .acc-item__name
+                    Github
+                  .acc-item__button
+                    %a.pink(href="#") Connect
+
+
+              //account-item DIGITAL OCEAN
+              .acc-item.digitalocean
+
+                .acc-item__acc
+                  .acc-item__image
+                    %img(src="images/accounts/github.png")
+                  .acc-item__name
+                    Github
+                  .acc-item__button
+                    %a.pink(href="#") Connect
+
+
+              //account-item GOOGLE
+              .acc-item.google
+
+                .acc-item__acc
+                  .acc-item__image
+                    %img(src="images/accounts/github.png")
+                  .acc-item__name
+                    Github
+                  .acc-item__button
+                    %a.pink(href="#") Connect
+
+
+              //account-item FACEBOOK
+              .acc-item.facebook
+
+                .acc-item__acc
+                  .acc-item__image
+                    %img(src="images/accounts/github.png")
+                  .acc-item__name
+                    Github
+                  .acc-item__button
+                    %a.pink(href="#") Connect
+
+
+              //account-item ONEDRIVE
+              .acc-item.onedrive
+
+                .acc-item__acc
+                  .acc-item__image
+                    %img(src="images/accounts/github.png")
+                  .acc-item__name
+                    Github
+                  .acc-item__button
+                    %a.pink(href="#") Connect
+
+                .acc-item__list
+                  %div
+                    .acc-item__name
+                      mate.lopata@gmail.com
+                    .acc-item__button
+                      %a.pink(href="#") Disconnect
+                  %div
+                    .acc-item__name
+                      mate.lopata123@gmail.com
+                    .acc-item__button
+                      %a.pink(href="#") Disconnect
+
+
+
+
+      .main__col2
+
+        //PROFILE COMPLETION ===========================================
+        .card-wrap
+          %h1 Profile completion
+          .card.profile
+            .card__section.row
+
+              //graph
+              .graph
+                .graph__circle-out
+                .graph__circle-in
+                  70%
+
+              //steps
+              .steps
+                %h2.gray Follow these steps to complete your profile:
+                %ul
+                  %li Create new container
+                  %li Add 3rd party service
+                  %li Buy premium account
+                  %li Report error
+
+
+        //NEED MORE RESOURCES ===========================================
+        .card-wrap
+          %h1 Need more resources?
+          .card.resources
+            .card__section.col
+
+              //resource containers
+              .resource.containers
+                .resource__top
+                  .resource__bar
+                .resource__bot
+                  .resource__num
+                    2/4
+                  .resource__name
+                    Containers
+
+              //resource remote connections
+              .resource.remote
+                .resource__top
+                  .resource__bar
+                .resource__bot
+                  .resource__num
+                    4/4
+                  .resource__name
+                    Remote Connections
+
+            .card__section
+              .card-footer
+                .card__button
+                  %a.btn--pink(href="#") Upgrade
+
+
+
+        //CHANGE PASSOWRD ===========================================
+        .card-wrap
+          %h1 Change passowrd?
+          .card.password
+            .card__section.col
+              .input-wrap.old-pass
+              .input-wrap.new-pass
+              .input-wrap.repeat-pass
+
+            .card__section
+              .card-footer
+                .card__button
+                  %a(href="#") Change
+
+
+
+
+        //DELETE YOUR ACCOUNT ===========================================
+        .card-wrap
+          %h1 Delete your account?
+          .card.delete
+            .card__section.col
+              %span This action is permanent and cannot be undone!
+              %p Are you sure?
+
+            .card__section
+              .card-footer
+                .card__button
+                  %a.btn--red(href="#") Delete
+
+
+
+
+
+
+
+
