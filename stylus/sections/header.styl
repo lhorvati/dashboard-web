@@ -1,1 +1,31 @@
 /* HEADER.STYL ======================================= */
+
+#header
+    position: relative
+    width: 100%
+    box-shadow(shadowLvl2)
+    z-index: 10
+
+
+.header
+    flexbox()
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: space-between
+    height: 80px
+    background: #fff
+
+    .header__dashboard
+        font-size: 20px
+        font-weight: 400
+
+    .header__search
+        width: 600px
+        height: 48px
+        margin: 0 20px
+
+    .header__user
+        width: 50px
+        height: 50px
+        border-radius(100%)
+        background: #ccc

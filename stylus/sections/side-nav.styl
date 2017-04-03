@@ -1,0 +1,31 @@
+/* SIDE-NAV.STYL ======================================= */
+
+.side-nav
+    width: 200px
+    background: #e0e0e0
+
+    ul 
+        padding-top: 40px
+        box-sizing()
+
+        li
+            position: relative
+            margin-bottom: 14px
+
+            a
+                font-size: 13px
+                font-weight: 400
+                color: #000
+                line-height: 1.5
+                margin-left: 20px
+
+                &.active
+                    font-weight: 700
+
+                &.active::before
+                    position: absolute
+                    display: block
+                    content: ''
+                    width: 2px
+                    height: 100%
+                    background: #000
