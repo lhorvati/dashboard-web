@@ -1,0 +1,242 @@
+/* MAIN.STYL ======================================= */
+
+.main
+    background: #eee
+    width: 100%
+    position: relative
+    box-sizing()
+    padding: 30px 5%
+
+    .main__col2
+        width: 50%
+
+        &:first-child
+            margin-right: 30px
+
+
+/* Main.Account ======================================= */
+
+.main.account
+    flexbox()
+    flex-flow: row nowrap
+
+
+
+
+
+
+/* CARD ========== */
+.card-wrap
+    flex-flow: column nowrap
+    margin-bottom: 30px
+
+    h1
+        font-size: 13px
+        font-weight: 400
+        color: #424242
+        margin-bottom: 20px
+
+    h2
+        font-size: 16px
+        font-weight: 400
+        color: #000
+
+        &.gray
+            color: #757575
+
+    .card
+        background: #fff
+        box-shadow(shadowLvl1)
+        border-radius(2px)
+        flexbox()
+        flex-flow: column nowrap
+
+        .card__section
+            box-sizing()
+            padding: 30px 20px
+            flexbox()
+
+            &.col
+                flex-flow: column nowrap
+            &.row
+                flex-flow: row nowrap
+            &.border
+                border-bottom: 1px solid rgba(66, 66, 66, 0.15)
+            &.border-top
+                border-top: 1px solid rgba(66, 66, 66, 0.15)
+            &.no-padding
+                padding: 0
+
+
+
+        .card-footer
+            width: 100%
+            flexbox()
+            flex-flow: row nowrap
+            justify-content: flex-end
+
+            .card__button a
+                color: #000
+                font-size: 14px
+                font-weight: 400
+                text-transform: uppercase
+                padding: 10px 15px
+                margin-right: 10px
+
+                &:hover
+                    color: colorPurple
+
+            .card__button:last-child a
+                margin-right: 0
+
+
+
+
+    /* ACCOUNT INFORMATION - user */
+    .user
+        flexbox()
+        flex-flow: row nowrap
+
+        .user__image
+            width: 130px
+            flexbox()
+            flex-flow: column nowrap
+            align-items: center
+
+            img
+                border-radius(50%)
+                width: 100%
+
+            a
+                color: #757575
+                font-size: 16px
+
+        .user__details
+            flexbox()
+            flex-flow: column nowrap
+            flex: 1
+
+        .user__name,
+        .user__email,
+        .user__company
+            font-size: 16px
+            color: #000
+            margin-bottom: 12px
+
+
+
+    /* CONNECTED ACCOUNTS - acc-item */
+    .acc-item
+        flexbox()
+        flex-flow: column nowrap
+        box-sizing()
+        padding: 10px 20px
+        border-bottom: 1px solid rgba(66, 66, 66, 0.15)
+
+        &:first-child
+            padding-top: 30px
+        &:last-child
+            padding-bottom: 30px
+
+        .acc-item__acc
+            flexbox()
+            flex-flow: row nowrap
+            align-items: center
+            margin-bottom: 10px
+
+        .acc-item__image
+            width: 30px
+
+        .acc-item__name
+            flex: 1
+
+        .acc-item__button
+            color: colorPurple
+            text-transform: uppercase
+
+            &:hover
+                color: colorBlack
+
+
+
+        .acc-item__list
+            flexbox()
+            flex-flow: column nowrap
+
+            div
+                flexbox()
+                flex-flow: row nowrap
+                margin-top: 7px
+
+
+
+
+    /* PROFILE COMPLETION - graph & steps */
+    .graph
+        min-width: 126px
+        flexbox()
+        flex-center()
+
+        .graph__circle-in
+            color: colorPurple
+            font-size: 40px
+            font-weight: 600
+
+
+
+
+    .steps ul
+        margin-top: 20px
+
+        li
+            margin-bottom: 20px
+            flexbox()
+            flex-flow: row nowrap
+            align-items: center
+            color: colorGray
+
+            &:before
+                width: 20px
+                height: 20px
+                display: block
+                content: ''
+                background: url(../images/find.png) center no-repeat
+                background-size: 20px
+                margin-right: 10px
+
+            &:last-child
+                margin-bottom: 0
+
+
+    /* DELETE YOUR ACCOUNT */
+    .card.delete
+
+        span,
+        p
+            font-size: 16px
+            font-weight: 400
+
+        span
+            color: colorGray2-05
+            font-style: italic
+        p
+            color: colorGray2
+            margin-top: 30px
+
+
+
+
+
+
+
+
+
+.title--large
+    font-size: 22px
+    color: #000
+
+
+.title--gray
+    font-size: 14px
+    color: #424242
+    opacity: .5
