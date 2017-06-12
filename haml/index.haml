@@ -32,29 +32,33 @@
       %nav.side-nav
         %ul
           %li
-            %a.active(href="#") Account
+            %a.side-nav-link.account.active(href="#") Account
           %li
-            %a(href="#") Billing
+            %a.side-nav-link.billing(href="#") Billing
           %li
-            %a(href="#") Projects
+            %a.side-nav-link.projects(href="#") Projects
           %li
-            %a(href="#") Shared with me
+            %a.side-nav-link.shared-with-me(href="#") Shared with me
           %li
-            %a(href="#") My shares
+            %a.side-nav-link.my-shares(href="#") My shares
           %li
-            %a(href="#") SSH keys
+            %a.side-nav-link.ssh-keys(href="#") SSH keys
           %li
-            %a(href="#") Custom stacks
+            %a.side-nav-link.custom-stacks(href="#") Custom stacks
           %li
-            %a(href="#") Custom domains
+            %a.side-nav-link.custom-domains(href="#") Custom domains
           %li
-            %a(href="#") Refer a friend
+            %a.side-nav-link.refer-friend(href="#") Refer a friend
 
-      //Main section
-      .main.account
+
+
+
+
+      //MAIN SECTION - ACCOUNT ***********************************
+      .main.account.show-flex
         .main__col2
 
-          //ACCOUNT INFORMATION ===========================================
+          //ACCOUNT INFORMATION ================
           .card-wrap
             %h1 Account information
             .card.information
@@ -92,7 +96,7 @@
                     %a(href="#") Save
 
 
-          //CONNECTED ACCOUNTS ===========================================
+          //CONNECTED ACCOUNTS ================
           .card-wrap
             %h1 Connected accounts
             .card.accounts
@@ -198,7 +202,7 @@
 
         .main__col2
 
-          //PROFILE COMPLETION ===========================================
+          //PROFILE COMPLETION ================
           .card-wrap
             %h1 Profile completion
             .card.profile
@@ -220,7 +224,7 @@
                     %li Report error
 
 
-          //NEED MORE RESOURCES ===========================================
+          //NEED MORE RESOURCES ================
           .card-wrap
             %h1 Need more resources?
             .card.resources
@@ -253,7 +257,7 @@
 
 
 
-          //CHANGE PASSOWRD ===========================================
+          //CHANGE PASSOWRD ================
           .card-wrap
             %h1 Change passowrd?
             .card.password
@@ -270,7 +274,7 @@
 
 
 
-          //DELETE YOUR ACCOUNT ===========================================
+          //DELETE YOUR ACCOUNT ================
           .card-wrap
             %h1 Delete your account?
             .card.delete
@@ -287,3 +291,388 @@
 
 
 
+
+
+
+
+
+
+
+
+
+      //MAIN SECTION - BILLING ***********************************
+      .main.billing.hide
+        .main__col2
+
+          //SUBSCRIPTIONS ================
+          .card-wrap
+            %h1 Subscriptions
+            .card.subscription
+              .card__section.row
+
+                //plan left
+                .plan-main
+                  .plan__name
+                    Yearly bussiness plan
+                  .plan__total
+                    $480.00 USD
+
+                //plan right
+                .plan-details
+                  .plan-details-row
+                    .plan-name Status:
+                    .plan-value canceled
+
+                  .plan-details-row
+                    .plan-name Quantity:
+                    .plan-value 1
+
+                  .plan-details-row
+                    .plan-name Start date:
+                    .plan-value dec 23, 2015
+
+                  .plan-details-row
+                    .plan-name Invoice ID:
+                    .plan-value 28582
+
+                  .plan-details-row
+                    .plan-name Recuring date:
+                    .plan-value Dec 23, 2020
+
+
+
+          //MANAGE ACCOUNTS ================
+          .card-wrap
+            %h1 Manage accounts
+            .card.manage-accounts
+              .card__section.col
+
+                //manage accounts - TH
+                .manage-accounts-row
+                  .manage-accounts__name
+                    %span email
+                  .manage-accounts__col
+                    %span container <br> always on
+                  .manage-accounts__col
+                    %span unlimited <br> revisions
+                  .manage-accounts__col
+                    %span additional 15 remote connections
+                  .manage-accounts__delete
+
+
+                //manage accounts - item1
+                .manage-accounts-row
+                  .manage-accounts__name
+                    testaccount@codeanywhere.com
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__delete
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+
+
+
+                //manage accounts - item2
+                .manage-accounts-row
+                  .manage-accounts__name
+                    testaccount@codeanywhere.com
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__delete
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+
+
+
+                //manage accounts - item3
+                .manage-accounts-row
+                  .manage-accounts__name
+                    testaccount@codeanywhere.com
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__col
+                    .counter
+                      .counter__top
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                      .counter__mid
+                        0
+                      .counter__bot
+                        %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                          %path(d="M8 5v14l11-7z")
+                  .manage-accounts__delete
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+
+              .card__section.row.border-top
+                .card-footer
+                  .card__button
+                    %a(href="#") Add account
+
+
+
+
+          //ADDONS ================
+          .card-wrap
+            %h1 Addons
+            .card.addons
+              .card__section.col
+
+                //manage accounts - TH
+                .manage-accounts-row
+                  .manage-accounts__name
+                    %span Addon name
+                  .manage-accounts__col
+                    %span Quantity
+                  .manage-accounts__col
+                    %span Assign
+                  .manage-accounts__col
+                    %span Unassign
+
+
+                //manage accounts - item1
+                .manage-accounts-row
+                  .manage-accounts__name
+                    Unlimited revisions
+                  .manage-accounts__col
+                    1
+                  .manage-accounts__col
+                    1
+                  .manage-accounts__col
+                    1
+
+
+                //manage accounts - item2
+                .manage-accounts-row
+                  .manage-accounts__name
+                    Container always on
+                  .manage-accounts__col
+                    15
+                  .manage-accounts__col
+                    15
+                  .manage-accounts__col
+                    15
+
+
+                //manage accounts - item3
+                .manage-accounts-row
+                  .manage-accounts__name
+                    Account licence
+                  .manage-accounts__col
+                    4
+                  .manage-accounts__col
+                    3
+                  .manage-accounts__col
+                    2
+
+
+                //manage accounts - item4
+                .manage-accounts-row
+                  .manage-accounts__name
+                    Additional 15 remote connections
+                  .manage-accounts__col
+                    105
+                  .manage-accounts__col
+                    498
+                  .manage-accounts__col
+                    99
+
+
+
+
+                //manage accounts - item5
+                .manage-accounts-row
+                  .manage-accounts__name
+                    Additional 15 custom domains
+                  .manage-accounts__col
+                    105
+                  .manage-accounts__col
+                    498
+                  .manage-accounts__col
+                    99
+
+
+
+
+
+        .main__col2
+
+          //BILLING INFORMATIONS ================
+          .card-wrap
+            %h1 Billing informations
+            .card.billing-information
+              .card__section.col
+
+                .billing-information__name
+                  Mate Lopata
+
+                .billing-information__card
+                  XXXX-1223 (MasterCard)
+
+
+
+          //INVOICES ================
+          .card-wrap
+            %h1 Invoices
+            .card.invoices
+              .card__section.col
+
+
+                //manage accounts - TH
+                .manage-accounts-row
+                  .manage-accounts__col
+                    %span Number
+                  .manage-accounts__col
+                    %span Billed on
+                  .manage-accounts__col
+                    %span Due on
+                  .manage-accounts__col
+                    %span Status
+                  .manage-accounts__name
+                    %span Total
+
+
+                //manage accounts - item1
+                .manage-accounts-row
+                  .manage-accounts__col
+                    28582
+                  .manage-accounts__col
+                    Dec 24, 2017
+                  .manage-accounts__col
+                    Dec 24, 2018
+                  .manage-accounts__col
+                    paid
+                  .manage-accounts__name
+                    $(-480.00) USD
+
+
+                //manage accounts - item1
+                .manage-accounts-row
+                  .manage-accounts__col
+                    28541
+                  .manage-accounts__col
+                    Jul 14, 2016
+                  .manage-accounts__col
+                    Dec 24, 2015
+                  .manage-accounts__col
+                    paid
+                  .manage-accounts__name
+                    $480.00 USD
+
+
+                //manage accounts - item1
+                .manage-accounts-row
+                  .manage-accounts__col
+                    28582
+                  .manage-accounts__col
+                    Dec 24, 2015
+                  .manage-accounts__col
+                    Dec 24, 2014
+                  .manage-accounts__col
+                    paid
+                  .manage-accounts__name
+                    $240.00 USD
+
+
+
+
+
+
+          //2-FACTOR AUTENTIFICATION ================
+          .card-wrap
+            %h1 2-Factor Autentification
+            .card.two-factor
+              .card__section.row
+                .two-factor__txt
+                  Enable 2-Factor Authentification
+                .two-factor__btn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%script(src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript")
+%script(src="js/myscript.js" type="text/javascript")

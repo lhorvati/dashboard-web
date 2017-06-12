@@ -1,0 +1,34 @@
+/* COUNTER.STYL ======================================= */
+
+.counter
+    flexbox()
+    flex-flow: column nowrap
+    align-items: center
+    width: 40px
+    margin: 0 auto
+
+    .counter__top,
+    .counter__bot
+        width: 20px
+        height: 20px
+        cursor: pointer
+
+        svg
+            transform: rotate(-90deg)
+            fill: colorGray2
+            transition(.2s)
+
+            &:hover
+                fill: colorGray2-05
+
+    .counter__bot
+        svg
+            transform: rotate(90deg)
+
+    .counter__mid
+        text-align: center
+        font-size: 16px
+        color: colorGray2
+        margin: 2px 0
+
+

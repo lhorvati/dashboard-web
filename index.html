@@ -33,38 +33,38 @@
       <nav class="side-nav">
         <ul>
           <li>
-            <a class="active" href="#">Account</a>
+            <a class="side-nav-link account active" href="#">Account</a>
           </li>
           <li>
-            <a href="#">Billing</a>
+            <a class="side-nav-link billing" href="#">Billing</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a class="side-nav-link projects" href="#">Projects</a>
           </li>
           <li>
-            <a href="#">Shared with me</a>
+            <a class="side-nav-link shared-with-me" href="#">Shared with me</a>
           </li>
           <li>
-            <a href="#">My shares</a>
+            <a class="side-nav-link my-shares" href="#">My shares</a>
           </li>
           <li>
-            <a href="#">SSH keys</a>
+            <a class="side-nav-link ssh-keys" href="#">SSH keys</a>
           </li>
           <li>
-            <a href="#">Custom stacks</a>
+            <a class="side-nav-link custom-stacks" href="#">Custom stacks</a>
           </li>
           <li>
-            <a href="#">Custom domains</a>
+            <a class="side-nav-link custom-domains" href="#">Custom domains</a>
           </li>
           <li>
-            <a href="#">Refer a friend</a>
+            <a class="side-nav-link refer-friend" href="#">Refer a friend</a>
           </li>
         </ul>
       </nav>
-      <!-- /Main section -->
-      <div class="main account">
+      <!-- /MAIN SECTION - ACCOUNT *********************************** -->
+      <div class="main account show-flex">
         <div class="main__col2">
-          <!-- /ACCOUNT INFORMATION =========================================== -->
+          <!-- /ACCOUNT INFORMATION ================ -->
           <div class="card-wrap">
             <h1>Account information</h1>
             <div class="card information">
@@ -113,7 +113,7 @@
               </div>
             </div>
           </div>
-          <!-- /CONNECTED ACCOUNTS =========================================== -->
+          <!-- /CONNECTED ACCOUNTS ================ -->
           <div class="card-wrap">
             <h1>Connected accounts</h1>
             <div class="card accounts">
@@ -243,7 +243,7 @@
           </div>
         </div>
         <div class="main__col2">
-          <!-- /PROFILE COMPLETION =========================================== -->
+          <!-- /PROFILE COMPLETION ================ -->
           <div class="card-wrap">
             <h1>Profile completion</h1>
             <div class="card profile">
@@ -268,7 +268,7 @@
               </div>
             </div>
           </div>
-          <!-- /NEED MORE RESOURCES =========================================== -->
+          <!-- /NEED MORE RESOURCES ================ -->
           <div class="card-wrap">
             <h1>Need more resources?</h1>
             <div class="card resources">
@@ -311,7 +311,7 @@
               </div>
             </div>
           </div>
-          <!-- /CHANGE PASSOWRD =========================================== -->
+          <!-- /CHANGE PASSOWRD ================ -->
           <div class="card-wrap">
             <h1>Change passowrd?</h1>
             <div class="card password">
@@ -329,7 +329,7 @@
               </div>
             </div>
           </div>
-          <!-- /DELETE YOUR ACCOUNT =========================================== -->
+          <!-- /DELETE YOUR ACCOUNT ================ -->
           <div class="card-wrap">
             <h1>Delete your account?</h1>
             <div class="card delete">
@@ -348,6 +348,476 @@
           </div>
         </div>
       </div>
+      <!-- /MAIN SECTION - BILLING *********************************** -->
+      <div class="main billing hide">
+        <div class="main__col2">
+          <!-- /SUBSCRIPTIONS ================ -->
+          <div class="card-wrap">
+            <h1>Subscriptions</h1>
+            <div class="card subscription">
+              <div class="card__section row">
+                <!-- /plan left -->
+                <div class="plan-main">
+                  <div class="plan__name">
+                    Yearly bussiness plan
+                  </div>
+                  <div class="plan__total">
+                    $480.00 USD
+                  </div>
+                </div>
+                <!-- /plan right -->
+                <div class="plan-details">
+                  <div class="plan-details-row">
+                    <div class="plan-name">Status:</div>
+                    <div class="plan-value">canceled</div>
+                  </div>
+                  <div class="plan-details-row">
+                    <div class="plan-name">Quantity:</div>
+                    <div class="plan-value">1</div>
+                  </div>
+                  <div class="plan-details-row">
+                    <div class="plan-name">Start date:</div>
+                    <div class="plan-value">dec 23, 2015</div>
+                  </div>
+                  <div class="plan-details-row">
+                    <div class="plan-name">Invoice ID:</div>
+                    <div class="plan-value">28582</div>
+                  </div>
+                  <div class="plan-details-row">
+                    <div class="plan-name">Recuring date:</div>
+                    <div class="plan-value">Dec 23, 2020</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /MANAGE ACCOUNTS ================ -->
+          <div class="card-wrap">
+            <h1>Manage accounts</h1>
+            <div class="card manage-accounts">
+              <div class="card__section col">
+                <!-- /manage accounts - TH -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    <span>email</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>container <br> always on</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>unlimited <br> revisions</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>additional 15 remote connections</span>
+                  </div>
+                  <div class="manage-accounts__delete"></div>
+                </div>
+                <!-- /manage accounts - item1 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    testaccount@codeanywhere.com
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__delete">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /manage accounts - item2 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    testaccount@codeanywhere.com
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__delete">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /manage accounts - item3 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    testaccount@codeanywhere.com
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <div class="counter">
+                      <div class="counter__top">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                      <div class="counter__mid">
+                        0
+                      </div>
+                      <div class="counter__bot">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="manage-accounts__delete">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__section row border-top">
+                <div class="card-footer">
+                  <div class="card__button">
+                    <a href="#">Add account</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /ADDONS ================ -->
+          <div class="card-wrap">
+            <h1>Addons</h1>
+            <div class="card addons">
+              <div class="card__section col">
+                <!-- /manage accounts - TH -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    <span>Addon name</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Quantity</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Assign</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Unassign</span>
+                  </div>
+                </div>
+                <!-- /manage accounts - item1 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    Unlimited revisions
+                  </div>
+                  <div class="manage-accounts__col">
+                    1
+                  </div>
+                  <div class="manage-accounts__col">
+                    1
+                  </div>
+                  <div class="manage-accounts__col">
+                    1
+                  </div>
+                </div>
+                <!-- /manage accounts - item2 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    Container always on
+                  </div>
+                  <div class="manage-accounts__col">
+                    15
+                  </div>
+                  <div class="manage-accounts__col">
+                    15
+                  </div>
+                  <div class="manage-accounts__col">
+                    15
+                  </div>
+                </div>
+                <!-- /manage accounts - item3 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    Account licence
+                  </div>
+                  <div class="manage-accounts__col">
+                    4
+                  </div>
+                  <div class="manage-accounts__col">
+                    3
+                  </div>
+                  <div class="manage-accounts__col">
+                    2
+                  </div>
+                </div>
+                <!-- /manage accounts - item4 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    Additional 15 remote connections
+                  </div>
+                  <div class="manage-accounts__col">
+                    105
+                  </div>
+                  <div class="manage-accounts__col">
+                    498
+                  </div>
+                  <div class="manage-accounts__col">
+                    99
+                  </div>
+                </div>
+                <!-- /manage accounts - item5 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    Additional 15 custom domains
+                  </div>
+                  <div class="manage-accounts__col">
+                    105
+                  </div>
+                  <div class="manage-accounts__col">
+                    498
+                  </div>
+                  <div class="manage-accounts__col">
+                    99
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__col2">
+          <!-- /BILLING INFORMATIONS ================ -->
+          <div class="card-wrap">
+            <h1>Billing informations</h1>
+            <div class="card billing-information">
+              <div class="card__section col">
+                <div class="billing-information__name">
+                  Mate Lopata
+                </div>
+                <div class="billing-information__card">
+                  XXXX-1223 (MasterCard)
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /INVOICES ================ -->
+          <div class="card-wrap">
+            <h1>Invoices</h1>
+            <div class="card invoices">
+              <div class="card__section col">
+                <!-- /manage accounts - TH -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__col">
+                    <span>Number</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Billed on</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Due on</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Status</span>
+                  </div>
+                  <div class="manage-accounts__name">
+                    <span>Total</span>
+                  </div>
+                </div>
+                <!-- /manage accounts - item1 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__col">
+                    28582
+                  </div>
+                  <div class="manage-accounts__col">
+                    Dec 24, 2017
+                  </div>
+                  <div class="manage-accounts__col">
+                    Dec 24, 2018
+                  </div>
+                  <div class="manage-accounts__col">
+                    paid
+                  </div>
+                  <div class="manage-accounts__name">
+                    $(-480.00) USD
+                  </div>
+                </div>
+                <!-- /manage accounts - item1 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__col">
+                    28541
+                  </div>
+                  <div class="manage-accounts__col">
+                    Jul 14, 2016
+                  </div>
+                  <div class="manage-accounts__col">
+                    Dec 24, 2015
+                  </div>
+                  <div class="manage-accounts__col">
+                    paid
+                  </div>
+                  <div class="manage-accounts__name">
+                    $480.00 USD
+                  </div>
+                </div>
+                <!-- /manage accounts - item1 -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__col">
+                    28582
+                  </div>
+                  <div class="manage-accounts__col">
+                    Dec 24, 2015
+                  </div>
+                  <div class="manage-accounts__col">
+                    Dec 24, 2014
+                  </div>
+                  <div class="manage-accounts__col">
+                    paid
+                  </div>
+                  <div class="manage-accounts__name">
+                    $240.00 USD
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /2-FACTOR AUTENTIFICATION ================ -->
+          <div class="card-wrap">
+            <h1>2-Factor Autentification</h1>
+            <div class="card two-factor">
+              <div class="card__section row">
+                <div class="two-factor__txt">
+                  Enable 2-Factor Authentification
+                </div>
+                <div class="two-factor__btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/myscript.js" type="text/javascript"></script>

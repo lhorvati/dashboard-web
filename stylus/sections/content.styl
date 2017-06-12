@@ -1,5 +1,18 @@
 /* MAIN.STYL ======================================= */
 
+
+.title--large
+    font-size: 22px
+    color: #000
+
+
+.title--gray
+    font-size: 14px
+    color: #424242
+    opacity: .5
+
+
+
 .main
     background: #eee
     width: 100%
@@ -14,7 +27,7 @@
             margin-right: 30px
 
 
-/* Main.Account ======================================= */
+/* Main Section - ACCOUNT ======================================= */
 
 .main.account
     flexbox()
@@ -225,18 +238,67 @@
 
 
 
+/* Main Section - BILLING ======================================= */
+.main.billing
+
+    /* Manage accounts */
+    .manage-accounts-row
+        flexbox()
+        flex-flow: row nowrap
+        align-items: center
+        margin-bottom: 30px
+
+        &:last-child
+            margin-bottom: 0
+
+        span
+            font-size: 10px
+            font-weight: 600
+            color: colorGray2
+
+        .manage-accounts__name,
+        .manage-accounts__col,
+        .manage-accounts__delete
+            font-size: 12px
+            font-weight: 400
+            color: colorGray2
+            box-sizing()
+            padding: 0 5px
+
+        .manage-accounts__name
+            flex: 1
+            padding: 0 5px 0 0
+
+        .manage-accounts__col,
+        .manage-accounts__delete
+            width: 100px
+            text-align: center
+
+        .manage-accounts__delete
+            width: 24px
+            cursor: pointer
+            padding: 0
+
+            svg
+                fill: colorGray2
+                transition(.2s)
+
+                &:hover
+                    fill: colorGray2-05
+
+
+    /* Billing information */
+    .billing-information
+        .billing-information__name,
+        .billing-information__card
+            color: colorGray2
+
+        .billing-information__name
+            margin-bottom: 20px
 
 
 
-
-
-
-.title--large
-    font-size: 22px
-    color: #000
-
-
-.title--gray
-    font-size: 14px
-    color: #424242
-    opacity: .5
+    /* 2-Factor Authentification */
+    .two-factor
+        .two-factor__txt
+            color: colorGray2
