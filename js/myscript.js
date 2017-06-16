@@ -165,3 +165,26 @@ $(function() {
 });
 
 /* /CONTENT TABS */
+
+
+
+
+
+/* COUNTER */
+
+var counter = 0;
+
+$(document).ready(function() {
+
+	$("#up").click(function(){
+		counter++;
+		$("#mid").text(counter);
+	});
+
+	$("#down").click(function(){
+		counter--;
+		$("#mid").text(counter);
+	});
+
+});
+/* /COUNTER */

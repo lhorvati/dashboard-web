@@ -79,14 +79,44 @@
                 //user-details
                 .user-details
                   .input-wrap.first-name
+                    .mui-input
+                      .group
+                        %input(name="" required="" type="text")/
+                        %span.bar
+                        %label First name
+                      %span.error
                   .input-wrap.last-name
+                    .mui-input
+                      .group
+                        %input(name="" required="" type="text")/
+                        %span.bar
+                        %label Last name
+                      %span.error
                   .input-wrap.company
+                    .mui-input
+                      .group
+                        %input(name="" required="" type="text")/
+                        %span.bar
+                        %label Company
+                      %span.error
 
               .card__section.col.border-top
                 .email
                   %span.title--gray Update email address
                   .input-wrap.new-email
+                    .mui-input
+                      .group
+                        %input(name="" required="" type="text")/
+                        %span.bar
+                        %label New email address
+                      %span.error
                   .input-wrap.repeat-email
+                    .mui-input
+                      .group
+                        %input(name="" required="" type="text")/
+                        %span.bar
+                        %label Please enter passowrd to confirm
+                      %span.error
 
               .card__section
                 .card-footer
@@ -235,7 +265,7 @@
                   .resource__top
                     .resource__bar
                   .resource__bot
-                    .resource__num
+                    .resource__num.yellow
                       2/4
                     .resource__name
                       Containers
@@ -245,7 +275,7 @@
                   .resource__top
                     .resource__bar
                   .resource__bot
-                    .resource__num
+                    .resource__num.red
                       4/4
                     .resource__name
                       Remote Connections
@@ -263,8 +293,26 @@
             .card.password
               .card__section.col
                 .input-wrap.old-pass
+                  .mui-input
+                    .group
+                      %input(name="" required="" type="text")/
+                      %span.bar
+                      %label Old password
+                    %span.error
                 .input-wrap.new-pass
+                  .mui-input
+                    .group
+                      %input(name="" required="" type="text")/
+                      %span.bar
+                      %label New password
+                    %span.error
                 .input-wrap.repeat-pass
+                  .mui-input
+                    .group
+                      %input(name="" required="" type="text")/
+                      %span.bar
+                      %label Confirm new password
+                    %span.error
 
               .card__section
                 .card-footer
@@ -310,34 +358,37 @@
             .card.subscription
               .card__section.row
 
-                //plan left
-                .plan-main
-                  .plan__name
-                    Yearly bussiness plan
-                  .plan__total
-                    $480.00 USD
+                .sub-wrap
+                  //plan left
+                  .sub
+                    .sub__name
+                      Yearly bussiness plan
+                    .sub__total
+                      $480.00 USD
+                    .sub__total-desc
+                      Total Cost
 
-                //plan right
-                .plan-details
-                  .plan-details-row
-                    .plan-name Status:
-                    .plan-value canceled
+                  //plan right
+                  .sub
+                    .sub-row
+                      .sub__item Status:
+                      .sub__value canceled
 
-                  .plan-details-row
-                    .plan-name Quantity:
-                    .plan-value 1
+                    .sub-row
+                      .sub__item Quantity:
+                      .sub__value 1
 
-                  .plan-details-row
-                    .plan-name Start date:
-                    .plan-value dec 23, 2015
+                    .sub-row
+                      .sub__item Start date:
+                      .sub__value dec 23, 2015
 
-                  .plan-details-row
-                    .plan-name Invoice ID:
-                    .plan-value 28582
+                    .sub-row
+                      .sub__item Invoice ID:
+                      .sub__value 28582
 
-                  .plan-details-row
-                    .plan-name Recuring date:
-                    .plan-value Dec 23, 2020
+                    .sub-row
+                      .sub__item Recuring date:
+                      .sub__value Dec 23, 2020
 
 
 
@@ -366,12 +417,12 @@
                     testaccount@codeanywhere.com
                   .manage-accounts__col
                     .counter
-                      .counter__top
+                      #up.counter__top
                         %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                           %path(d="M8 5v14l11-7z")
-                      .counter__mid
+                      #mid.counter__mid
                         0
-                      .counter__bot
+                      #down.counter__bot
                         %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                           %path(d="M8 5v14l11-7z")
                   .manage-accounts__col
@@ -583,6 +634,10 @@
                 .billing-information__card
                   XXXX-1223 (MasterCard)
 
+                .billing-information__btn
+                  %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
+
 
 
           //INVOICES ================
@@ -660,6 +715,12 @@
                 .two-factor__txt
                   Enable 2-Factor Authentification
                 .two-factor__btn
+                  .switch
+                    %input#toggle-1.toggle.toggle-round(type="checkbox")/
+                    %label(for="toggle-1")
+
+
+
 
 
 

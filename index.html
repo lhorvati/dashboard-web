@@ -89,16 +89,61 @@
                 </div>
                 <!-- /user-details -->
                 <div class="user-details">
-                  <div class="input-wrap first-name"></div>
-                  <div class="input-wrap last-name"></div>
-                  <div class="input-wrap company"></div>
+                  <div class="input-wrap first-name">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>First name</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
+                  <div class="input-wrap last-name">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>Last name</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
+                  <div class="input-wrap company">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>Company</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card__section col border-top">
                 <div class="email">
                   <span class="title--gray">Update email address</span>
-                  <div class="input-wrap new-email"></div>
-                  <div class="input-wrap repeat-email"></div>
+                  <div class="input-wrap new-email">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>New email address</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
+                  <div class="input-wrap repeat-email">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>Please enter passowrd to confirm</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card__section">
@@ -279,7 +324,7 @@
                     <div class="resource__bar"></div>
                   </div>
                   <div class="resource__bot">
-                    <div class="resource__num">
+                    <div class="resource__num yellow">
                       2/4
                     </div>
                     <div class="resource__name">
@@ -293,7 +338,7 @@
                     <div class="resource__bar"></div>
                   </div>
                   <div class="resource__bot">
-                    <div class="resource__num">
+                    <div class="resource__num red">
                       4/4
                     </div>
                     <div class="resource__name">
@@ -316,9 +361,36 @@
             <h1>Change passowrd?</h1>
             <div class="card password">
               <div class="card__section col">
-                <div class="input-wrap old-pass"></div>
-                <div class="input-wrap new-pass"></div>
-                <div class="input-wrap repeat-pass"></div>
+                <div class="input-wrap old-pass">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>Old password</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+                <div class="input-wrap new-pass">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>New password</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+                <div class="input-wrap repeat-pass">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>Confirm new password</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
               </div>
               <div class="card__section">
                 <div class="card-footer">
@@ -356,36 +428,41 @@
             <h1>Subscriptions</h1>
             <div class="card subscription">
               <div class="card__section row">
-                <!-- /plan left -->
-                <div class="plan-main">
-                  <div class="plan__name">
-                    Yearly bussiness plan
+                <div class="sub-wrap">
+                  <!-- /plan left -->
+                  <div class="sub">
+                    <div class="sub__name">
+                      Yearly bussiness plan
+                    </div>
+                    <div class="sub__total">
+                      $480.00 USD
+                    </div>
+                    <div class="sub__total-desc">
+                      Total Cost
+                    </div>
                   </div>
-                  <div class="plan__total">
-                    $480.00 USD
-                  </div>
-                </div>
-                <!-- /plan right -->
-                <div class="plan-details">
-                  <div class="plan-details-row">
-                    <div class="plan-name">Status:</div>
-                    <div class="plan-value">canceled</div>
-                  </div>
-                  <div class="plan-details-row">
-                    <div class="plan-name">Quantity:</div>
-                    <div class="plan-value">1</div>
-                  </div>
-                  <div class="plan-details-row">
-                    <div class="plan-name">Start date:</div>
-                    <div class="plan-value">dec 23, 2015</div>
-                  </div>
-                  <div class="plan-details-row">
-                    <div class="plan-name">Invoice ID:</div>
-                    <div class="plan-value">28582</div>
-                  </div>
-                  <div class="plan-details-row">
-                    <div class="plan-name">Recuring date:</div>
-                    <div class="plan-value">Dec 23, 2020</div>
+                  <!-- /plan right -->
+                  <div class="sub">
+                    <div class="sub-row">
+                      <div class="sub__item">Status:</div>
+                      <div class="sub__value">canceled</div>
+                    </div>
+                    <div class="sub-row">
+                      <div class="sub__item">Quantity:</div>
+                      <div class="sub__value">1</div>
+                    </div>
+                    <div class="sub-row">
+                      <div class="sub__item">Start date:</div>
+                      <div class="sub__value">dec 23, 2015</div>
+                    </div>
+                    <div class="sub-row">
+                      <div class="sub__item">Invoice ID:</div>
+                      <div class="sub__value">28582</div>
+                    </div>
+                    <div class="sub-row">
+                      <div class="sub__item">Recuring date:</div>
+                      <div class="sub__value">Dec 23, 2020</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -419,15 +496,15 @@
                   </div>
                   <div class="manage-accounts__col">
                     <div class="counter">
-                      <div class="counter__top">
+                      <div class="counter__top" id="up">
                         <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                           <path d="M8 5v14l11-7z"></path>
                         </svg>
                       </div>
-                      <div class="counter__mid">
+                      <div class="counter__mid" id="mid">
                         0
                       </div>
-                      <div class="counter__bot">
+                      <div class="counter__bot" id="down">
                         <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                           <path d="M8 5v14l11-7z"></path>
                         </svg>
@@ -719,6 +796,11 @@
                 <div class="billing-information__card">
                   XXXX-1223 (MasterCard)
                 </div>
+                <div class="billing-information__btn">
+                  <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -810,7 +892,12 @@
                 <div class="two-factor__txt">
                   Enable 2-Factor Authentification
                 </div>
-                <div class="two-factor__btn"></div>
+                <div class="two-factor__btn">
+                  <div class="switch">
+                    <input class="toggle toggle-round" id="toggle-1" type="checkbox">
+                    <label for="toggle-1"></label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
