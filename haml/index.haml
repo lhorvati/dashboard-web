@@ -446,8 +446,9 @@
                         %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                           %path(d="M8 5v14l11-7z")
                   .manage-accounts__delete
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+                    .btn-icon
+                      %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                        %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
 
 
@@ -486,8 +487,9 @@
                         %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                           %path(d="M8 5v14l11-7z")
                   .manage-accounts__delete
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+                    .btn-icon
+                      %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                        %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
 
 
@@ -526,8 +528,9 @@
                         %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                           %path(d="M8 5v14l11-7z")
                   .manage-accounts__delete
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+                    .btn-icon
+                      %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                        %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
               .card__section.row.border-top
                 .card-footer
@@ -635,8 +638,9 @@
                   XXXX-1223 (MasterCard)
 
                 .billing-information__btn
-                  %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                    %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
 
 
 
@@ -741,39 +745,72 @@
             //PLAN INFO ================
             .card-wrap
               .card.plan-info
-                .card__section.row
+                .card__section.col
 
-                  .sub-wrap
-                    //plan left
-                    .sub
-                      .sub__name
-                        Yearly bussiness plan
-                      .sub__total
-                        $480.00 USD
-                      .sub__total-desc
-                        Total Cost
+                  .card-title3 Type: Proffesional
 
-                    //plan right
-                    .sub
-                      .sub-row
-                        .sub__item Status:
-                        .sub__value canceled
+                  .row
+                    //resource Containers
+                    .resource.containers
+                      .resource__top
+                        .resource__bar
+                      .resource__bot
+                        .resource__num.yellow
+                          2/4
+                        .resource__name
+                          Containers
 
-                      .sub-row
-                        .sub__item Quantity:
-                        .sub__value 1
 
-                      .sub-row
-                        .sub__item Start date:
-                        .sub__value dec 23, 2015
+                  .card-title3 Containers/resources
 
-                      .sub-row
-                        .sub__item Invoice ID:
-                        .sub__value 28582
+                  .row
+                    //resource RAM
+                    .resource.remote
+                      .resource__top
+                        .resource__bar
+                      .resource__bot
+                        .resource__num.green
+                          256MB/1.5GB
+                        .resource__name
+                          RAM
 
-                      .sub-row
-                        .sub__item Recuring date:
-                        .sub__value Dec 23, 2020
+                  .row
+                    //resource Disk
+                    .resource.remote
+                      .resource__top
+                        .resource__bar
+                      .resource__bot
+                        .resource__num.orange
+                          55GB/80GB
+                        .resource__name
+                          Disk
+
+                  .row
+                    //resource Transfer
+                    .resource.remote
+                      .resource__top
+                        .resource__bar
+                      .resource__bot
+                        .resource__num.green
+                          1000GB/1TB
+                        .resource__name
+                          Transfer
+
+                  .row
+                    //resource Remote Connections
+                    .resource.remote
+                      .resource__top
+                        .resource__bar
+                      .resource__bot
+                        .resource__num.red
+                          4/4
+                        .resource__name
+                          Remote Connections
+
+                .card__section
+                  .card-footer
+                    .card__button
+                      %a.btn--purple(href="#") Upgrade
 
 
 
@@ -793,95 +830,129 @@
         .main__row
 
           .main__row-item
-            //PROJECTS ================
+            //PROJECT 1 ================
             .card-wrap
-              .card.billing-information
+              .card.project
                 .card__section.col
+                  .card-title2
+                    Codemirror
 
-                  .billing-information__name
-                    Mate Lopata
+                .card__section.col.border-top
+                  .row Project: hosted
+                  .row Container cloned from github.com/codemirror/Codemirror
+                  .row Created: Oct. 19. 2015
+                  .row Last opened: 7 days ago
+                  .row OS: Ubuntu 14.04
+                  .row CPU: 1
+                  .row RAM: 256MB
+                  .row Disk: 40GB
+                  .row Transfer: 1000GB
+                  .row.m-top Remote connections: 1
+                  .row Shared with: 5
 
-                  .billing-information__card
-                    XXXX-1223 (MasterCard)
+                .card__abs-bot.row
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+
 
 
           .main__row-item
-            //INVOICES ================
+            //PROJECT 2 ================
             .card-wrap
-              .card.invoices
+              .card.project
                 .card__section.col
+                  .card-title2
+                    Codemirror
 
+                .card__section.col.border-top
+                  .row Project: hosted
+                  .row Container cloned from github.com/codemirror/Codemirror
+                  .row Created: Oct. 19. 2015
+                  .row Last opened: 7 days ago
+                  .row OS: Ubuntu 14.04
+                  .row CPU: 1
+                  .row RAM: 256MB
+                  .row Disk: 40GB
+                  .row Transfer: 1000GB
+                  .row.m-top Remote connections: 1
+                  .row Shared with: 5
 
-                  //manage accounts - TH
-                  .manage-accounts-row
-                    .manage-accounts__col
-                      %span Number
-                    .manage-accounts__col
-                      %span Billed on
-                    .manage-accounts__col
-                      %span Due on
-                    .manage-accounts__col
-                      %span Status
-                    .manage-accounts__name
-                      %span Total
-
-
-                  //manage accounts - item1
-                  .manage-accounts-row
-                    .manage-accounts__col
-                      28582
-                    .manage-accounts__col
-                      Dec 24, 2017
-                    .manage-accounts__col
-                      Dec 24, 2018
-                    .manage-accounts__col
-                      paid
-                    .manage-accounts__name
-                      $(-480.00) USD
-
-
-                  //manage accounts - item1
-                  .manage-accounts-row
-                    .manage-accounts__col
-                      28541
-                    .manage-accounts__col
-                      Jul 14, 2016
-                    .manage-accounts__col
-                      Dec 24, 2015
-                    .manage-accounts__col
-                      paid
-                    .manage-accounts__name
-                      $480.00 USD
-
-
-                  //manage accounts - item1
-                  .manage-accounts-row
-                    .manage-accounts__col
-                      28582
-                    .manage-accounts__col
-                      Dec 24, 2015
-                    .manage-accounts__col
-                      Dec 24, 2014
-                    .manage-accounts__col
-                      paid
-                    .manage-accounts__name
-                      $240.00 USD
-
+                .card__abs-bot.row
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
 
 
 
           .main__row-item
-            //2-FACTOR AUTENTIFICATION ================
+            //PROJECT 3 ================
             .card-wrap
-              .card.two-factor
-                .card__section.row
-                  .two-factor__txt
-                    Enable 2-Factor Authentification
-                  .two-factor__btn
-                    .switch
-                      %input#toggle-1.toggle.toggle-round(type="checkbox")/
-                      %label(for="toggle-1")
+              .card.project
+                .card__section.col
+                  .card-title2
+                    Codemirror
+
+                .card__section.col.border-top
+                  .row Project: hosted
+                  .row Container cloned from github.com/codemirror/Codemirror
+                  .row Created: Oct. 19. 2015
+                  .row Last opened: 7 days ago
+                  .row OS: Ubuntu 14.04
+                  .row CPU: 1
+                  .row RAM: 256MB
+                  .row Disk: 40GB
+                  .row Transfer: 1000GB
+                  .row.m-top Remote connections: 1
+                  .row Shared with: 5
+
+                .card__abs-bot.row
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+
+
+
+
+          .main__row-item
+            //PROJECT 4 ================
+            .card-wrap
+              .card.project
+                .card__section.col
+                  .card-title2
+                    Codemirror
+
+                .card__section.col.border-top
+                  .row Project: hosted
+                  .row Container cloned from github.com/codemirror/Codemirror
+                  .row Created: Oct. 19. 2015
+                  .row Last opened: 7 days ago
+                  .row OS: Ubuntu 14.04
+                  .row CPU: 1
+                  .row RAM: 256MB
+                  .row Disk: 40GB
+                  .row Transfer: 1000GB
+                  .row.m-top Remote connections: 1
+                  .row Shared with: 5
+
+                .card__abs-bot.row
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
+                  .btn-icon
+                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
+
 
 
 

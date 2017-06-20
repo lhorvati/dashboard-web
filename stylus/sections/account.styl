@@ -136,38 +136,42 @@
                 margin-bottom: 0
 
 
-    /* NEED MORE RESOURCES - bars */
-    .resource
-        flexbox()
-        flex-flow: column nowrap
-        width: 100%
-        margin-top: 20px
+/* NEED MORE RESOURCES - bars */
+.resource
+    flexbox()
+    flex-flow: column nowrap
+    width: 100%
+    margin-top: 20px
 
-        /* Top */
-        .resource__top
-            padding: 5px 0
+    /* Top */
+    .resource__top
+        padding: 5px 0
 
-            .resource__bar
-                width: 100%
-                height: 5px
-                background: colorToggleBtnPassive
-
-        /* Bot */
-        .resource__bot
+        .resource__bar
             width: 100%
-            flexbox()
-            flex-flow: row nowrap
-            justify-content: space-between
-            align-items: center
-            font-size: 12px
+            height: 5px
+            background: colorToggleBtnPassive
 
-            .resource__num.yellow
-                color: colorYellow
-            .resource__num.red
-                color: colorDarkRed
+    /* Bot */
+    .resource__bot
+        width: 100%
+        flexbox()
+        flex-flow: row nowrap
+        justify-content: space-between
+        align-items: center
+        font-size: 12px
 
-            .resource__name
-                color: colorGray2
+        .resource__num.green
+            color: colorGreen
+        .resource__num.yellow
+            color: colorYellow
+        .resource__num.orange
+            color: colorRed
+        .resource__num.red
+            color: colorDarkRed
+
+        .resource__name
+            color: colorGray2
 
 
 

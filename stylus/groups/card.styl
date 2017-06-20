@@ -65,3 +65,19 @@
             .card__button:last-child a
                 margin-right: 0
 
+
+        .card__abs-bot
+            position: absolute
+            bottom: 20px
+            right: 20px
+            flexbox()
+
+            &.row
+                flex-flow: row nowrap
+
+                .btn-icon:not(:last-child)
+                    margin-right: 14px
+
+            &.col
+                flex-flow: column nowrap
+        

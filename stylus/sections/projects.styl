@@ -14,8 +14,19 @@
         .card
             height: 100%
 
-
+    /* project name in card - padding reduced */
+    .card.project
+        .card__section
+            padding: 20px
     /* /overwrite ***************/
+
+
+    .plan-info
+        .card-title3:not(:first-child)
+            margin-top: 30px
+
+        .row
+            margin: 0 20px
 
 
     .new-project
@@ -30,3 +41,22 @@
             font-size: 22px
             font-weight: 400
             text-transform: capitalize
+
+
+    .card.project
+
+        .m-top
+            margin-top: 20px
+
+        .card__section
+            .row
+                margin-bottom: 20px
+                color: colorGray2
+
+
+    .card__abs-bot
+        opacity: 0
+        transition(.6s)
+
+    .card.project:hover .card__abs-bot
+        opacity: 1
