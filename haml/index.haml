@@ -657,7 +657,7 @@
                     %span Due on
                   .manage-accounts__col
                     %span Status
-                  .manage-accounts__name
+                  .manage-accounts__col
                     %span Total
 
 
@@ -671,7 +671,7 @@
                     Dec 24, 2018
                   .manage-accounts__col
                     paid
-                  .manage-accounts__name
+                  .manage-accounts__col
                     $(-480.00) USD
 
 
@@ -685,7 +685,7 @@
                     Dec 24, 2015
                   .manage-accounts__col
                     paid
-                  .manage-accounts__name
+                  .manage-accounts__col
                     $480.00 USD
 
 
@@ -699,12 +699,8 @@
                     Dec 24, 2014
                   .manage-accounts__col
                     paid
-                  .manage-accounts__name
+                  .manage-accounts__col
                     $240.00 USD
-
-
-
-
 
 
           //2-FACTOR AUTENTIFICATION ================
@@ -726,6 +722,166 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+      //MAIN SECTION - PROJECTS ***********************************
+      .main.projects.hide
+        %h1.card-title Plan Info
+        .main__row
+
+          .main__row-item
+            //PLAN INFO ================
+            .card-wrap
+              .card.plan-info
+                .card__section.row
+
+                  .sub-wrap
+                    //plan left
+                    .sub
+                      .sub__name
+                        Yearly bussiness plan
+                      .sub__total
+                        $480.00 USD
+                      .sub__total-desc
+                        Total Cost
+
+                    //plan right
+                    .sub
+                      .sub-row
+                        .sub__item Status:
+                        .sub__value canceled
+
+                      .sub-row
+                        .sub__item Quantity:
+                        .sub__value 1
+
+                      .sub-row
+                        .sub__item Start date:
+                        .sub__value dec 23, 2015
+
+                      .sub-row
+                        .sub__item Invoice ID:
+                        .sub__value 28582
+
+                      .sub-row
+                        .sub__item Recuring date:
+                        .sub__value Dec 23, 2020
+
+
+
+          .main__row-item
+            //MANAGE ACCOUNTS ================
+            .card-wrap
+              .card.new-project
+                %span Create New Project
+
+
+
+
+
+
+
+        %h1.card-title Projects
+        .main__row
+
+          .main__row-item
+            //PROJECTS ================
+            .card-wrap
+              .card.billing-information
+                .card__section.col
+
+                  .billing-information__name
+                    Mate Lopata
+
+                  .billing-information__card
+                    XXXX-1223 (MasterCard)
+
+
+          .main__row-item
+            //INVOICES ================
+            .card-wrap
+              .card.invoices
+                .card__section.col
+
+
+                  //manage accounts - TH
+                  .manage-accounts-row
+                    .manage-accounts__col
+                      %span Number
+                    .manage-accounts__col
+                      %span Billed on
+                    .manage-accounts__col
+                      %span Due on
+                    .manage-accounts__col
+                      %span Status
+                    .manage-accounts__name
+                      %span Total
+
+
+                  //manage accounts - item1
+                  .manage-accounts-row
+                    .manage-accounts__col
+                      28582
+                    .manage-accounts__col
+                      Dec 24, 2017
+                    .manage-accounts__col
+                      Dec 24, 2018
+                    .manage-accounts__col
+                      paid
+                    .manage-accounts__name
+                      $(-480.00) USD
+
+
+                  //manage accounts - item1
+                  .manage-accounts-row
+                    .manage-accounts__col
+                      28541
+                    .manage-accounts__col
+                      Jul 14, 2016
+                    .manage-accounts__col
+                      Dec 24, 2015
+                    .manage-accounts__col
+                      paid
+                    .manage-accounts__name
+                      $480.00 USD
+
+
+                  //manage accounts - item1
+                  .manage-accounts-row
+                    .manage-accounts__col
+                      28582
+                    .manage-accounts__col
+                      Dec 24, 2015
+                    .manage-accounts__col
+                      Dec 24, 2014
+                    .manage-accounts__col
+                      paid
+                    .manage-accounts__name
+                      $240.00 USD
+
+
+
+
+
+          .main__row-item
+            //2-FACTOR AUTENTIFICATION ================
+            .card-wrap
+              .card.two-factor
+                .card__section.row
+                  .two-factor__txt
+                    Enable 2-Factor Authentification
+                  .two-factor__btn
+                    .switch
+                      %input#toggle-1.toggle.toggle-round(type="checkbox")/
+                      %label(for="toggle-1")
 
 
 

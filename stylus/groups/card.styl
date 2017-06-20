@@ -1,0 +1,67 @@
+/* CARD.STYL ======================================= */
+
+
+.card-wrap
+    flex-flow: column nowrap
+    margin-bottom: 30px
+
+    h1
+        font-size: 13px
+        font-weight: 400
+        color: #424242
+        margin-bottom: 20px
+
+    h2
+        font-size: 16px
+        font-weight: 400
+        color: #000
+
+        &.gray
+            color: #757575
+
+    .card
+        background: #fff
+        box-shadow(shadowLvl1)
+        border-radius(2px)
+        flexbox()
+        flex-flow: column nowrap
+        position: relative
+
+        .card__section
+            box-sizing()
+            padding: 30px 20px
+            flexbox()
+
+            &.col
+                flex-flow: column nowrap
+            &.row
+                flex-flow: row nowrap
+            &.border
+                border-bottom: 1px solid rgba(66, 66, 66, 0.15)
+            &.border-top
+                border-top: 1px solid rgba(66, 66, 66, 0.15)
+            &.no-padding
+                padding: 0
+
+
+
+        .card-footer
+            width: 100%
+            flexbox()
+            flex-flow: row nowrap
+            justify-content: flex-end
+
+            .card__button a
+                color: #000
+                font-size: 14px
+                font-weight: 400
+                text-transform: uppercase
+                padding: 10px 15px
+                margin-right: 10px
+
+                &:hover
+                    color: colorPurple
+
+            .card__button:last-child a
+                margin-right: 0
+

@@ -1,0 +1,138 @@
+/* BILLING.STYL ======================================= */
+
+
+.main.billing
+
+    /* Subscription */
+    .subscription
+        .sub-wrap
+            flexbox()
+            justify-content: space-between
+            width: 100%
+
+            .sub
+                flexbox()
+                flex-flow: column nowrap
+                align-items: center
+                width: 50%
+
+
+
+                .sub__name
+                    font-size: 20px
+                    font-weight: 400
+                    color: colorBlack
+                    margin-bottom: 20px
+                    text-transform: capitalize
+                    text-align: center
+
+                .sub__total
+                    font-size: 26px
+                    color: colorPurple
+                    margin-bottom: 6px
+                    text-transform: uppercase
+
+                .sub__total-desc
+                    font-size: 14px
+                    color: colorGray2
+                    text-transform: uppercase
+
+
+                .sub-row
+                    flexbox()
+                    flex-flow: row nowrap
+                    align-items: center
+                    width: 100%
+                    margin-bottom: 20px
+
+                .sub__item,
+                .sub__value
+                    width: 50%
+                    color: colorGray2
+                    text-transform: capitalize
+
+
+    /* Manage accounts */
+    .manage-accounts-row
+        flexbox()
+        flex-flow: row nowrap
+        align-items: center
+        margin-bottom: 30px
+
+        &:last-child
+            margin-bottom: 0
+
+        span
+            font-size: 10px
+            font-weight: 600
+            color: colorGray2
+
+        .manage-accounts__name,
+        .manage-accounts__col,
+        .manage-accounts__delete
+            font-size: 12px
+            font-weight: 400
+            color: colorGray2
+            box-sizing()
+            padding: 0 5px
+
+        .manage-accounts__name
+            padding: 0 5px 0 0
+            width: 40%
+            ellipsis()
+
+        .manage-accounts__col,
+        .manage-accounts__delete
+            width: 20%
+            text-align: center
+
+        .manage-accounts__delete
+            width: 24px
+            cursor: pointer
+            padding: 0
+
+            svg
+                fill: colorGray2
+                transition(.2s)
+
+                &:hover
+                    fill: colorGray2-05
+
+
+    /* Billing information */
+    .billing-information
+        .billing-information__name,
+        .billing-information__card
+            color: colorGray2
+
+        .billing-information__name
+            margin-bottom: 20px
+
+        .billing-information__btn
+            position: absolute
+            bottom: 20px
+            right: 20px
+            width: 24px
+            height: 24px
+            cursor: pointer
+            z-index: 1
+
+            svg
+                fill: colorGray2
+                transition(.2s)
+
+                &:hover
+                    fill: colorGray2-05
+
+
+
+
+    /* 2-Factor Authentification */
+    .two-factor
+        .two-factor__txt
+            color: colorGray2
+
+        .two-factor__btn
+            margin-left: auto
+
+

@@ -1,0 +1,32 @@
+/* PROJECTS.STYL ======================================= */
+
+.main.projects
+    flexbox()
+    flex-flow: column nowrap
+
+
+    /* overwrite ***************/
+    
+    /* same card height */
+    .card-wrap
+        height: calc(100% - 30px)
+
+        .card
+            height: 100%
+
+
+    /* /overwrite ***************/
+
+
+    .new-project
+        flexbox()
+        flex-center()
+
+        &:hover
+            cursor: pointer
+
+        span
+            color: colorPurple
+            font-size: 22px
+            font-weight: 400
+            text-transform: capitalize
