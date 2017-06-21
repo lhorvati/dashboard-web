@@ -1,28 +1,49 @@
 /* BUTTON.STYL ======================================= */
 
 
+.btn
+	padding: 10px 15px
+	text-transform: uppercase
+	font-weight: 400
+	font-size: 14px
+	transition(.7s)
+	border-radius: 5px
+
+
 /* Button PURPLE ========================== */
 .btn--purple
 	background: colorPurple
 	color: colorWhite !important
-	border-radius: 5px
-	transition(.7s)
 
 	&:hover
 		background: colorDarkPurple
-
-
 
 
 /* Button RED ========================== */
 .btn--red
 	background: colorRed
 	color: colorWhite !important
-	border-radius: 5px
-	transition(.7s)
 
 	&:hover
 		background: colorDarkRed
+
+
+/* Button TRANSPARENT (black to purple) ========================== */
+.btn--transparent1
+	color: colorBlack
+
+	&:hover
+		color: colorPurple
+
+
+/* Button TRANSPARENT (purple to black) ========================== */
+.btn--transparent2
+	color: colorPurple
+
+	&:hover
+		color: colorBlack
+
+
 
 
 
