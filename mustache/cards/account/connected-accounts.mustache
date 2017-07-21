@@ -1,0 +1,36 @@
+<div class="card-wrap">
+  <h1>Connected accounts</h1>
+  <div class="card accounts">
+    <div class="card__section col no-padding">
+
+      {{#acc-items}}
+        <div class="acc-item {{acc-item-type}}">
+          <div class="acc-item__acc">
+            <div class="acc-item__image">
+              <img src="{{acc-item-logo-url}}">
+            </div>
+            <div class="acc-item__name">
+              {{acc-item-name}}
+            </div>
+            <div class="acc-item__button">
+              <a class="pink" href="#">Connect</a>
+            </div>
+          </div>
+          <div class="acc-item__list">
+            {{#acc-list}}
+              <div>
+                <div class="acc-item__name">
+                  {{acc-list-name}}
+                </div>
+                <div class="acc-item__button">
+                  <a class="pink" href="#">Disconnect</a>
+                </div>
+              </div>
+            {{/acc-item-list}}
+          </div>
+        </div>
+      {{/acc-items}}
+
+    </div>
+  </div>
+</div>

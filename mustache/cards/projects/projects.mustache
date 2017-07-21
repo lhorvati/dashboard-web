@@ -1,0 +1,40 @@
+{{#projects}}
+  <div class="main__row-item">
+    <div class="card-wrap">
+
+      <div class="card project">
+        <div class="card__section col">
+          <div class="card-title2">
+            {{project-title}}
+          </div>
+        </div>
+        <div class="card__section col border-top">
+          <div class="row">Project: {{project-state}}</div>
+          <div class="row">Container cloned from {{project-url}}</div>
+          <div class="row">Created: {{project-created}}</div>
+          <div class="row">Last opened: {{project-last-opened}} ago</div>
+          <div class="row">OS: {{project-os}}</div>
+          <div class="row">CPU: {{project-cpu}}</div>
+          <div class="row">RAM: {{project-ram}}</div>
+          <div class="row">Disk: {{project-disk}}</div>
+          <div class="row">Transfer: {{project-transfer}}</div>
+          <div class="row m-top">Remote connections: {{project-remote-connections}}</div>
+          <div class="row">Shared with: {{project-shared-with}}</div>
+        </div>
+        <div class="card__abs-bot row">
+          <div class="btn-icon">
+            <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+            </svg>
+          </div>
+          <div class="btn-icon">
+            <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{{/projects}}

@@ -1,0 +1,49 @@
+<div class="card-wrap">
+  <div class="card plan-info">
+    <div class="card__section col">
+      <div class="card-title3">Type: Proffesional</div>
+      <div class="row">
+        <!--/resource Containers -->
+        <div class="resource {{resource-type}} {{percentage}}">
+          <div class="resource__top">
+            <div class="resource__bar"></div>
+          </div>
+          <div class="resource__bot">
+            <div class="resource__num yellow">
+              {{resource-num}}
+            </div>
+            <div class="resource__name">
+              {{resource-name}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-title3">Containers/resources</div>
+      <div class="row">
+
+        {{#resources}}
+          <div class="resource {{resource-type}} {{percentage}}">
+            <div class="resource__top">
+              <div class="resource__bar"></div>
+            </div>
+            <div class="resource__bot">
+              <div class="resource__num green">
+                {{resource-num}}
+              </div>
+              <div class="resource__name">
+                {{resource-name}}
+              </div>
+            </div>
+          </div>
+        {{/resources}}
+
+      </div>
+
+    </div>
+    <div class="card__section">
+      <div class="card-footer">
+        <a class="btn btn--purple" href="#">Upgrade</a>
+      </div>
+    </div>
+  </div>
+</div>

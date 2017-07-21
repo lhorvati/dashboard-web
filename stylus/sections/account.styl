@@ -105,6 +105,76 @@
 
 
     /* PROFILE COMPLETION - graph & steps */
+
+    /* PIE Percentage ========== */
+    .graph.percentage-0
+        .graph__circle-out--left
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%), linear-gradient(-270deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-1
+        .graph__circle-out--left
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%), linear-gradient(-234deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-2
+        .graph__circle-out--left
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%), linear-gradient(-198deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-3
+        .graph__circle-out--left
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%), linear-gradient(-162deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-4
+        .graph__circle-out--left
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%), linear-gradient(-126deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-5
+        .graph__circle-out--left
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%), linear-gradient(-90deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-6
+        .graph__circle-out--left
+            background: linear-gradient(126deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-7
+        .graph__circle-out--left
+            background: linear-gradient(162deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-8
+        .graph__circle-out--left
+            background: linear-gradient(198deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-9
+        .graph__circle-out--left
+            background: linear-gradient(234deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, colorPurple 50%, transparent 50%)
+
+    .graph.percentage-10
+        .graph__circle-out--left
+            background: linear-gradient(270deg, colorLightPurple 50%, transparent 50%),linear-gradient(-270deg, colorPurple 50%, colorLightPurple 50%)
+        .graph__circle-out--right
+            background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, colorPurple 50%, transparent 50%)
+
+
+
     .graph
         min-width: 126px
         flexbox()
@@ -114,6 +184,38 @@
             color: colorPurple
             font-size: 40px
             font-weight: 600
+
+            flexbox()
+            flex-center()
+            width: 100px
+            height: 100px
+            box-sizing()
+            border-radius(100%)
+            background: colorWhite
+            position: absolute
+            margin-top: 5px
+            z-index: 10
+
+        .graph__circle-out--left,
+        .graph__circle-out--right
+            flexbox()
+            flex-center()
+            width: 110px
+            height: 110px
+            box-sizing()
+            border-radius(100%)
+            background: colorToggleBtnPassive
+            margin-top: 10px
+
+        .graph__circle-out--left
+            position: relative
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%), linear-gradient(-270deg, #7f3f98 50%, colorLightPurple 50%)
+
+        .graph__circle-out--right
+            position: absolute
+            z-index: 1
+            margin-top: 5px
+            background: linear-gradient(90deg, colorLightPurple 50%, transparent 50%), linear-gradient(-270deg, #7f3f98 50%, transparent 50%)
 
 
 
@@ -133,8 +235,8 @@
                 height: 20px
                 display: block
                 content: ''
-                background: url(../images/find.png) center no-repeat
-                background-size: 20px
+                background: url(../images/check.svg) center no-repeat
+                background-size: 18px
                 margin-right: 10px
 
             &:last-child
@@ -142,11 +244,67 @@
 
 
 /* NEED MORE RESOURCES - bars */
+
+/* BARS Percentage */ 
+.resource.percentage-1 
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #6cc781 10%, #d5d5d5 10%)
+    .resource__bot .resource__num
+        color: #6cc781
+.resource.percentage-2
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #6cc781 20%, #d5d5d5 20%)
+    .resource__bot .resource__num
+        color: #6cc781
+.resource.percentage-3
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #6cc781 30%, #d5d5d5 30%)
+    .resource__bot .resource__num
+        color: #6cc781
+.resource.percentage-4
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #6cc781 40%, #d5d5d5 40%)
+    .resource__bot .resource__num
+        color: #6cc781
+.resource.percentage-5
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #ffe600 50%, #d5d5d5 50%)
+    .resource__bot .resource__num
+        color: #ecd501
+.resource.percentage-6
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #ffe600 60%, #d5d5d5 60%)
+    .resource__bot .resource__num
+        color: #ecd501
+.resource.percentage-7
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #ffe600 70%, #d5d5d5 70%)
+    .resource__bot .resource__num
+        color: #ecd501
+.resource.percentage-8
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #ffe600 80%, #d5d5d5 80%)
+    .resource__bot .resource__num
+        color: #ecd501
+.resource.percentage-9
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #e53934 90%, #d5d5d5 90%)
+    .resource__bot .resource__num
+        color: #e53934
+.resource.percentage-10
+    .resource__top .resource__bar
+        background: linear-gradient(90deg, #e53934 100%, #d5d5d5 0%)
+    .resource__bot .resource__num
+        color: #e53934
+
+
+
 .resource
     flexbox()
     flex-flow: column nowrap
     width: 100%
     margin-top: 20px
+
 
     /* Top */
     .resource__top
@@ -166,14 +324,8 @@
         align-items: center
         font-size: 12px
 
-        .resource__num.green
-            color: colorGreen
-        .resource__num.yellow
-            color: colorYellow
-        .resource__num.orange
-            color: colorRed
-        .resource__num.red
-            color: colorDarkRed
+        .resource__num
+            color: colorGray
 
         .resource__name
             color: colorGray2

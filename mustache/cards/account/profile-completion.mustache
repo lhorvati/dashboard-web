@@ -1,0 +1,24 @@
+<div class="card-wrap">
+  <h1>Profile completion</h1>
+  <div class="card profile">
+    <div class="card__section row">
+      <!--/graph -->
+      <div class="graph {{percentage}}">
+        <div class="graph__circle-in">
+          {{graph-percentage}}
+        </div>
+        <div class="graph__circle-out--left"></div>
+        <div class="graph__circle-out--right"></div>
+      </div>
+      <!--/steps -->
+      <div class="steps">
+        <h2 class="gray">Follow these steps to complete your profile:</h2>
+        <ul>
+            {{#profile-steps}}
+              <li>{{profile-steps-name}}</li>
+            {{/profile-steps}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

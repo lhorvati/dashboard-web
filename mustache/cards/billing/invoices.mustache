@@ -1,0 +1,47 @@
+<div class="card-wrap">
+  <h1>Invoices</h1>
+  <div class="card invoices">
+    <div class="card__section col">
+      <!--/manage accounts - TH -->
+      <div class="manage-accounts-row">
+        <div class="manage-accounts__col">
+          <span>Number</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>Billed on</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>Due on</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>Status</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>Total</span>
+        </div>
+      </div>
+
+
+      {{#invoices-list}}
+      <div class="manage-accounts-row">
+        <div class="manage-accounts__col">
+          {{invoice-id}}
+        </div>
+        <div class="manage-accounts__col">
+          {{invoice-billed-on}}
+        </div>
+        <div class="manage-accounts__col">
+          {{invoice-due-on}}
+        </div>
+        <div class="manage-accounts__col">
+          {{invoice-status}}
+        </div>
+        <div class="manage-accounts__col">
+          {{invoice-total}}
+        </div>
+      </div>
+      {{/invoices-list}}
+
+    </div>
+  </div>
+</div>

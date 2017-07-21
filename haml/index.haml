@@ -238,9 +238,10 @@
 
                 //graph
                 .graph
-                  .graph__circle-out
                   .graph__circle-in
                     70%
+                  .graph__circle-out--left
+                  .graph__circle-out--right
 
                 //steps
                 .steps
@@ -263,7 +264,7 @@
                   .resource__top
                     .resource__bar
                   .resource__bot
-                    .resource__num.yellow
+                    .resource__num
                       2/4
                     .resource__name
                       Containers
@@ -273,7 +274,7 @@
                   .resource__top
                     .resource__bar
                   .resource__bot
-                    .resource__num.red
+                    .resource__num
                       4/4
                     .resource__name
                       Remote Connections
@@ -808,7 +809,7 @@
 
 
           .main__row-item
-            //MANAGE ACCOUNTS ================
+            //CREATE NEW PROJECT ================
             .card-wrap
               .card.new-project
                 %span Create New Project
@@ -949,7 +950,7 @@
 
 
 
-      //MAIN SECTION - PROJECTS ***********************************
+      //MAIN SECTION - SHARED WITH ME ***********************************
       .main.shared-with-me.hide
 
         .main__row
@@ -963,17 +964,15 @@
                     Codemirror
 
                 .card__section.col.border-top
-                  .row Project: hosted
-                  .row Container cloned from github.com/codemirror/Codemirror
-                  .row Created: Oct. 19. 2015
-                  .row Last opened: 7 days ago
-                  .row OS: Ubuntu 14.04
-                  .row CPU: 1
-                  .row RAM: 256MB
-                  .row Disk: 40GB
-                  .row Transfer: 1000GB
-                  .row.m-top Remote connections: 1
-                  .row Shared with: 5
+                  .row
+                    .row__left Created
+                    .row__right March, 24, 2016
+                  .row
+                    .row__left Opened
+                    .row__right Never
+                  .row
+                    .row__left Shared by
+                    .row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
                   .btn-icon
@@ -987,97 +986,19 @@
 
           .main__row-item
             //PROJECT 2 ================
-            .card-wrap
-              .card.project
-                .card__section.col
-                  .card-title2
-                    Codemirror
-
-                .card__section.col.border-top
-                  .row Project: hosted
-                  .row Container cloned from github.com/codemirror/Codemirror
-                  .row Created: Oct. 19. 2015
-                  .row Last opened: 7 days ago
-                  .row OS: Ubuntu 14.04
-                  .row CPU: 1
-                  .row RAM: 256MB
-                  .row Disk: 40GB
-                  .row Transfer: 1000GB
-                  .row.m-top Remote connections: 1
-                  .row Shared with: 5
-
-                .card__abs-bot.row
-                  .btn-icon
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
-
+            
 
 
 
           .main__row-item
             //PROJECT 3 ================
-            .card-wrap
-              .card.project
-                .card__section.col
-                  .card-title2
-                    Codemirror
-
-                .card__section.col.border-top
-                  .row Project: hosted
-                  .row Container cloned from github.com/codemirror/Codemirror
-                  .row Created: Oct. 19. 2015
-                  .row Last opened: 7 days ago
-                  .row OS: Ubuntu 14.04
-                  .row CPU: 1
-                  .row RAM: 256MB
-                  .row Disk: 40GB
-                  .row Transfer: 1000GB
-                  .row.m-top Remote connections: 1
-                  .row Shared with: 5
-
-                .card__abs-bot.row
-                  .btn-icon
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
-
+            
 
 
 
           .main__row-item
             //PROJECT 4 ================
-            .card-wrap
-              .card.project
-                .card__section.col
-                  .card-title2
-                    Codemirror
-
-                .card__section.col.border-top
-                  .row Project: hosted
-                  .row Container cloned from github.com/codemirror/Codemirror
-                  .row Created: Oct. 19. 2015
-                  .row Last opened: 7 days ago
-                  .row OS: Ubuntu 14.04
-                  .row CPU: 1
-                  .row RAM: 256MB
-                  .row Disk: 40GB
-                  .row Transfer: 1000GB
-                  .row.m-top Remote connections: 1
-                  .row Shared with: 5
-
-                .card__abs-bot.row
-                  .btn-icon
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon
-                    %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
-                      %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
-
+            
 
 
 

@@ -1,0 +1,29 @@
+<div class="card-wrap">
+  <h1>Need more resources?</h1>
+  <div class="card resources">
+    <div class="card__section col">
+
+      {{#resources}}
+        <div class="resource {{resource-type}} {{percentage}}">
+          <div class="resource__top">
+            <div class="resource__bar"></div>
+          </div>
+          <div class="resource__bot">
+            <div class="resource__num">
+              {{resource-num}}
+            </div>
+            <div class="resource__name">
+              {{resource-name}}
+            </div>
+          </div>
+        </div>
+      {{/resources}}
+
+    </div>
+    <div class="card__section">
+      <div class="card-footer">
+        <a class="btn btn--purple" href="#">Upgrade</a>
+      </div>
+    </div>
+  </div>
+</div>

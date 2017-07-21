@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1395 -17977 13.689 13.689">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #7f3f98;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        stroke: #7f3f98;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="group-9" transform="translate(-1476.156 -18173.156)">
+    <g id="group" transform="translate(83.905 198.905)">
+      <rect id="rectangle" class="cls-1" width="8.557" height="8.557"/>
+      <path id="path" class="cls-2" d="M5.439,9.123l-1.5-1.5-.61.665L5.4,10.378,9.819,5.942l-.6-.6Z" transform="translate(-2.188 -3.603)"/>
+    </g>
+    <g id="ellipse-5" class="cls-3" transform="translate(81.156 196.156)">
+      <circle class="cls-4" cx="6.844" cy="6.844" r="6.844"/>
+      <circle class="cls-1" cx="6.844" cy="6.844" r="6.344"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+<div class="card-wrap">
+  <h1>Manage accounts</h1>
+  <div class="card manage-accounts">
+    <div class="card__section col">
+      <!--/manage accounts - TH -->
+      <div class="manage-accounts-row">
+        <div class="manage-accounts__name">
+          <span>email</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>container <br> always on</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>unlimited <br> revisions</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>additional 15 remote connections</span>
+        </div>
+        <div class="manage-accounts__delete"></div>
+      </div>
+
+      {{#manage-accounts}}
+      <div class="manage-accounts-row">
+        <div class="manage-accounts__name">
+          {{manage-account-name}}
+        </div>
+        <div class="manage-accounts__col">
+          <div class="counter">
+            <div class="counter__top" id="up">
+              <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+            <div class="counter__mid" id="mid">
+              {{manage-account-always-on}}
+            </div>
+            <div class="counter__bot" id="down">
+              <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="manage-accounts__col">
+          <div class="counter">
+            <div class="counter__top">
+              <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+            <div class="counter__mid">
+              {{manage-account-revisions}}
+            </div>
+            <div class="counter__bot">
+              <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="manage-accounts__col">
+          <div class="counter">
+            <div class="counter__top">
+              <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+            <div class="counter__mid">
+              {{manage-account-remote-connections}}
+            </div>
+            <div class="counter__bot">
+              <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="manage-accounts__delete">
+          <div class="btn-icon">
+            <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      {{/manage-accounts}}
+
+
+    </div>
+    <div class="card__section row border-top">
+      <div class="card-footer">
+        <a class="btn btn--transparent2" href="#">Add account</a>
+      </div>
+    </div>
+  </div>
+</div>

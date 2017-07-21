@@ -1,0 +1,41 @@
+<div class="card-wrap">
+  <h1>Addons</h1>
+  <div class="card addons">
+    <div class="card__section col">
+      <!--/manage accounts - TH -->
+      <div class="manage-accounts-row">
+        <div class="manage-accounts__name">
+          <span>Addon name</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>Quantity</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>Assign</span>
+        </div>
+        <div class="manage-accounts__col">
+          <span>Unassign</span>
+        </div>
+      </div>
+
+
+      {{#addons-list}}
+        <div class="manage-accounts-row">
+          <div class="manage-accounts__name">
+            {{addons-name}}
+          </div>
+          <div class="manage-accounts__col">
+            {{addons-quantity}}
+          </div>
+          <div class="manage-accounts__col">
+            {{addons-assign}}
+          </div>
+          <div class="manage-accounts__col">
+            {{addons-unassign}}
+          </div>
+        </div>
+      {{/addons-list}}
+      
+    </div>
+  </div>
+</div>
