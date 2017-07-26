@@ -19,6 +19,12 @@
         &.gray
             color: #757575
 
+
+
+    // card absolute buttons - show on card hover
+    .card:hover .card__abs-bot
+        opacity: 1
+
     .card
         background: #fff
         box-shadow(shadowLvl1)
@@ -26,6 +32,10 @@
         flexbox()
         flex-flow: column nowrap
         position: relative
+
+
+        // Card Title and Card Button are managed in global.styl
+
 
         .card__section
             box-sizing()
@@ -60,6 +70,9 @@
             bottom: 20px
             right: 20px
             flexbox()
+            // card absolute buttons - invisible at the begining
+            opacity: 0
+            transition(.6s)
 
             &.row
                 flex-flow: row nowrap
@@ -69,4 +82,27 @@
 
             &.col
                 flex-flow: column nowrap
-        
+
+
+
+
+        // Card Row (left and right)
+        .card-row
+            flexbox()
+            align-items: center
+            min-height: 30px
+
+            .card-row__left,
+            .card-row__right,
+            .card-row__center
+                ellipsis()
+                line-height: 16px
+
+            .card-row__left
+                min-width: 90px
+                padding-right: 10px
+                box-sizing()
+
+            .card-row__center
+                word-break: break-word
+                white-space: normal
