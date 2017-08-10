@@ -1,0 +1,51 @@
+/* DIALOG.STYL ======================================= */
+
+.dialog-wrap
+    background: colorBlack03
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100vw
+    height: 100vh
+    z-index: 100
+    flexbox()
+    flex-center()
+    visibility: hidden
+    opacity: 0
+    transition(.5s)
+
+    &.fadeIn
+        visibility: visible
+        opacity: 1
+
+
+    .dialog
+        min-width: 640px
+        min-height: 170px
+        background: colorWhite
+        color: colorGray
+        font-size: 16px
+        box-sizing()
+        padding: 30px
+        border-radius(2px)
+        box-shadow(shadowLvl5)
+
+        .dialog__title
+            font-size: 20px
+            font-weight: 500
+            color: colorBlack
+
+        .dialog__text
+            font-size: 16px
+            font-weight: 400
+            color: colorGray
+            margin: 20px 0 30px 0
+
+        .dialog__buttons
+            flexbox()
+            flex-flow: row nowrap
+            justify-content: flex-end
+
+

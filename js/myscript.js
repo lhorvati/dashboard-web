@@ -1,7 +1,7 @@
 /* MYSCRIPT.JS ======================================= */
 
 
-/* Mobile Main Nav */
+/* Mobile Main Nav =================== */
 $(function() {
 	$(".main-nav__m-open").click(function() {
 		$(".main-nav__mobile-wrap").addClass("slide");
@@ -17,26 +17,12 @@ $(function() {
 
 
 
-/* Mobile Article Nav */
-$(function() {
-	$(".article-nav-mobile").click(function() {
-		$(".article-nav__mobile-wrap").addClass("slide");
-	});
-});
-
-$(function() {
-	$(".article-nav__m-close").click(function() {
-		$(".article-nav__mobile-wrap").removeClass("slide");
-	});
-});
-/* /Mobile Article Nav */
 
 
 
 
 
-
-/* CONTENT TABS */
+/* CONTENT TABS =================== */
 
 /* Accounts button */
 $(function() {
@@ -170,7 +156,7 @@ $(function() {
 
 
 
-/* COUNTER */
+/* COUNTER =================== */
 
 var counter = 0;
 
@@ -188,3 +174,70 @@ $(document).ready(function() {
 
 });
 /* /COUNTER */
+
+
+
+
+/* NEW CUSTOM DOMAIN show/hide =================== */
+$(function() {
+	$(".ncd-title").click(function() {
+		$(".ncd-title").addClass("hide");
+		$(".ncd-wrap").addClass("show");
+	});
+});
+
+$(function() {
+	$(".ncd-close").click(function() {
+		$(".ncd-wrap").removeClass("show");
+		$(".ncd-title").removeClass("hide");
+	});
+});
+/* /NEW CUSTOM DOMAIN show/hide */
+
+
+
+
+
+/* ACCOUNT DETAILS =================== */
+$(function() {
+	$("#account").click(function() {
+		$("#user-details-wrap").removeClass("hide");
+		$(".edit-photo").removeClass("hide");
+	});
+});
+
+$(function() {
+	$(".user-details-close").click(function() {
+		$("#user-details-wrap").addClass("hide");
+		$(".edit-photo").addClass("hide");
+	});
+});
+
+
+
+
+
+
+
+
+
+
+/* DIALOG open/close =================== */
+$(function() {
+	$(".dialog-open").click(function() {
+		$(".dialog-wrap").addClass("fadeIn");
+	});
+});
+
+$(function() {
+	$(".dialog-close").click(function() {
+		$(".dialog-wrap").removeClass("fadeIn");
+	});
+});
+/* /DIALOG open/close */
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+/* TOOLTIP.STYL ======================================= */
+
+
+/* Tooltip container */
+.tooltip
+    position: relative
+    display: inline-block
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    &:hover .tooltiptext
+        visibility: visible
+        opacity: 1
+
+
+    /* Tooltip text */
+    .tooltiptext
+        visibility: hidden
+        min-width: 200px
+        background-color: colorWhite
+        color: colorGray
+        text-align: center
+        padding: 10px
+        border-radius: 6px
+        box-shadow(0 0 10px colorBlack03)
+        margin-top: 40px
+        word-break: break-word
+
+        /* Position the tooltip text - see examples below! */
+        position: absolute
+        z-index: 10
+
+
+
+        /* Carret arrow top */
+        &::after
+            content: " "
+            position: absolute
+            bottom: 100%  /* At the top of the tooltip */
+            left: 50%
+            margin-left: -5px
+            border-width: 5px
+            border-style: solid
+            border-color: transparent transparent colorWhite transparent

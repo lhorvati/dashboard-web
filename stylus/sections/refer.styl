@@ -1,1 +1,84 @@
 /* REFER.STYL ======================================= */
+
+.main.refer-friend
+    .main__row .main__row-item
+        width: 100%
+        margin-left: 0 !important
+    
+    .main__row .main__row-item:last-child
+        flexbox()
+        flex-flow: row wrap
+
+        .main__col:first-child
+            flex: 1
+            margin-right: 30px
+        .main__col:last-child
+            width: 300px
+
+
+
+.three-steps
+    flexbox()
+    flex-flow: row wrap
+    justify-content: space-between
+
+.card.refer
+    width: 300px
+    text-align: center
+
+    .card__section
+        padding: 50px
+
+    .refer__title
+        font-size: 22px
+        color: colorPurple
+        font-weight: 600
+        margin-bottom: 20px
+
+    .refer__text
+        color: colorGray2
+        font-size: 16px
+        font-weight: 400
+
+
+.refer-share
+    .refer-share__content
+        flex: 1
+        line-height: 30px
+
+        a
+            color: colorPurple
+            text-decoration: none
+
+    .refer-share__links
+        flexbox()
+        flex-flow: column nowrap
+        justify-content: space-between
+        min-width: 100px
+        text-align: right
+
+        .refer-share__links__bot
+            flexbox()
+            flex-flow: row wrap
+            justify-content: space-between
+
+            .btn-icon
+                width: 30px
+                height: 30px
+
+
+.refer-tracking
+    text-align: center
+
+    .sub__total
+        font-size: 26px
+        color: colorPurple
+        margin-bottom: 6px
+        text-transform: uppercase
+
+    .sub__total-desc
+        font-size: 14px
+        color: colorGray2
+        text-transform: uppercase
+
+

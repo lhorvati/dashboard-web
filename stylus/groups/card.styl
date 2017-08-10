@@ -67,15 +67,21 @@
 
         .card__abs-bot
             position: absolute
-            bottom: 20px
-            right: 20px
+            bottom: 10px
+            right: 10px
             flexbox()
+            background: colorWhite
+            padding: 10px
+            border-radius(5px)
             // card absolute buttons - invisible at the begining
             opacity: 0
             transition(.6s)
 
             &.row
                 flex-flow: row nowrap
+
+                .btn-icon
+                    noselect()
 
                 .btn-icon:not(:last-child)
                     margin-right: 14px
@@ -106,3 +112,67 @@
             .card-row__center
                 word-break: break-word
                 white-space: normal
+
+
+        // Card Col (top and bot)
+        .card-col
+            flexbox()
+            flex-flow: column wrap
+            align-items: flex-start
+            line-height: 30px
+
+            &:not(:last-child)
+                margin-right: 30px
+
+            .card-col__top,
+            .card-col__bot,
+            .card-col__center
+                ellipsis()
+                line-height: 16px
+
+            .card-col__top
+                margin-bottom: 10px
+                color: colorDarkBlue
+
+            .card-col__center
+                word-break: break-word
+                white-space: normal
+
+
+
+
+
+
+
+/* Overwrite - Card header reduced padding */
+
+.shared-with-me,
+.my-shares,
+.ssh-keys,
+.custom-stacks,
+.custom-domains
+
+    .card .card__section
+        padding: 20px
+
+
+/* Overwrite - display fix for less items */
+.main.shared-with-me,
+.main.my-shares,
+.main.ssh-keys,
+.main.custom-stacks,
+.main.custom-domains,
+.main.refer-friend
+    .main__row
+        width: 100%
+        display: block
+
+        .main__row-item
+            display: inline-block
+
+            &:nth-child(2n)
+                margin-left: 25px
+
+.main.custom-domains
+    .main__row .main__row-item:nth-child(2n)
+        margin-left: 0

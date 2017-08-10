@@ -20,6 +20,12 @@
                 flex-flow: column nowrap
                 align-items: center
                 width: 50%
+                box-sizing()
+
+                &:first-child
+                    padding-right: 20px
+                    text-align: center
+
 
 
 
@@ -41,6 +47,9 @@
                     font-size: 14px
                     color: colorGray2
                     text-transform: uppercase
+
+                .sub__btn
+                    margin-top: 30px
 
 
                 .sub-row
@@ -95,6 +104,7 @@
             width: 24px
             cursor: pointer
             padding: 0
+            noselect()
 
 
 
@@ -116,6 +126,7 @@
             height: 24px
             cursor: pointer
             z-index: 1
+            noselect()
 
 
 

@@ -68,12 +68,12 @@
           <div class="card-wrap">
             <h1>Account information</h1>
             <div class="card information">
-              <div class="card__section col">
+              <div class="card__section col" id="account">
                 <!-- /user -->
                 <div class="user">
                   <div class="user__image">
-                    <img src="images/avatar.png">
-                    <a href="#">Edit photo</a>
+                    <img src="images/profile.jpg">
+                    <a class="edit-photo hide" href="#">Edit photo</a>
                   </div>
                   <div class="user__details">
                     <div class="user__name">
@@ -87,69 +87,73 @@
                     </div>
                   </div>
                 </div>
-                <!-- /user-details -->
-                <div class="user-details">
-                  <div class="input-wrap first-name">
-                    <div class="mui-input">
-                      <div class="group">
-                        <input name="" required="" type="text">
-                        <span class="bar"></span>
-                        <label>First name</label>
+              </div>
+              <div class="hide" id="user-details-wrap">
+                <div class="card__section col">
+                  <!-- /user-details -->
+                  <div class="user-details">
+                    <div class="input-wrap first-name">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>First name</label>
+                        </div>
+                        <span class="error"></span>
                       </div>
-                      <span class="error"></span>
                     </div>
-                  </div>
-                  <div class="input-wrap last-name">
-                    <div class="mui-input">
-                      <div class="group">
-                        <input name="" required="" type="text">
-                        <span class="bar"></span>
-                        <label>Last name</label>
+                    <div class="input-wrap last-name">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>Last name</label>
+                        </div>
+                        <span class="error"></span>
                       </div>
-                      <span class="error"></span>
                     </div>
-                  </div>
-                  <div class="input-wrap company">
-                    <div class="mui-input">
-                      <div class="group">
-                        <input name="" required="" type="text">
-                        <span class="bar"></span>
-                        <label>Company</label>
+                    <div class="input-wrap company">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>Company</label>
+                        </div>
+                        <span class="error"></span>
                       </div>
-                      <span class="error"></span>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card__section col border-top">
-                <div class="email">
-                  <span class="title--gray">Update email address</span>
-                  <div class="input-wrap new-email">
-                    <div class="mui-input">
-                      <div class="group">
-                        <input name="" required="" type="text">
-                        <span class="bar"></span>
-                        <label>New email address</label>
+                <div class="card__section col border-top">
+                  <div class="email">
+                    <span class="title--gray">Update email address</span>
+                    <div class="input-wrap new-email">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>New email address</label>
+                        </div>
+                        <span class="error"></span>
                       </div>
-                      <span class="error"></span>
                     </div>
-                  </div>
-                  <div class="input-wrap repeat-email">
-                    <div class="mui-input">
-                      <div class="group">
-                        <input name="" required="" type="text">
-                        <span class="bar"></span>
-                        <label>Please enter passowrd to confirm</label>
+                    <div class="input-wrap repeat-email">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>Please enter passowrd to confirm</label>
+                        </div>
+                        <span class="error"></span>
                       </div>
-                      <span class="error"></span>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card__section">
-                <div class="card-footer">
-                  <a class="btn btn--transparent1" href="#">Cancel</a>
-                  <a class="btn btn--transparent1" href="#">Save</a>
+                <div class="card__section">
+                  <div class="card-footer">
+                    <div class="user-details-close btn btn--transparent1">Cancel</div>
+                    <a class="btn btn--transparent1" href="#">Save</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -430,6 +434,9 @@
                     </div>
                     <div class="sub__total-desc">
                       Total Cost
+                    </div>
+                    <div class="sub__btn">
+                      <div class="btn btn--purple">Upgrade</div>
                     </div>
                   </div>
                   <!-- /plan right -->
@@ -1039,7 +1046,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1076,7 +1083,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1113,7 +1120,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1150,7 +1157,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1194,7 +1201,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1233,7 +1240,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1272,7 +1279,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1311,7 +1318,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1350,7 +1357,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1389,7 +1396,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1428,7 +1435,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1467,7 +1474,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1500,9 +1507,10 @@
                     <div class="card-row__left">Opened</div>
                     <div class="card-row__right">Never</div>
                   </div>
-                  <div class="card-row">
+                  <div class="card-row tooltip">
                     <div class="card-row__left">Share link</div>
                     <div class="card-row__right">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
+                    <div class="tooltiptext">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
                   </div>
                   <div class="card-row">
                     <div class="card-row__left">Shared with</div>
@@ -1515,7 +1523,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1543,9 +1551,10 @@
                     <div class="card-row__left">Opened</div>
                     <div class="card-row__right">Never</div>
                   </div>
-                  <div class="card-row">
+                  <div class="card-row tooltip">
                     <div class="card-row__left">Share link</div>
                     <div class="card-row__right">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
+                    <div class="tooltiptext">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
                   </div>
                   <div class="card-row">
                     <div class="card-row__left">Shared with</div>
@@ -1558,7 +1567,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1586,9 +1595,10 @@
                     <div class="card-row__left">Opened</div>
                     <div class="card-row__right">Never</div>
                   </div>
-                  <div class="card-row">
+                  <div class="card-row tooltip">
                     <div class="card-row__left">Share link</div>
                     <div class="card-row__right">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
+                    <div class="tooltiptext">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
                   </div>
                   <div class="card-row">
                     <div class="card-row__left">Shared with</div>
@@ -1601,7 +1611,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1629,9 +1639,10 @@
                     <div class="card-row__left">Opened</div>
                     <div class="card-row__right">Never</div>
                   </div>
-                  <div class="card-row">
+                  <div class="card-row tooltip">
                     <div class="card-row__left">Share link</div>
                     <div class="card-row__right">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
+                    <div class="tooltiptext">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
                   </div>
                   <div class="card-row">
                     <div class="card-row__left">Shared with</div>
@@ -1644,7 +1655,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1672,9 +1683,10 @@
                     <div class="card-row__left">Opened</div>
                     <div class="card-row__right">Never</div>
                   </div>
-                  <div class="card-row">
+                  <div class="card-row tooltip">
                     <div class="card-row__left">Share link</div>
                     <div class="card-row__right">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
+                    <div class="tooltiptext">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
                   </div>
                   <div class="card-row">
                     <div class="card-row__left">Shared with</div>
@@ -1687,7 +1699,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1715,9 +1727,10 @@
                     <div class="card-row__left">Opened</div>
                     <div class="card-row__right">Never</div>
                   </div>
-                  <div class="card-row">
+                  <div class="card-row tooltip">
                     <div class="card-row__left">Share link</div>
                     <div class="card-row__right">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
+                    <div class="tooltiptext">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
                   </div>
                   <div class="card-row">
                     <div class="card-row__left">Shared with</div>
@@ -1730,7 +1743,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1758,9 +1771,10 @@
                     <div class="card-row__left">Opened</div>
                     <div class="card-row__right">Never</div>
                   </div>
-                  <div class="card-row">
+                  <div class="card-row tooltip">
                     <div class="card-row__left">Share link</div>
                     <div class="card-row__right">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
+                    <div class="tooltiptext">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
                   </div>
                   <div class="card-row">
                     <div class="card-row__left">Shared with</div>
@@ -1773,7 +1787,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1801,9 +1815,10 @@
                     <div class="card-row__left">Opened</div>
                     <div class="card-row__right">Never</div>
                   </div>
-                  <div class="card-row">
+                  <div class="card-row tooltip">
                     <div class="card-row__left">Share link</div>
                     <div class="card-row__right">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
+                    <div class="tooltiptext">https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com</div>
                   </div>
                   <div class="card-row">
                     <div class="card-row__left">Shared with</div>
@@ -1816,7 +1831,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1853,7 +1868,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1885,7 +1900,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1917,7 +1932,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1949,7 +1964,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -1981,7 +1996,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2013,7 +2028,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2045,7 +2060,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2077,7 +2092,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2124,7 +2139,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2166,7 +2181,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2208,7 +2223,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2250,7 +2265,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2292,7 +2307,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2334,7 +2349,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2376,7 +2391,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2418,7 +2433,7 @@
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                     </svg>
                   </div>
-                  <div class="btn-icon">
+                  <div class="btn-icon dialog-open">
                     <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
                     </svg>
@@ -2426,6 +2441,516 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <!-- /MAIN SECTION - CUSTOM DOMAINS *********************************** -->
+      <div class="main custom-domains hide">
+        <div class="main__row">
+          <div class="main__row-item">
+            <!-- /CREATE NEW CUSTOM DOMAIN ================ -->
+            <div class="card-wrap">
+              <div class="card new-custom-domain">
+                <span class="ncd-title">Create New Custom Domain</span>
+                <div class="ncd-wrap">
+                  <div class="card__section row">
+                    <div class="card-title2">
+                      mate.lopata@gmail.com
+                    </div>
+                  </div>
+                  <div class="card__section row border-top">
+                    <div class="card-col">
+                      <div class="input-wrap domain-name">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Domain name</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-col">
+                      <div class="input-wrap">
+                        <div class="mui-select">
+                          <select>
+                            <option>Container</option>
+                            <option>FTP</option>
+                            <option>SFTP</option>
+                            <option>SSH</option>
+                            <option>Dropbox</option>
+                            <option>Google Drive</option>
+                            <option>One Drive</option>
+                          </select>
+                          <span class="bar"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-col">
+                      <div class="input-wrap">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>External port</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-col">
+                      <div class="input-wrap">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Internal port</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__section row">
+                    <div class="card-footer">
+                      <div class="btn ncd-close">Close</div>
+                      <div class="btn">Confirm</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /PROJECT 1 ================ -->
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    mate.lopata@gmail.com
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">March, 24, 2016</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">CentOS</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">random text, random text, random text</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Created by</div>
+                    <div class="card-col__bot">mate.lopata@gmail.com</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-open">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /PROJECT 2 ================ -->
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    mate.lopata@gmail.com
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">March, 24, 2016</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">CentOS</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">random text, random text, random text</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-open">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /PROJECT 3 ================ -->
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    mate.lopata@gmail.com
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">March, 24, 2016</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">CentOS</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">random text, random text, random text</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Created by</div>
+                    <div class="card-col__bot">mate.lopata@gmail.com</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-open">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /PROJECT 4 ================ -->
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    mate.lopata@gmail.com
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">March, 24, 2016</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">CentOS</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">random text, random text, random text</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Created by</div>
+                    <div class="card-col__bot">mate.lopata@gmail.com</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-open">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /PROJECT 5 ================ -->
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    mate.lopata@gmail.com
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">March, 24, 2016</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">CentOS</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">random text, random text, random text</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Created by</div>
+                    <div class="card-col__bot">mate.lopata@gmail.com</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-open">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /PROJECT 6 ================ -->
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    mate.lopata@gmail.com
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">March, 24, 2016</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">CentOS</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">random text, random text, random text</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Created by</div>
+                    <div class="card-col__bot">mate.lopata@gmail.com</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-open">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /PROJECT 7 ================ -->
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    mate.lopata@gmail.com
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">March, 24, 2016</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">CentOS</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">random text, random text, random text</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Created by</div>
+                    <div class="card-col__bot">mate.lopata@gmail.com</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-open">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /PROJECT 8 ================ -->
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    mate.lopata@gmail.com
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">March, 24, 2016</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">CentOS</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">random text, random text, random text</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Created by</div>
+                    <div class="card-col__bot">mate.lopata@gmail.com</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-open">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /MAIN SECTION - REFER A FRIEND *********************************** -->
+      <div class="main refer-friend hide">
+        <div class="main__row">
+          <div class="main__row-item">
+            <!-- /THREE STEPS ================ -->
+            <div class="three-steps">
+              <div class="card-wrap">
+                <div class="card refer">
+                  <div class="card__section col">
+                    <span class="refer__title">Step one</span>
+                    <p class="refer__text">Give friend 15$ off. Using your unique refferal link.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrap">
+                <div class="card refer">
+                  <div class="card__section col">
+                    <span class="refer__title">Step two</span>
+                    <p class="refer__text">Friends subscribe with discount.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrap">
+                <div class="card refer">
+                  <div class="card__section col">
+                    <span class="refer__title">Step three</span>
+                    <p class="refer__text">You also receive 15$ off for your subscription.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /Share ================ -->
+            <div class="card-wrap">
+              <h1>Share</h1>
+              <div class="card refer-share">
+                <div class="card__section row">
+                  <div class="refer-share__content">
+                    <p>Sign up for Codeanywhere premium account and we both get $15 in credit</p>
+                    <a href="#">https://codeanywhere.com/refferalsignup/?r=6352356234cd23423c5</a>
+                  </div>
+                  <div class="refer-share__links">
+                    <div class="refer-share__links__top">
+                      <div class="card-btn">Copy link</div>
+                    </div>
+                    <div class="refer-share__links__bot">
+                      <div class="btn-icon">
+                        <svg viewbox="0 0 512 512">
+                          <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path>
+                        </svg>
+                      </div>
+                      <div class="btn-icon">
+                        <svg viewbox="0 0 512 512">
+                          <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
+                        </svg>
+                      </div>
+                      <div class="btn-icon">
+                        <svg viewbox="0 0 512 512">
+                          <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <div class="main__col">
+              <!-- /Share With ================ -->
+              <div class="card-wrap">
+                <h1>Share With</h1>
+                <div class="card refer-share-with">
+                  <div class="card__section col">
+                    <div class="card-row">
+                      <div class="card-col">
+                        username.test@gmail.com
+                      </div>
+                      <div class="card-col">
+                        03.04.2017
+                      </div>
+                      <div class="card-col">
+                        30$
+                      </div>
+                    </div>
+                    <div class="card-row">
+                      <div class="card-col">
+                        username.test@gmail.com
+                      </div>
+                      <div class="card-col">
+                        03.04.2017
+                      </div>
+                      <div class="card-col">
+                        20$
+                      </div>
+                    </div>
+                    <div class="card-row">
+                      <div class="card-col">
+                        username.test@gmail.com
+                      </div>
+                      <div class="card-col">
+                        03.04.2017
+                      </div>
+                      <div class="card-col">
+                        40$
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__col">
+              <!-- /Refferal Tracking ================ -->
+              <div class="card-wrap">
+                <h1>Refferal tracking</h1>
+                <div class="card refer-tracking">
+                  <div class="card__section col">
+                    <div class="sub__total">$ 153 USD</div>
+                    <div class="sub__total-desc">Total credit</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /DIALOG -->
+      <div class="dialog-wrap">
+        <div class="dialog">
+          <div class="dialog__title">Remove {{dialogTitle}}</div>
+          <div class="dialog__text">Are you sure you want to remove "{{dialogItemName}}" ?</div>
+          <div class="dialog__buttons">
+            <div class="btn dialog-close">Cancel</div>
+            <div class="btn dialog-remove">Remove</div>
           </div>
         </div>
       </div>

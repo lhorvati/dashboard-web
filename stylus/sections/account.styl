@@ -6,13 +6,18 @@
     flexbox()
     flex-flow: row nowrap
 
+    .card.information
+        cursor: pointer
 
     .card.information,
     .card.password
         .card__section:last-child
             padding: 20px
 
-
+    //user details - section padding-top removed 
+    #user-details-wrap .card__section.col:first-child
+        padding: 0 20px 30px 20px
+        margin-top: -30px
 
     /* ACCOUNT INFORMATION - user */
     .user
@@ -24,14 +29,22 @@
             flexbox()
             flex-flow: column nowrap
             align-items: center
+            margin-right: 10px
 
             img
                 border-radius(50%)
                 width: 100%
 
-            a
-                color: #757575
+            a.edit-photo
+                color: colorGray2
                 font-size: 16px
+                margin-top: 10px
+                transition(.2s)
+                cursor: pointer
+
+        .user__image:hover a.edit-photo
+            color: colorPurple
+
 
         .user__details
             flexbox()
@@ -43,7 +56,7 @@
         .user__email,
         .user__company
             font-size: 16px
-            color: #000
+            color: colorBlack
             margin-bottom: 12px
 
 
@@ -182,7 +195,7 @@
 
         .graph__circle-in
             color: colorPurple
-            font-size: 40px
+            font-size: 30px
             font-weight: 600
 
             flexbox()
