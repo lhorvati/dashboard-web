@@ -218,6 +218,25 @@ $(function() {
 
 
 
+/* SEARCH RESULTS SECTION =================== */
+$(function() {
+	$(".input-search").focus(function() {
+		/* Side nav */
+		$(".side-nav-link").removeClass("active");
+		/* Main content */
+		$(".main").removeClass("show-flex");
+		$(".main").addClass("hide");
+		$(".main.search-results").addClass("show");
+		$(".main.search-results").removeClass("hide");
+	});
+});
+
+
+
+
+
+
+
 
 
 
