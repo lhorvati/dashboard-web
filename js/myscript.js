@@ -203,6 +203,7 @@ $(function() {
 	$("#account").click(function() {
 		$("#user-details-wrap").removeClass("hide");
 		$(".edit-photo").removeClass("hide");
+		$("#account").addClass("hide");
 	});
 });
 
@@ -210,6 +211,8 @@ $(function() {
 	$(".user-details-close").click(function() {
 		$("#user-details-wrap").addClass("hide");
 		$(".edit-photo").addClass("hide");
+		$("#account").removeClass("hide");
+		
 	});
 });
 
@@ -243,17 +246,31 @@ $(function() {
 
 /* DIALOG open/close =================== */
 $(function() {
-	$(".dialog-open").click(function() {
-		$(".dialog-wrap").addClass("fadeIn");
+	$(".dialog-remove").click(function() {
+		$(".dialog-wrap.remove").addClass("fadeIn");
 	});
 });
 
 $(function() {
 	$(".dialog-close").click(function() {
-		$(".dialog-wrap").removeClass("fadeIn");
+		$(".dialog-wrap.remove").removeClass("fadeIn");
 	});
 });
 /* /DIALOG open/close */
+
+/* DIALOG EDIT =================== */
+$(function() {
+	$(".dialog-edit").click(function() {
+		$(".dialog-wrap.edit").addClass("fadeIn");
+	});
+});
+
+$(function() {
+	$(".dialog-close").click(function() {
+		$(".dialog-wrap.edit").removeClass("fadeIn");
+	});
+});
+/* /DIALOG EDIT */
 
 
 

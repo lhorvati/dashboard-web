@@ -62,7 +62,7 @@
           .card-wrap
             %h1 Account information
             .card.information
-              #account.card__section.col
+              .card__section.col
 
                 //user
                 .user
@@ -76,6 +76,12 @@
                       %span mate.lopata@gmail.com
                     .user__company
                       %span Codeanywhere
+
+              .card__abs-bot.row
+                #account.btn-icon
+                  %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
+
 
               #user-details-wrap.hide
                 .card__section.col
@@ -291,6 +297,8 @@
             .card.resources
               .card__section.col
 
+                .card-title2.center Yearly bussiness plan
+
                 //resource containers
                 .resource.containers
                   .resource__top
@@ -346,7 +354,7 @@
 
               .card__section
                 .card-footer
-                  %a.btn.btn--transparent1(href="#") Change
+                  .btn.btn--transparent1.dialog-edit Change
 
 
 
@@ -361,7 +369,7 @@
 
               .card__section
                 .card-footer
-                  %a.btn.btn--red(href="#") Delete
+                  .btn.btn--red.dialog-remove Delete
 
 
 
@@ -880,10 +888,10 @@
                   .row Shared with: 5
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -911,10 +919,10 @@
                   .row Shared with: 5
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -943,10 +951,10 @@
                   .row Shared with: 5
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -975,10 +983,10 @@
                   .row Shared with: 5
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1012,10 +1020,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1043,10 +1051,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1075,10 +1083,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1107,10 +1115,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1138,10 +1146,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1169,10 +1177,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1201,10 +1209,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1233,10 +1241,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1276,10 +1284,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1312,10 +1320,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1349,10 +1357,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1386,10 +1394,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1422,10 +1430,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1458,10 +1466,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1495,10 +1503,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1532,10 +1540,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1568,10 +1576,10 @@
                       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1593,10 +1601,10 @@
                       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1619,10 +1627,10 @@
                       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1645,10 +1653,10 @@
                       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1670,10 +1678,10 @@
                       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1695,10 +1703,10 @@
                       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1721,10 +1729,10 @@
                       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1747,10 +1755,10 @@
                       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1790,10 +1798,10 @@
                     .card-row__right mate.lopata@gmail.com
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1824,10 +1832,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1859,10 +1867,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1894,10 +1902,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1928,10 +1936,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1962,10 +1970,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -1997,10 +2005,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2032,10 +2040,10 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon
+                  .btn-icon.dialog-edit
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z")
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2136,7 +2144,7 @@
                     .card-col__bot 3000
 
                 .card__abs-bot.row
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2167,7 +2175,7 @@
 
 
                 .card__abs-bot.row
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2199,7 +2207,7 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2231,7 +2239,7 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2262,7 +2270,7 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2293,7 +2301,7 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2325,7 +2333,7 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2357,7 +2365,7 @@
                   
 
                 .card__abs-bot.row
-                  .btn-icon.dialog-open
+                  .btn-icon.dialog-remove
                     %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                       %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2486,13 +2494,22 @@
 
 
       //DIALOG
-      .dialog-wrap
+      .dialog-wrap.remove
         .dialog
           .dialog__title Remove {{dialogTitle}}
           .dialog__text Are you sure you want to remove "{{dialogItemName}}" ?
           .dialog__buttons
             .btn.dialog-close Cancel
-            .btn.dialog-remove Remove
+            .btn.dialog-delete Remove
+
+
+      .dialog-wrap.edit
+        .dialog
+          .dialog__title Edit {{dialogTitle}}
+          .dialog__text Are you sure you want to edit "{{dialogItemName}}" ?
+          .dialog__buttons
+            .btn.dialog-close Cancel
+            .btn.dialog-delete Remove
 
 
 
@@ -2538,7 +2555,7 @@
                   .card-col__bot mate.lopata@gmail.com
 
               .card__abs-bot.row
-                .btn-icon.dialog-open
+                .btn-icon.dialog-remove
                   %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                     %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2568,7 +2585,7 @@
                   .card-col__bot mate.lopata@gmail.com
 
               .card__abs-bot.row
-                .btn-icon.dialog-open
+                .btn-icon.dialog-remove
                   %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                     %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
@@ -2600,7 +2617,7 @@
                   .card-col__bot mate.lopata@gmail.com
 
               .card__abs-bot.row
-                .btn-icon.dialog-open
+                .btn-icon.dialog-remove
                   %svg(height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg")
                     %path(d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z")
 
