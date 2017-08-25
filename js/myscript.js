@@ -327,3 +327,37 @@ $(function() {
 
 
 
+
+
+
+/* DIALOG PRICING PLANS =================== */
+$(function() {
+	$(".dialog-upgrade").click(function() {
+		$(".dialog-wrap.pricing-plans").addClass("fadeIn");
+	});
+});
+
+$(function() {
+	$(".dialog-close").click(function() {
+		$(".dialog-wrap.pricing-plans").removeClass("fadeIn");
+	});
+});
+/* /DIALOG PRICING PLANS */
+
+
+/* DIALOG COMPAIR PRICING =================== */
+$(function() {
+	$(".dialog-compair").click(function() {
+		$(".dialog-wrap.pricing-compair").addClass("fadeIn");
+	});
+});
+
+$(function() {
+	$(".dialog-compair-close").click(function() {
+		$(".dialog-wrap.pricing-compair").removeClass("fadeIn");
+	});
+});
+/* /DIALOG COMPAIR PRICING */
+
+
+

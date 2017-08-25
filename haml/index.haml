@@ -379,7 +379,7 @@
 
               .card__section
                 .card-footer
-                  %a.btn.btn--purple(href="https://codeanywhere.com/dashboard") Upgrade
+                  .btn.btn--purple.dialog-upgrade Upgrade
 
 
 
@@ -463,7 +463,7 @@
                       Total Cost
 
                     .sub__btn
-                      %a.btn.btn--purple(href="https://codeanywhere.com/dashboard") Upgrade
+                      .btn.btn--purple.dialog-upgrade Upgrade
 
                   //plan right
                   .sub
@@ -1040,7 +1040,7 @@
 
                 .card__section
                   .card-footer
-                    %a.btn.btn--purple(href="https://codeanywhere.com/dashboard") Upgrade
+                    .btn.btn--purple.dialog-upgrade Upgrade
 
 
 
@@ -2588,7 +2588,7 @@
 
 
       //DIALOGS
-      //Remove Dialog
+      //Remove Dialog =================== *
       .dialog-wrap.remove
         .dialog
           .dialog__title Remove {{dialogTitle}}
@@ -2598,7 +2598,7 @@
             .btn.dialog-delete Remove
 
 
-      //Edit Dialog
+      //Edit Dialog =================== *
       .dialog-wrap.edit
         .dialog
           .dialog__title Edit {{dialogTitle}}
@@ -2606,7 +2606,7 @@
           .dialog__buttons
             .btn.dialog-close Cancel
             .btn.dialog-delete Remove
-      //Add Account Dialog
+      //Add Account Dialog =================== *
       .dialog-wrap.account
         .dialog
           .dialog__title Manage accounts
@@ -2621,6 +2621,103 @@
           .dialog__buttons
             .btn.dialog-close Cancel
             .btn.dialog-add Add
+
+
+      //Pricing Plans Dialog =================== *
+      .dialog-wrap.pricing-plans
+        .dialog
+
+          .plans
+
+            .plans-item
+              .plans-item__title Free
+              .plans-item__price $0
+              .plans-item__billing Per user/forever
+              .plans-item__button Current plan
+              .plans-item__features
+                %ul
+                  %li Everything you need to get started programming
+
+            .plans-item
+              .plans-item__title Starter
+              .plans-item__price $2
+              .plans-item__billing 
+                Per user/mo. (billed annually)
+                <br>
+                $3 user/mo. (billed monthly)
+              .plans-item__button
+                .btn.btn--purple Upgrade
+              .plans-item__features
+                %ul
+                  %li Premium support
+                  %li Revision System
+
+            .plans-item
+              .plans-item__title Freelancer
+              .plans-item__price $7
+              .plans-item__billing 
+                Per user/mo. (billed annually)
+                <br>
+                $10 user/mo. (billed monthly)
+              .plans-item__button
+                .btn.btn--purple Upgrade
+              .plans-item__features
+                %ul
+                  %li Connect up to 50 FTP servers
+                  %li 1 Always-On Container
+                  %li Connect Multiples of the same Cloud Storage
+
+            .plans-item
+              .plans-item__title Professional
+              .plans-item__price $20
+              .plans-item__billing 
+                Per user/mo. (billed annually)
+                <br>
+                $25 user/mo. (billed monthly)
+              .plans-item__button
+                .btn.btn--purple Upgrade
+              .plans-item__features
+                %ul
+                  %li Unlimited FTP servers
+                  %li Manage multiple users
+                  %li Extra security
+
+            .plans-item
+              .plans-item__title Bussiness
+              .plans-item__price $40
+              .plans-item__billing 
+                Per user/mo. (billed annually)
+                <br>
+                $50 user/mo. (billed monthly)
+              .plans-item__button
+                .btn.btn--purple Upgrade
+              .plans-item__features
+                %ul
+                  %li Unlimited Cloud Services
+                  %li Unlimited Shares
+                  %li 30 Powerfull Containers
+                  %li 6 Always-On Containers
+
+
+          .dialog-section
+            or
+          .dialog-section
+            .btn.btn--purple.dialog-compair Compair our plans
+
+
+          .dialog__buttons
+            .btn.dialog-close Cancel
+
+
+
+      //Pricing Compare Dialog =================== *
+      .dialog-wrap.pricing-compair
+        .dialog
+
+
+
+          .dialog__buttons
+            .btn.dialog-compair-close Cancel
 
 
 

@@ -493,7 +493,7 @@
               </div>
               <div class="card__section">
                 <div class="card-footer">
-                  <a class="btn btn--purple" href="https://codeanywhere.com/dashboard">Upgrade</a>
+                  <div class="btn btn--purple dialog-upgrade">Upgrade</div>
                 </div>
               </div>
             </div>
@@ -579,7 +579,7 @@
                       Total Cost
                     </div>
                     <div class="sub__btn">
-                      <a class="btn btn--purple" href="https://codeanywhere.com/dashboard">Upgrade</a>
+                      <div class="btn btn--purple dialog-upgrade">Upgrade</div>
                     </div>
                   </div>
                   <!-- /plan right -->
@@ -1331,7 +1331,7 @@
                 </div>
                 <div class="card__section">
                   <div class="card-footer">
-                    <a class="btn btn--purple" href="https://codeanywhere.com/dashboard">Upgrade</a>
+                    <div class="btn btn--purple dialog-upgrade">Upgrade</div>
                   </div>
                 </div>
               </div>
@@ -3098,7 +3098,7 @@
         </div>
       </div>
       <!-- /DIALOGS -->
-      <!-- /Remove Dialog -->
+      <!-- /Remove Dialog =================== * -->
       <div class="dialog-wrap remove">
         <div class="dialog">
           <div class="dialog__title">Remove {{dialogTitle}}</div>
@@ -3109,7 +3109,7 @@
           </div>
         </div>
       </div>
-      <!-- /Edit Dialog -->
+      <!-- /Edit Dialog =================== * -->
       <div class="dialog-wrap edit">
         <div class="dialog">
           <div class="dialog__title">Edit {{dialogTitle}}</div>
@@ -3120,7 +3120,7 @@
           </div>
         </div>
       </div>
-      <!-- /Add Account Dialog -->
+      <!-- /Add Account Dialog =================== * -->
       <div class="dialog-wrap account">
         <div class="dialog">
           <div class="dialog__title">Manage accounts</div>
@@ -3139,6 +3139,117 @@
           <div class="dialog__buttons">
             <div class="btn dialog-close">Cancel</div>
             <div class="btn dialog-add">Add</div>
+          </div>
+        </div>
+      </div>
+      <!-- /Pricing Plans Dialog =================== * -->
+      <div class="dialog-wrap pricing-plans">
+        <div class="dialog">
+          <div class="plans">
+            <div class="plans-item">
+              <div class="plans-item__title">Free</div>
+              <div class="plans-item__price">$0</div>
+              <div class="plans-item__billing">Per user/forever</div>
+              <div class="plans-item__button">Current plan</div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Everything you need to get started programming</li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans-item">
+              <div class="plans-item__title">Starter</div>
+              <div class="plans-item__price">$2</div>
+              <div class="plans-item__billing">
+                Per user/mo. (billed annually)
+                <br>
+                $3 user/mo. (billed monthly)
+              </div>
+              <div class="plans-item__button">
+                <div class="btn btn--purple">Upgrade</div>
+              </div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Premium support</li>
+                  <li>Revision System</li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans-item">
+              <div class="plans-item__title">Freelancer</div>
+              <div class="plans-item__price">$7</div>
+              <div class="plans-item__billing">
+                Per user/mo. (billed annually)
+                <br>
+                $10 user/mo. (billed monthly)
+              </div>
+              <div class="plans-item__button">
+                <div class="btn btn--purple">Upgrade</div>
+              </div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Connect up to 50 FTP servers</li>
+                  <li>1 Always-On Container</li>
+                  <li>Connect Multiples of the same Cloud Storage</li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans-item">
+              <div class="plans-item__title">Professional</div>
+              <div class="plans-item__price">$20</div>
+              <div class="plans-item__billing">
+                Per user/mo. (billed annually)
+                <br>
+                $25 user/mo. (billed monthly)
+              </div>
+              <div class="plans-item__button">
+                <div class="btn btn--purple">Upgrade</div>
+              </div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Unlimited FTP servers</li>
+                  <li>Manage multiple users</li>
+                  <li>Extra security</li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans-item">
+              <div class="plans-item__title">Bussiness</div>
+              <div class="plans-item__price">$40</div>
+              <div class="plans-item__billing">
+                Per user/mo. (billed annually)
+                <br>
+                $50 user/mo. (billed monthly)
+              </div>
+              <div class="plans-item__button">
+                <div class="btn btn--purple">Upgrade</div>
+              </div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Unlimited Cloud Services</li>
+                  <li>Unlimited Shares</li>
+                  <li>30 Powerfull Containers</li>
+                  <li>6 Always-On Containers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dialog-section">
+            or
+          </div>
+          <div class="dialog-section">
+            <div class="btn btn--purple dialog-compair">Compair our plans</div>
+          </div>
+          <div class="dialog__buttons">
+            <div class="btn dialog-close">Cancel</div>
+          </div>
+        </div>
+      </div>
+      <!-- /Pricing Compare Dialog =================== * -->
+      <div class="dialog-wrap pricing-compair">
+        <div class="dialog">
+          <div class="dialog__buttons">
+            <div class="btn dialog-compair-close">Cancel</div>
           </div>
         </div>
       </div>
