@@ -951,24 +951,26 @@
                 <div class="billing-information__expand hide">
                   <div class="billing-info">
                     <div class="card-title">Billing information</div>
-                    <div class="input-wrap first-name">
-                      <div class="mui-input">
-                        <div class="group">
-                          <input name="" required="" type="text">
-                          <span class="bar"></span>
-                          <label>First Name</label>
+                    <div class="billing-info-row2">
+                      <div class="input-wrap first-name">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>First Name</label>
+                          </div>
+                          <span class="error"></span>
                         </div>
-                        <span class="error"></span>
                       </div>
-                    </div>
-                    <div class="input-wrap last-name">
-                      <div class="mui-input">
-                        <div class="group">
-                          <input name="" required="" type="text">
-                          <span class="bar"></span>
-                          <label>Last Name</label>
+                      <div class="input-wrap last-name">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Last Name</label>
+                          </div>
+                          <span class="error"></span>
                         </div>
-                        <span class="error"></span>
                       </div>
                     </div>
                     <div class="input-wrap phone">
@@ -1001,11 +1003,11 @@
                         <span class="error"></span>
                       </div>
                     </div>
-                    <div class="expiration-wrap row">
-                      <div class="input-wrap">
+                    <div class="billing-info-row3">
+                      <div class="input-wrap card-date">
                         <div class="mui-select">
                           <select>
-                            <option>01 - January</option>
+                            <option selected="selected">01 - January</option>
                             <option>02 - February</option>
                             <option>03 - March</option>
                             <option>04 - April</option>
@@ -1021,10 +1023,10 @@
                           <span class="bar"></span>
                         </div>
                       </div>
-                      <div class="input-wrap">
+                      <div class="input-wrap card-year">
                         <div class="mui-select">
                           <select>
-                            <option>2017</option>
+                            <option selected="selected">2017</option>
                             <option>2018</option>
                             <option>2019</option>
                             <option>2020</option>
@@ -1047,62 +1049,91 @@
                           <span class="bar"></span>
                         </div>
                       </div>
+                      <div class="input-wrap card-cvv">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="number">
+                            <span class="bar"></span>
+                            <label>CVV</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="address-info">
                     <div class="card-title">Address information</div>
-                    <div class="input-wrap first-name">
+                    <div class="billing-info-row2">
+                      <div class="input-wrap address">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Address</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                      <div class="input-wrap address2">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Address 2</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-wrap city">
                       <div class="mui-input">
                         <div class="group">
                           <input name="" required="" type="text">
                           <span class="bar"></span>
-                          <label>First Name</label>
+                          <label>City</label>
                         </div>
                         <span class="error"></span>
                       </div>
                     </div>
-                    <div class="input-wrap last-name">
-                      <div class="mui-input">
-                        <div class="group">
-                          <input name="" required="" type="text">
-                          <span class="bar"></span>
-                          <label>Last Name</label>
+                    <div class="billing-info-row2">
+                      <div class="input-wrap state">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>State/Province</label>
+                          </div>
+                          <span class="error"></span>
                         </div>
-                        <span class="error"></span>
+                      </div>
+                      <div class="input-wrap zip">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="number">
+                            <span class="bar"></span>
+                            <label>Zip/Postal Code</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
                       </div>
                     </div>
-                    <div class="input-wrap phone">
-                      <div class="mui-input">
-                        <div class="group">
-                          <input name="" required="" type="number">
-                          <span class="bar"></span>
-                          <label>Phone Number</label>
-                        </div>
-                        <span class="error"></span>
+                    <div class="input-wrap country">
+                      <div class="mui-select">
+                        <select>
+                          <option selected="selected">Croatia</option>
+                          <option>Bosna i Hercegovina</option>
+                          <option>Slovenia</option>
+                        </select>
+                        <span class="bar"></span>
                       </div>
                     </div>
-                    <div class="input-wrap vat">
-                      <div class="mui-input">
-                        <div class="group">
-                          <input name="" required="" type="number">
-                          <span class="bar"></span>
-                          <label>VAT Number</label>
-                        </div>
-                        <span class="error"></span>
-                      </div>
-                    </div>
-                    <div class="input-wrap credit-card">
-                      <div class="mui-input">
-                        <div class="group">
-                          <input name="" required="" type="number">
-                          <span class="bar"></span>
-                          <label>Credit Card Number</label>
-                        </div>
-                        <span class="error"></span>
-                      </div>
-                    </div>
-                    <div class="btn btn-transparent billing-close">Close</div>
                   </div>
+                </div>
+              </div>
+              <div class="card__section hide" id="billing-footer">
+                <div class="card-footer">
+                  <div class="btn btn--purple billing-update">Update</div>
+                  <div class="btn btn-transparent billing-close">Close</div>
                 </div>
               </div>
             </div>

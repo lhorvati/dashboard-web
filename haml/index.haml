@@ -742,20 +742,22 @@
 
                   .billing-info
                     .card-title Billing information
-                    .input-wrap.first-name
-                      .mui-input
-                        .group
-                          %input(name="" required="" type="text")/
-                          %span.bar
-                          %label First Name
-                        %span.error
-                    .input-wrap.last-name
-                      .mui-input
-                        .group
-                          %input(name="" required="" type="text")/
-                          %span.bar
-                          %label Last Name
-                        %span.error
+
+                    .billing-info-row2
+                      .input-wrap.first-name
+                        .mui-input
+                          .group
+                            %input(name="" required="" type="text")/
+                            %span.bar
+                            %label First Name
+                          %span.error
+                      .input-wrap.last-name
+                        .mui-input
+                          .group
+                            %input(name="" required="" type="text")/
+                            %span.bar
+                            %label Last Name
+                          %span.error
                     .input-wrap.phone
                       .mui-input
                         .group
@@ -777,11 +779,11 @@
                           %span.bar
                           %label Credit Card Number
                         %span.error
-                    .expiration-wrap.row
-                      .input-wrap
+                    .billing-info-row3
+                      .input-wrap.card-date
                         .mui-select
                           %select
-                            %option 01 - January
+                            %option(selected="selected") 01 - January
                             %option 02 - February
                             %option 03 - March
                             %option 04 - April
@@ -794,10 +796,10 @@
                             %option 11 - November
                             %option 12 - December
                           %span.bar
-                      .input-wrap
+                      .input-wrap.card-year
                         .mui-select
                           %select
-                            %option 2017
+                            %option(selected="selected") 2017
                             %option 2018
                             %option 2019
                             %option 2020
@@ -817,46 +819,66 @@
                             %option 2034
                             %option 2035
                           %span.bar
+                      .input-wrap.card-cvv
+                        .mui-input
+                          .group
+                            %input(name="" required="" type="number")/
+                            %span.bar
+                            %label CVV
+                          %span.error
 
                   .address-info
                     .card-title Address information
-                    .input-wrap.first-name
-                      .mui-input
-                        .group
-                          %input(name="" required="" type="text")/
-                          %span.bar
-                          %label First Name
-                        %span.error
-                    .input-wrap.last-name
-                      .mui-input
-                        .group
-                          %input(name="" required="" type="text")/
-                          %span.bar
-                          %label Last Name
-                        %span.error
-                    .input-wrap.phone
-                      .mui-input
-                        .group
-                          %input(name="" required="" type="number")/
-                          %span.bar
-                          %label Phone Number
-                        %span.error
-                    .input-wrap.vat
-                      .mui-input
-                        .group
-                          %input(name="" required="" type="number")/
-                          %span.bar
-                          %label VAT Number
-                        %span.error
-                    .input-wrap.credit-card
-                      .mui-input
-                        .group
-                          %input(name="" required="" type="number")/
-                          %span.bar
-                          %label Credit Card Number
-                        %span.error
 
-                    .btn.btn-transparent.billing-close Close
+                    .billing-info-row2
+                      .input-wrap.address
+                        .mui-input
+                          .group
+                            %input(name="" required="" type="text")/
+                            %span.bar
+                            %label Address
+                          %span.error
+                      .input-wrap.address2
+                        .mui-input
+                          .group
+                            %input(name="" required="" type="text")/
+                            %span.bar
+                            %label Address 2
+                          %span.error
+                    .input-wrap.city
+                      .mui-input
+                        .group
+                          %input(name="" required="" type="text")/
+                          %span.bar
+                          %label City
+                        %span.error
+                    .billing-info-row2
+                      .input-wrap.state
+                        .mui-input
+                          .group
+                            %input(name="" required="" type="text")/
+                            %span.bar
+                            %label State/Province
+                          %span.error
+                      .input-wrap.zip
+                        .mui-input
+                          .group
+                            %input(name="" required="" type="number")/
+                            %span.bar
+                            %label Zip/Postal Code
+                          %span.error
+                    .input-wrap.country
+                      .mui-select
+                        %select
+                          %option(selected="selected") Croatia
+                          %option Bosna i Hercegovina
+                          %option Slovenia
+                        %span.bar
+
+              #billing-footer.card__section.hide
+                .card-footer
+                  .btn.btn--purple.billing-update Update
+                  .btn.btn-transparent.billing-close Close
 
 
 

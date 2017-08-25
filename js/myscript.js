@@ -225,6 +225,7 @@ $(function() {
 		$(".billing-information__name").addClass("hide");
 		$(".billing-information__card").addClass("hide");
 		$(".card__abs-bot.row").addClass("hide");
+		$("#billing-footer").removeClass("hide");
 	});
 });
 
@@ -234,8 +235,13 @@ $(function() {
 		$(".billing-information__name").removeClass("hide");
 		$(".billing-information__card").removeClass("hide");
 		$(".card__abs-bot.row").removeClass("hide");
+		$("#billing-footer").addClass("hide");
+		
 	});
 });
+
+
+
 
 
 
