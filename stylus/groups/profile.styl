@@ -1,0 +1,408 @@
+/* PROFILE.STYL ======================================== */
+
+#profile.profile
+    position: absolute
+    right: 8px
+    top: 55px
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+    cursor: auto
+    overflow: visible
+    z-index: 30
+    display: none
+
+.profile::before
+    position: absolute
+    content: ''
+    display: block
+    border-color: transparent
+    border-style: dashed dashed solid
+    border-width: 0px 5.5px 5.5px
+    width: 0
+    border-bottom-color: #d5d5d5
+    top: -6px
+    right: 10px
+
+.profile-wrap
+    position: relative
+    width: 300px
+    flexbox()
+    flex-flow: column nowrap
+    background: #f1f1f1
+    overflow: auto
+    color: #000
+    
+    a
+      text-decoration: none
+
+    .profile-top
+        width: 100%
+
+    /* Profile Row */
+    .profile-row
+        width: 100%
+        flexbox()
+        flex-flow: row nowrap
+        align-items: center
+        overflow: hidden
+        box-sizing()
+        padding: 0 16px
+        
+        &.f-center
+          justify-content: center
+
+        .profile-row__desc
+            flexbox()
+            flex-flow: column nowrap
+            justify-content: center
+            align-items: flex-start
+            min-height: 56px
+            flex: 1
+
+
+            
+/* PIE Percentage ========== */            
+.profile-wrap .profile-top.percentage-0
+    .profile-pie-left
+        background: linear-gradient(90deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, #fff 50%, transparent 50%), linear-gradient(-270deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-1
+    .profile-pie-left
+        background: linear-gradient(90deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, #fff 50%, transparent 50%), linear-gradient(-234deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-2
+    .profile-pie-left
+        background: linear-gradient(90deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, #fff 50%, transparent 50%), linear-gradient(-198deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-3
+    .profile-pie-left
+        background: linear-gradient(90deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, #fff 50%, transparent 50%), linear-gradient(-162deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-4
+    .profile-pie-left
+        background: linear-gradient(90deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, #fff 50%, transparent 50%), linear-gradient(-126deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-5
+    .profile-pie-left
+        background: linear-gradient(90deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, #fff 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-6
+    .profile-pie-left
+        background: linear-gradient(126deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-7
+    .profile-pie-left
+        background: linear-gradient(162deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-8
+    .profile-pie-left
+        background: linear-gradient(198deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-9
+    .profile-pie-left
+        background: linear-gradient(234deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-10
+    .profile-pie-left
+        background: linear-gradient(270deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+    .profile-pie-right
+        background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+            
+
+/* PROFILE TOP ========== */
+.profile-wrap .profile-top
+    flexbox()
+    flex-flow: column nowrap
+    position: relative
+    z-index: 1000
+    background: #f1f1f1
+
+
+    /* MANAGED ROW */
+    .managed-row
+        width: 100%
+        height: 40px
+        background: #d5d5d5
+        box-sizing()
+        padding: 0 16px
+        font-size: 9px
+        flexbox()
+        align-items: center
+
+    /* PROFILE IMAGE BLOCK */
+    .profile-image
+        flexbox()
+        justify-content: center
+        align-items: center
+        width: 100px
+        height: 100px
+        font-size: 18px
+        font-weight: 400
+        box-sizing()
+        border-radius: 100%
+        background: #fff
+        // margin: 10px auto 0 auto
+        position: absolute
+        margin-top: 5px
+        z-index: 10
+        
+        .profile-image__center
+            flexbox()
+            flex-flow: column nowrap
+            justify-content: center
+            align-items: center
+
+            .profile-image__center--prim
+                color: #7f3f98
+                font-size: 26px
+                font-weight: 600
+            
+            .profile-image__center--sec
+                color: #393939
+                font-size: 9px
+                text-transform: uppercase
+                
+    /* PROFILE PIE */
+    .profile-pie-left,
+    .profile-pie-right
+        flexbox()
+        justify-content: center
+        align-items: center
+        width: 110px
+        height: 110px
+        box-sizing()
+        border-radius: 100%
+        background: #d5d5d5
+        margin-top: 10px
+
+    .profile-pie-left
+        position: relative
+        background: linear-gradient(90deg, #fff 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #fff 50%)
+      
+    .profile-pie-right
+        position: absolute
+        z-index: 1
+        margin-top: 5px
+        margin-left: -1px
+        background: linear-gradient(90deg, #fff 50%, transparent 50%), linear-gradient(-270deg, #7f3f98 50%, transparent 50%)
+
+
+    /* Profile Details Block */
+    .profile-details
+        width: 100%
+        flexbox()
+        flex-flow: column nowrap
+        margin: 15px 0
+        text-align: center
+
+        .profile-details__username,
+        .profile-details__email
+            ellipsis()
+
+        .profile-details__username
+            text-transform: capitalize
+            margin-bottom: 3px
+            font-size: 16px
+        
+        .profile-details__email
+            text-transform: lowercase
+            font-size: 12px
+            opacity: .7
+
+    
+
+
+/* Dashboard bottun align */
+.dashboard-wrap a
+        margin: 0 auto
+    
+    
+    .profile-steps
+        width: 100%
+        flexbox()
+        flex-flow: column nowrap
+        margin: 24px 0 16px 0
+        font-size: 12px
+
+        .profile-steps__top
+            color: #717171
+            margin-bottom: 5px
+            font-size: 12px
+            text-align: left
+
+        .profile-steps__bot
+            flexbox()
+            flex-flow: row nowrap
+            align-items: center
+            font-size: 10px
+
+            .profile-steps__sec--icon
+                flexbox()
+                flex-shrink: 0
+                width: 16px
+                height: 16px
+                background: url("img/dialog/check.svg") center no-repeat
+                background-size: 14px
+
+            .profile-steps__sec--text
+                margin-left: 5px
+
+
+    /* PROFILE UPGARDE BLOCK */
+    .upgrade-wrap
+        border-top: 1px solid #d5d5d5
+        margin-top: 10px
+
+        
+        /* Percentage */ 
+        .upgrade-row.percentage-1 
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #6cc781 10%, #d5d5d5 10%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #6cc781
+        .upgrade-row.percentage-2
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #6cc781 20%, #d5d5d5 20%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #6cc781
+        .upgrade-row.percentage-3
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #6cc781 30%, #d5d5d5 30%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #6cc781
+        .upgrade-row.percentage-4
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #6cc781 40%, #d5d5d5 40%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #6cc781
+        .upgrade-row.percentage-5
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #ffe600 50%, #d5d5d5 50%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #ecd501
+        .upgrade-row.percentage-6
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #ffe600 60%, #d5d5d5 60%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #ecd501
+        .upgrade-row.percentage-7
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #ffe600 70%, #d5d5d5 70%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #ecd501
+        .upgrade-row.percentage-8
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #ffe600 80%, #d5d5d5 80%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #ecd501
+        .upgrade-row.percentage-9
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #e53934 90%, #d5d5d5 90%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #e53934
+        .upgrade-row.percentage-10
+            .upgrade-row__top .upgrade-row__top--bar
+                background: linear-gradient(90deg, #e53934 100%, #d5d5d5 0%)
+            .upgrade-row__bot .upgrade-row__bot--left
+                color: #e53934
+            
+         
+        
+            
+        
+        .upgrade-row
+            flexbox()
+            flex-flow: column nowrap
+            width: 100%
+            margin-top: 20px
+            
+            /* Subscription */
+            .subscription
+                flexbox()
+                flex-flow: column nowrap
+                text-align: center
+                color: #717171
+                font-size: 12px
+
+                span
+                    color: #7f3f98
+                    font-size: 14px
+                    margin-left: 5px
+            
+
+            /* Top */
+            .upgrade-row__top
+                padding: 5px 0
+
+                .upgrade-row__top--bar
+                    width: 100%
+                    height: 5px
+                    background: #d5d5d5
+
+            /* Bot */
+            .upgrade-row__bot
+                width: 100%
+                flexbox()
+                flex-flow: row nowrap
+                justify-content: space-between
+                align-items: center
+
+                .upgrade-row__bot--left,
+                .upgrade-row__bot--right
+                    font-size: 10px
+
+                /*
+                .upgrade-row__bot--left.green
+                    color: #89fba4
+                .upgrade-row__bot--left.yellow
+                    color: #fef177
+                .upgrade-row__bot--left.red
+                    color: #e53934
+                */
+                .upgrade-row__bot--right
+                    color: #717171
+                    
+                 
+        
+        .upgrade-message
+            margin: 30px 0 18px 0
+            font-size: 12px
+        
+        .manage-txt
+            font-size: 12px
+            color: #717171
+            box-sizing()
+            padding: 12px 0
+
+
+        .profile-row.buttons-row
+            justify-content: space-between
+            padding-bottom: 16px
+
+
+
+
+
+
+
+

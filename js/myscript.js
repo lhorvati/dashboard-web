@@ -218,6 +218,27 @@ $(function() {
 
 
 
+/* BILLING DETAILS =================== */
+$(function() {
+	$("#billing").click(function() {
+		$(".billing-information__expand").removeClass("hide");
+		$(".billing-information__name").addClass("hide");
+		$(".billing-information__card").addClass("hide");
+		$(".card__abs-bot.row").addClass("hide");
+	});
+});
+
+$(function() {
+	$(".billing-close").click(function() {
+		$(".billing-information__expand").addClass("hide");
+		$(".billing-information__name").removeClass("hide");
+		$(".billing-information__card").removeClass("hide");
+		$(".card__abs-bot.row").removeClass("hide");
+	});
+});
+
+
+
 
 
 
@@ -236,6 +257,12 @@ $(function() {
 
 
 
+/* PROFILE BUTTON TOGGLE =================== */
+$(function() {
+	$("#profile-btn").click(function() {
+		$("#profile").toggleClass("show");
+	});
+});
 
 
 
@@ -244,7 +271,10 @@ $(function() {
 
 
 
-/* DIALOG open/close =================== */
+
+
+
+/* DIALOG REMOVE =================== */
 $(function() {
 	$(".dialog-remove").click(function() {
 		$(".dialog-wrap.remove").addClass("fadeIn");
@@ -256,7 +286,7 @@ $(function() {
 		$(".dialog-wrap.remove").removeClass("fadeIn");
 	});
 });
-/* /DIALOG open/close */
+/* /DIALOG REMOVE */
 
 /* DIALOG EDIT =================== */
 $(function() {
@@ -271,6 +301,20 @@ $(function() {
 	});
 });
 /* /DIALOG EDIT */
+
+/* DIALOG ADD-ACCOUNT =================== */
+$(function() {
+	$(".dialog-add-acc").click(function() {
+		$(".dialog-wrap.account").addClass("fadeIn");
+	});
+});
+
+$(function() {
+	$(".dialog-close").click(function() {
+		$(".dialog-wrap.account").removeClass("fadeIn");
+	});
+});
+/* /DIALOG ADD-ACCOUNT */
 
 
 
