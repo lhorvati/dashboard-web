@@ -2587,26 +2587,26 @@
 
 
 
-      //DIALOGS
-      //Remove Dialog =================== *
+      //DIALOGS ***********************************
+      //REMOVE Dialog =================== *
       .dialog-wrap.remove
         .dialog
           .dialog__title Remove {{dialogTitle}}
           .dialog__text Are you sure you want to remove "{{dialogItemName}}" ?
           .dialog__buttons
-            .btn.dialog-close Cancel
-            .btn.dialog-delete Remove
+            .btn.btn--transparent1.dialog-close Cancel
+            .btn.btn--transparent1.dialog-delete Remove
 
 
-      //Edit Dialog =================== *
+      //EDIT Dialog =================== *
       .dialog-wrap.edit
         .dialog
           .dialog__title Edit {{dialogTitle}}
           .dialog__text Are you sure you want to edit "{{dialogItemName}}" ?
           .dialog__buttons
-            .btn.dialog-close Cancel
-            .btn.dialog-delete Remove
-      //Add Account Dialog =================== *
+            .btn.btn--transparent1.dialog-close Cancel
+            .btn.btn--transparent1.dialog-delete Remove
+      //ADD ACCOUNT Dialog =================== *
       .dialog-wrap.account
         .dialog
           .dialog__title Manage accounts
@@ -2619,11 +2619,11 @@
                   %label Add account email
                 %span.error
           .dialog__buttons
-            .btn.dialog-close Cancel
-            .btn.dialog-add Add
+            .btn.btn--transparent1.dialog-close Cancel
+            .btn.btn--transparent1.dialog-add Add
 
 
-      //Pricing Plans Dialog =================== *
+      //PRICING PLANS Dialog =================== *
       .dialog-wrap.pricing-plans
         .dialog
 
@@ -2706,18 +2706,292 @@
 
 
           .dialog__buttons
-            .btn.dialog-close Cancel
+            .btn.btn--transparent1.dialog-close Cancel
 
 
 
-      //Pricing Compare Dialog =================== *
+      //PRICING COMPARE Dialog =================== *
+      .dialog-wrap.pricing-compair
+        .dialog
+
+          //Prices row
+          .prices
+            .plans
+
+              .plans-item
+                .plans-item__title Free
+                .plans-item__button Current plan
+
+              .plans-item
+                .plans-item__title Starter
+                .plans-item__button
+                  .btn.btn--purple Upgrade
+
+              .plans-item
+                .plans-item__title Freelancer
+                .plans-item__button
+                  .btn.btn--purple Upgrade
+
+
+              .plans-item
+                .plans-item__title Professional
+                .plans-item__button
+                  .btn.btn--purple Upgrade
+
+
+              .plans-item
+                .plans-item__title Bussiness
+                .plans-item__button
+                  .btn.btn--purple Upgrade
+
+
+          //Comparison rows
+          .comparison
+            .comparison__title Editor
+            .comparison__list
+              .comparison-feature
+                .comparison-feature__name Web Editor
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+              .comparison-feature
+                .comparison-feature__name Mobile Editor
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+              .comparison-feature
+                .comparison-feature__name SSH Terminal Console
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+              .comparison-feature
+                .comparison-feature__name Premium Technical Support (via Email)
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+              .comparison-feature
+                .comparison-feature__name Two-Factor Authentification
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z")
+
+          .comparison
+            .comparison__title Collaboration
+            .comparison__list
+              .comparison-feature
+                .comparison-feature__name Shares
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z")
+              .comparison-feature
+                .comparison-feature__name Revisions
+                .comparison-feature__presence 10
+                .comparison-feature__presence 20
+                .comparison-feature__presence 150
+                .comparison-feature__presence 500
+                .comparison-feature__presence 1000
+              .comparison-feature
+                .comparison-feature__name Multiple Licenses Limit
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
+                .comparison-feature__presence 20
+                .comparison-feature__presence 50
+                .comparison-feature__presence 1000
+
+
+          .comparison
+            .comparison__title Development Enviroments
+            .comparison__list
+              .comparison-feature
+                .comparison-feature__name Remote Connections
+                .comparison-feature__presence 1
+                .comparison-feature__presence 5
+                .comparison-feature__presence 50
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z")
+                .comparison-feature__presence
+                  %svg(height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg")
+                    %path(d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z")
+              .comparison-feature
+                .comparison-feature__name Custom Domains
+                .comparison-feature__presence 1
+                .comparison-feature__presence 1
+                .comparison-feature__presence 2
+                .comparison-feature__presence 4
+                .comparison-feature__presence 7
+              .comparison-feature
+                .comparison-feature__name Containers (Standard)
+                .comparison-feature__presence 1
+                .comparison-feature__presence 1
+                .comparison-feature__presence 10
+                .comparison-feature__presence 20
+                .comparison-feature__presence 30
+              .comparison-feature
+                .comparison-feature__name Containers (RAM)
+                .comparison-feature__presence 256 MB
+                .comparison-feature__presence 256 MB
+                .comparison-feature__presence 512 MB
+                .comparison-feature__presence 768 MB
+                .comparison-feature__presence 1024 MB
+              .comparison-feature
+                .comparison-feature__name  Containers (HDD)
+                .comparison-feature__presence 2 GB
+                .comparison-feature__presence 2 GB
+                .comparison-feature__presence 5 GB
+                .comparison-feature__presence 10 GB
+                .comparison-feature__presence 15 GB
+              .comparison-feature
+                .comparison-feature__name  Containers (Always on)
+                .comparison-feature__presence 0
+                .comparison-feature__presence 0
+                .comparison-feature__presence 1
+                .comparison-feature__presence 3
+                .comparison-feature__presence 6
+              .comparison-feature
+                .comparison-feature__name  Custom stacks
+                .comparison-feature__presence 1
+                .comparison-feature__presence 1
+                .comparison-feature__presence 10
+                .comparison-feature__presence 20
+                .comparison-feature__presence 30
+
+
+          //Prices row
+          .prices
+            .plans
+
+              .plans-item
+                .plans-item__title Free
+                .plans-item__button Current plan
+
+              .plans-item
+                .plans-item__title Starter
+                .plans-item__button
+                  .btn.btn--purple Upgrade
+
+              .plans-item
+                .plans-item__title Freelancer
+                .plans-item__button
+                  .btn.btn--purple Upgrade
+
+
+              .plans-item
+                .plans-item__title Professional
+                .plans-item__button
+                  .btn.btn--purple Upgrade
+
+
+              .plans-item
+                .plans-item__title Bussiness
+                .plans-item__button
+                  .btn.btn--purple Upgrade
+
+
+
+
+          .dialog__buttons
+            .btn.btn--transparent1.dialog-compair-close Cancel
+
+
+
+
+
+
+
+
+      //PAYMENT Dialog =================== *
       .dialog-wrap.pricing-compair
         .dialog
 
 
 
+
+
           .dialog__buttons
-            .btn.dialog-compair-close Cancel
+            .btn.btn--transparent1.dialog-compair-close Cancel
+
+
+
+
+
+
 
 
 

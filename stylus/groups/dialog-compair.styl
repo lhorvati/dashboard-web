@@ -1,0 +1,58 @@
+/* DIALOG-COMPAIR.STYL ======================================= */
+
+.pricing-compair
+    overflow: auto
+    align-items: flex-start
+
+    .dialog
+        min-width: 1100px
+        padding: 30px 30px 20px 30px
+        margin: 20px 0
+
+
+
+//Prices
+.prices .plans 
+    justify-content: flex-end
+
+    .plans-item
+        border: none
+        width: 170px
+
+
+//Comparison
+.comparison
+    margin-bottom: 40px
+
+    .comparison__title
+        color: colorPurple
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 15px
+
+    .comparison__list
+        .comparison-feature
+            min-height: 40px
+            border-bottom: 1px solid colorGray03
+            flexbox()
+            align-items: center
+
+            &:first-child
+                border-top: 1px solid colorGray03
+
+            .comparison-feature__name
+                width: 190px
+                color: colorGray
+                line-height: 1.5
+                box-sizing()
+                padding: 5px 30px 5px 0
+
+            .comparison-feature__presence
+                width: 170px
+                color: colorGray
+                text-align: center
+
+                svg
+                    fill: colorPurple
+                    width: 20px
+                    height: 20px
