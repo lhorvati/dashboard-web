@@ -1,0 +1,37 @@
+/* SEARCH-RESULTS.STYL ======================================= */
+
+.main.search-results
+    padding: 0 5% 30px 5%
+
+    .main__row .main__row-item
+        width: 100%
+
+
+
+// Search List
+.search-list
+    background: colorWhite
+    box-shadow(shadowLvl1)
+    border-radius(2px)
+    flexbox()
+    flex-flow: column nowrap
+    position: relative
+    overflow-x: hidden
+    overflow-y: auto
+    min-height: 50px
+    max-height: 200px
+    margin-bottom: 50px
+
+    .search-list-item
+        height: 50px
+        line-height: 50px
+        padding-left: 60px
+        color: colorGray2
+        font-size: 16px
+        font-weight: 400
+        background: url("../images/find.svg") 15px 15px no-repeat
+        background-size: 20px 20px
+        cursor: pointer
+
+        &:hover
+            background-color: colorLighterGray

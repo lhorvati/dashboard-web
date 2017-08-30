@@ -1,19 +1,28 @@
 /* MYSCRIPT.JS ======================================= */
 
 
-/* Mobile Main Nav =================== */
+/* Mobile Side Nav =================== */
 $(function() {
-	$(".main-nav__m-open").click(function() {
-		$(".main-nav__mobile-wrap").addClass("slide");
+	$(".mobile-nav-open").click(function() {
+		$(".side-nav").addClass("slide");
 	});
 });
 
 $(function() {
-	$(".main-nav__m-close").click(function() {
-		$(".main-nav__mobile-wrap").removeClass("slide");
+	$(".mobile-nav-close").click(function() {
+		$(".side-nav").removeClass("slide");
 	});
 });
-/* /Mobile Main Nav */
+
+
+
+$(function() {
+	$(".side-nav-link").click(function() {
+		$(".side-nav").removeClass("slide");
+	});
+});
+
+/* /Mobile Side Nav */
 
 
 
@@ -260,6 +269,11 @@ $(function() {
 		$(".main.search-results").removeClass("hide");
 	});
 });
+
+/* SEARCH RESULTS SECTION MOBILE ================ */
+
+
+
 
 
 

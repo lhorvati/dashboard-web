@@ -13,7 +13,7 @@
     align-items: center
     justify-content: space-between
     height: 80px
-    background: #fff
+    background: colorWhite
 
     .header__dashboard
         font-size: 20px
@@ -36,43 +36,31 @@
 
 
 
-
-
-
-
-/* SEARCH-RESULTS.STYL ======================================= */
-.main.search-results
-    padding: 0 5% 30px 5%
-
-    .main__row .main__row-item
-        width: 100%
-
-
-
-// Search List
-.search-list
-    background: colorWhite
-    box-shadow(shadowLvl1)
-    border-radius(2px)
+.mobile-header
     flexbox()
-    flex-flow: column nowrap
-    position: relative
-    overflow-x: hidden
-    overflow-y: auto
-    min-height: 50px
-    max-height: 200px
-    margin-bottom: 50px
+    flex-flow: row nowrap
+    align-items: center
+    height: 50px
+    background: colorWhite
+    display: none
 
-    .search-list-item
+    .mobile-header__btn
+        width: 50px
         height: 50px
-        line-height: 50px
-        padding-left: 60px
-        color: colorGray2
-        font-size: 16px
-        font-weight: 400
-        background: url("../images/find.png") 15px 15px no-repeat
-        background-size: 20px 20px
-        cursor: pointer
+        flexbox()
+        flex-center()
 
-        &:hover
-            background-color: colorLighterGray
+        &:first-child svg
+            width: 20px
+            height: 20px
+        &:last-child svg
+            width: 16px
+            height: 16px
+
+    .mobile-header__title
+        flex: 1
+        font-size: 20px
+        font-weight: 400
+        color: colorDarkGray
+        padding-left: 15px
+        ellipsis()

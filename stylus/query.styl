@@ -1,0 +1,173 @@
+/* QUERY.STYL ======================================= */
+
+@media only screen and (max-width: 1241px), only screen and (max-device-width: 1241px) {
+
+
+    //HEADER ***********************************
+    #header .container {
+        display: none
+    }
+    .mobile-header,
+    .side-nav .mobile-nav-close {
+        display: flex
+    }
+
+    //SIDE-NAV ***********************************
+    #body .side-nav {
+        position: fixed
+        top: 0
+        bottom: 0
+        overflow: auto
+        left: -120vw
+        z-index: 100
+        width: 80vw
+        height: 100vh
+        box-shadow: 0 0 100px #000
+    }
+    .side-nav ul {
+        padding-top: 60px
+        box-sizing: border-box
+    }
+    .side-nav ul li {
+        height: 34px
+        margin-bottom: 20px
+    }
+    .side-nav ul li a {
+        font-size: 16px
+        line-height: 34px
+    }
+
+    #body .main {
+        width: 100%
+        padding: 30px 0
+    }
+    .main.account,
+    .main.billing,
+    .main.projects,
+    .main.shared-with-me,
+    .main.my-shares,
+    .main.ssh-keys,
+    .main.custom-stacks,
+    .main.custom-domains,
+    .main.refer-friend {
+        flex-flow: column wrap
+    }
+
+    .main .main__col2 {
+        margin: 0
+        width: 100%
+    }
+    // Card
+    .card-wrap {
+        margin-bottom: 50px
+    }
+    .card-wrap h1 {
+        margin-left: 10px
+    }
+    .card-wrap .card .card__abs-bot {
+        opacity: 1
+    }
+    // Input
+    #body .main .input-wrap {
+        padding: 0
+    }
+
+
+
+    //MAIN SECTION - ACCOUNT ***********************************
+    .card-wrap .card.profile-details .card__section.row {
+        flex-flow: column nowrap
+    }
+    .main.account .graph {
+        margin-bottom: 20px
+    }
+
+    .main.account .acc-item .acc-item__list div {
+        flex-flow: column nowrap
+    }
+
+    //MAIN SECTION - BILLING ***********************************
+    .card-wrap .card.subscription .card__section .sub-wrap {
+        flex-flow: column nowrap
+    }
+    .card-wrap .card.subscription .card__section .sub-wrap .sub {
+        width: 100%
+        padding: 0
+    }
+    .card-wrap .card.subscription .card__section .sub-wrap .sub:first-child {
+        margin-bottom: 30px
+    }
+    .main.billing .manage-accounts-row .manage-accounts__name {
+        text-overflow: initial
+        overflow: visible
+        white-space: normal
+        word-wrap: break-word
+    }
+    .card-row2,
+    .card-row3 {
+        flex-flow: column nowrap
+    }
+    .card-row2 .input-wrap,
+    .card-row3 .input-wrap {
+        width: 100%
+    }
+
+
+    //MAIN SECTION - PROJECTS ***********************************
+    .main .main__row {
+        flex-flow: column nowrap
+    }
+    .main .main__row .main__row-item {
+        width: 100%
+    }
+    #body .main.projects .new-project {
+        height: 100px
+    }
+
+
+
+    .main.custom-domains .main__row .main__row-item:nth-child(2n),
+    .main.custom-stacks .main__row .main__row-item:nth-child(2n),
+    .main.my-shares .main__row .main__row-item:nth-child(2n),
+    .main.refer-friend .main__row .main__row-item:nth-child(2n),
+    .main.search-results .main__row .main__row-item:nth-child(2n),
+    .main.shared-with-me .main__row .main__row-item:nth-child(2n),
+    .main.ssh-keys .main__row .main__row-item:nth-child(2n) {
+        margin-left: 0
+    }
+
+
+    //MAIN SECTION - CUSTOM DOMAINS ***********************************
+
+
+
+
+
+
+
+}/* media end */
+
+
+
+@media only screen and (max-width: 981px), only screen and (max-device-width: 981px) {
+
+    .mobile-hide {
+        display: none
+    }
+    .mobile-show {
+        display: block
+    }
+
+
+
+}/* media end */
+
+
+
+
+
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+
+
+}/* media end */
