@@ -23,7 +23,7 @@
       .container
         .header
           .header__dashboard
-            %a(href="#") Dashboard
+            %a(href="https://codeanywhere.com/dashboard") Dashboard
           .header__search
             %input.input-search(placeholder="Search")
           #profile-btn.header__user
@@ -45,11 +45,6 @@
                     .profile-details
                       .profile-details__username Luka Horvatic
                       .profile-details__email horvaticluka@gmail.com
-                  .dashboard-wrap
-                    .profile-row
-                      %a(href="https://codeanywhere.com/dashboard" target="_blank")
-                        .profile-button
-                          .btn.btn--purple Dashboard
                   .upgrade-wrap
                     .profile-row
                       .upgrade-row
@@ -75,9 +70,8 @@
                     .profile-row
                       .upgrade-message Need more resources?
                     .profile-row.buttons-row
-                      %a(href="https://codeanywhere.com/dashboard" target="_blank")
-                        .profile-button
-                          .btn.btn--purple Upgrade
+                      .profile-button
+                        .btn.btn--purple.dialog-upgrade Upgrade
                       %a(href="https://codeanywhere.com/signout")
                         .txt-button
                           .btn.btn--transparent1 Sign Out
@@ -2208,8 +2202,8 @@
 
                   .card__section.row
                     .card-footer
-                      .btn.ncd-close Close
-                      .btn Confirm
+                      .btn.btn--transparent1.ncd-close Close
+                      .btn.btn--transparent1 Confirm
 
 
 
