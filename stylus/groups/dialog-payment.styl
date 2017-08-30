@@ -1,1 +1,171 @@
 /* DIALOG-PAYMENT.STYL ======================================= */
+
+.pricing-payment
+    overflow: auto
+    //align-items: flex-start
+    flex-center()
+
+    .dialog
+        min-width: 900px
+        padding: 30px 30px 20px 30px
+
+
+// Payment Options ================================
+.payment-options
+    .plans-item
+        cursor: pointer
+        transition(.5s)
+
+        &:hover
+            background: colorLightPurple03
+
+        &.active
+            background: colorPurple
+
+            .plans-item__title
+            .plans-item__price
+            .plans-item__billing
+                color: colorWhite
+
+
+
+// Payment method ================================
+.payment-methods
+    flexbox()
+    flex-flow: column nowrap
+    margin: 20px 0
+
+
+    // Radio button is handled in elements/radio.styl
+
+
+
+// Payment Addons ================================
+.payment-addons
+    flexbox()
+    flex-flow: column nowrap
+    margin: 20px 0
+
+
+.addon-item
+    flexbox()
+    flex-flow: row nowrap
+    height: 50px
+    align-items: center
+
+    &:hover .addon-item__name,
+    &:hover .addon-item__count input,
+    &:hover .addon-item__total
+        color: colorPurple
+        border-color: colorPurple
+
+    .addon-item__name,
+    .addon-item__count,
+    .addon-item__total
+        color: colorGray2
+        font-size: 16px
+        font-weight: 400
+
+    .addon-item__name
+        width: calc(100% - 140px)
+
+    .addon-item__count,
+    .addon-item__total
+        width: 70px
+        flexbox()
+        flex-center()
+
+    .addon-item__count
+        input
+            width: 40px
+            height: 30px
+            padding: 0
+            margin: 0
+            border: 1px solid colorGray2
+            border-radius(3px)
+            box-sizing()
+            text-align: center
+
+
+
+
+// Payment Coupon ================================
+.payment-coupon
+    margin-bottom: 50px
+
+
+
+
+
+
+// Payment Summary ================================
+.payment-summary
+    flexbox()
+    flex-flow: column nowrap
+    margin: 20px 0
+
+
+    .summary-item
+        flexbox()
+        flex-flow: row nowrap
+        align-items: center
+        justify-content: space-between
+        height: 30px
+
+        .summary-item__name,
+        .summary-item__months,
+        .summary-item__price
+            color: colorGray2
+            font-size: 16px
+            font-weight: 400
+            ellipsis()
+
+
+        .summary-item__name
+            flex: 1
+            text-align: left
+
+        .summary-item__months
+            width: 70px
+            text-align: center
+
+        .summary-item__price
+            width: 120px
+            text-align: right
+
+        &:first-child
+            .summary-item__name,
+            .summary-item__months,
+            .summary-item__price
+                font-size: 14px
+                font-weight: 600
+
+        &:last-child
+            border-top: 1px solid colorGray03
+
+            .summary-item__name,
+            .summary-item__months,
+            .summary-item__price
+                color: colorPurple
+
+
+
+// Payment Subscribe ================================
+.payment-subscribe
+    flexbox()
+    flex-flow: row nowrap
+    align-items: center
+    margin-top: 50px
+
+    .subscribe-tos
+        color: colorGray2
+        font-size: 14px
+        font-weight: 400
+        box-sizing()
+        padding-right: 20px
+        line-height: 1.5
+        flex: 1
+
+        a
+            color: colorPurple
+

@@ -743,7 +743,7 @@
                   .billing-info
                     .card-title Billing information
 
-                    .billing-info-row2
+                    .card-row2
                       .input-wrap.first-name
                         .mui-input
                           .group
@@ -779,7 +779,7 @@
                           %span.bar
                           %label Credit Card Number
                         %span.error
-                    .billing-info-row3
+                    .card-row3
                       .input-wrap.card-date
                         .mui-select
                           %select
@@ -830,7 +830,7 @@
                   .address-info
                     .card-title Address information
 
-                    .billing-info-row2
+                    .card-row2
                       .input-wrap.address
                         .mui-input
                           .group
@@ -852,7 +852,7 @@
                           %span.bar
                           %label City
                         %span.error
-                    .billing-info-row2
+                    .card-row2
                       .input-wrap.state
                         .mui-input
                           .group
@@ -2646,7 +2646,7 @@
                 <br>
                 $3 user/mo. (billed monthly)
               .plans-item__button
-                .btn.btn--purple Upgrade
+                .btn.btn--purple.dialog-payment Upgrade
               .plans-item__features
                 %ul
                   %li Premium support
@@ -2660,7 +2660,7 @@
                 <br>
                 $10 user/mo. (billed monthly)
               .plans-item__button
-                .btn.btn--purple Upgrade
+                .btn.btn--purple.dialog-payment Upgrade
               .plans-item__features
                 %ul
                   %li Connect up to 50 FTP servers
@@ -2675,7 +2675,7 @@
                 <br>
                 $25 user/mo. (billed monthly)
               .plans-item__button
-                .btn.btn--purple Upgrade
+                .btn.btn--purple.dialog-payment Upgrade
               .plans-item__features
                 %ul
                   %li Unlimited FTP servers
@@ -2690,7 +2690,7 @@
                 <br>
                 $50 user/mo. (billed monthly)
               .plans-item__button
-                .btn.btn--purple Upgrade
+                .btn.btn--purple.dialog-payment Upgrade
               .plans-item__features
                 %ul
                   %li Unlimited Cloud Services
@@ -2725,24 +2725,24 @@
               .plans-item
                 .plans-item__title Starter
                 .plans-item__button
-                  .btn.btn--purple Upgrade
+                  .btn.btn--purple.dialog-payment Upgrade
 
               .plans-item
                 .plans-item__title Freelancer
                 .plans-item__button
-                  .btn.btn--purple Upgrade
+                  .btn.btn--purple.dialog-payment Upgrade
 
 
               .plans-item
                 .plans-item__title Professional
                 .plans-item__button
-                  .btn.btn--purple Upgrade
+                  .btn.btn--purple.dialog-payment Upgrade
 
 
               .plans-item
                 .plans-item__title Bussiness
                 .plans-item__button
-                  .btn.btn--purple Upgrade
+                  .btn.btn--purple.dialog-payment Upgrade
 
 
           //Comparison rows
@@ -2944,24 +2944,24 @@
               .plans-item
                 .plans-item__title Starter
                 .plans-item__button
-                  .btn.btn--purple Upgrade
+                  .btn.btn--purple.dialog-payment Upgrade
 
               .plans-item
                 .plans-item__title Freelancer
                 .plans-item__button
-                  .btn.btn--purple Upgrade
+                  .btn.btn--purple.dialog-payment Upgrade
 
 
               .plans-item
                 .plans-item__title Professional
                 .plans-item__button
-                  .btn.btn--purple Upgrade
+                  .btn.btn--purple.dialog-payment Upgrade
 
 
               .plans-item
                 .plans-item__title Bussiness
                 .plans-item__button
-                  .btn.btn--purple Upgrade
+                  .btn.btn--purple.dialog-payment Upgrade
 
 
 
@@ -2977,15 +2977,228 @@
 
 
       //PAYMENT Dialog =================== *
-      .dialog-wrap.pricing-compair
+      .dialog-wrap.pricing-payment
         .dialog
+
+          .dialog-col-wrap
+            .dialog-col2
+
+              .payment-options
+                .plans
+                  #payment-option1.plans-item.active
+                    .plans-item__title Monthly
+                    .plans-item__price $25
+                    .plans-item__billing Per user monthly
+                  #payment-option2.plans-item
+                    .plans-item__title Yearly
+                    .plans-item__price $30
+                    .plans-item__billing Per user yearly
+
+
+              .payment-methods
+                .radio-btn
+                  %input(type="radio" id="p-option1" name="selector" checked)
+                  %label(for="p-option1")
+                    %img(src="images/credit-cards/visa.svg" alt="Visa")
+                    %img(src="images/credit-cards/mastercard.svg" alt="MasterCard")
+                    %img(src="images/credit-cards/amex.svg" alt="Amex")
+                    %img(src="images/credit-cards/diners.svg" alt="Diners")
+                    %img(src="images/credit-cards/jcb.svg" alt="JCB")
+
+                .radio-btn
+                  %input(type="radio" id="p-option2" name="selector")
+                  %label(for="p-option2")
+                    %img(src="images/credit-cards/paypal.svg" alt="PayPal")
+
+
+
+              .payment-user-details
+                .card-row2
+                  .input-wrap.first-name
+                    .mui-input
+                      .group
+                        %input(name="" required="" type="text")/
+                        %span.bar
+                        %label First Name
+                      %span.error
+                  .input-wrap.last-name
+                    .mui-input
+                      .group
+                        %input(name="" required="" type="text")/
+                        %span.bar
+                        %label Last Name
+                      %span.error
+              .input-wrap.credit-card
+                .mui-input
+                  .group
+                    %input(name="" required="" type="number")/
+                    %span.bar
+                    %label Credit Card Number
+                  %span.error
+              .card-row3
+                .input-wrap.card-date
+                  .mui-select
+                    %select
+                      %option(selected="selected") 01 - January
+                      %option 02 - February
+                      %option 03 - March
+                      %option 04 - April
+                      %option 05 - May
+                      %option 06 - June
+                      %option 07 - July
+                      %option 08 - August
+                      %option 09 - September
+                      %option 10 - October
+                      %option 11 - November
+                      %option 12 - December
+                    %span.bar
+                .input-wrap.card-year
+                  .mui-select
+                    %select
+                      %option(selected="selected") 2017
+                      %option 2018
+                      %option 2019
+                      %option 2020
+                      %option 2021
+                      %option 2022
+                      %option 2023
+                      %option 2024
+                      %option 2025
+                      %option 2026
+                      %option 2027
+                      %option 2028
+                      %option 2029
+                      %option 2030
+                      %option 2031
+                      %option 2032
+                      %option 2033
+                      %option 2034
+                      %option 2035
+                    %span.bar
+                .input-wrap.card-cvv
+                  .mui-input
+                    .group
+                      %input(name="" required="" type="number")/
+                      %span.bar
+                      %label CVV
+                    %span.error
+
+
+              .card-row2
+                .input-wrap.state
+                  .mui-input
+                    .group
+                      %input(name="" required="" type="text")/
+                      %span.bar
+                      %label State/Province
+                    %span.error
+                .input-wrap.zip
+                  .mui-input
+                    .group
+                      %input(name="" required="" type="number")/
+                      %span.bar
+                      %label Zip/Postal Code
+                    %span.error
+              .input-wrap.country
+                .mui-select
+                  %select
+                    %option(selected="selected") Croatia
+                    %option Bosna i Hercegovina
+                    %option Slovenia
+                  %span.bar
+
+
+
+
+            .dialog-col2
+
+              .payment-addons
+                %h3.title--large Addons
+                .addon-item
+                  .addon-item__name
+                    Container always on
+                  .addon-item__count
+                    %input(type="number" value="0")
+                  .addon-item__total
+                    $60
+
+                .addon-item
+                  .addon-item__name
+                    Additional 15 Connections
+                  .addon-item__count
+                    %input(type="number" value="0")
+                  .addon-item__total
+                    $24
+
+                .addon-item
+                  .addon-item__name
+                    Additional 15 Custom Domains
+                  .addon-item__count
+                    %input(type="number" value="0")
+                  .addon-item__total
+                    $24
+
+                .addon-item
+                  .addon-item__name
+                    Unlimited Revisins
+                  .addon-item__count
+                    %input(type="number" value="0")
+                  .addon-item__total
+                    $20
+
+
+
+              .payment-coupon
+                .input-wrap.coupon
+                  .mui-input
+                    .group
+                      %input(name="" required="" type="text")/
+                      %span.bar
+                      %label Coupon code
+                    %span.error
+
+
+
+              .payment-summary
+                .summary-item
+                  .summary-item__name ITEM
+                  .summary-item__months MONTHS
+                  .summary-item__price PRICE
+                .summary-item
+                  .summary-item__name Bussines Plan
+                  .summary-item__months 12
+                  .summary-item__price $600.00
+                .summary-item
+                  .summary-item__name Addons
+                  .summary-item__months
+                  .summary-item__price $60.00
+                .summary-item
+                  .summary-item__name Discount
+                  .summary-item__months
+                  .summary-item__price -$120.00
+                .summary-item
+                  .summary-item__name Total
+                  .summary-item__months
+                  .summary-item__price $540.00
+
+
+
+
+              .payment-subscribe
+                .subscribe-tos
+                  By clicking SUBSCRIBE, you agree to our <a href="https://codeanywhere.com/tos">Terms of service</a>
+                .subscribe-btn
+                  .btn.btn--purple Subscribe
+
+
+
 
 
 
 
 
           .dialog__buttons
-            .btn.btn--transparent1.dialog-compair-close Cancel
+            .btn.btn--transparent1.dialog-payment-close Cancel
 
 
 

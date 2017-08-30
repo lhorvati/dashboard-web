@@ -951,7 +951,7 @@
                 <div class="billing-information__expand hide">
                   <div class="billing-info">
                     <div class="card-title">Billing information</div>
-                    <div class="billing-info-row2">
+                    <div class="card-row2">
                       <div class="input-wrap first-name">
                         <div class="mui-input">
                           <div class="group">
@@ -1003,7 +1003,7 @@
                         <span class="error"></span>
                       </div>
                     </div>
-                    <div class="billing-info-row3">
+                    <div class="card-row3">
                       <div class="input-wrap card-date">
                         <div class="mui-select">
                           <select>
@@ -1063,7 +1063,7 @@
                   </div>
                   <div class="address-info">
                     <div class="card-title">Address information</div>
-                    <div class="billing-info-row2">
+                    <div class="card-row2">
                       <div class="input-wrap address">
                         <div class="mui-input">
                           <div class="group">
@@ -1095,7 +1095,7 @@
                         <span class="error"></span>
                       </div>
                     </div>
-                    <div class="billing-info-row2">
+                    <div class="card-row2">
                       <div class="input-wrap state">
                         <div class="mui-input">
                           <div class="group">
@@ -3097,8 +3097,8 @@
           </div>
         </div>
       </div>
-      <!-- /DIALOGS -->
-      <!-- /Remove Dialog =================== * -->
+      <!-- /DIALOGS *********************************** -->
+      <!-- /REMOVE Dialog =================== * -->
       <div class="dialog-wrap remove">
         <div class="dialog">
           <div class="dialog__title">Remove {{dialogTitle}}</div>
@@ -3109,7 +3109,7 @@
           </div>
         </div>
       </div>
-      <!-- /Edit Dialog =================== * -->
+      <!-- /EDIT Dialog =================== * -->
       <div class="dialog-wrap edit">
         <div class="dialog">
           <div class="dialog__title">Edit {{dialogTitle}}</div>
@@ -3120,7 +3120,7 @@
           </div>
         </div>
       </div>
-      <!-- /Add Account Dialog =================== * -->
+      <!-- /ADD ACCOUNT Dialog =================== * -->
       <div class="dialog-wrap account">
         <div class="dialog">
           <div class="dialog__title">Manage accounts</div>
@@ -3142,7 +3142,7 @@
           </div>
         </div>
       </div>
-      <!-- /Pricing Plans Dialog =================== * -->
+      <!-- /PRICING PLANS Dialog =================== * -->
       <div class="dialog-wrap pricing-plans">
         <div class="dialog">
           <div class="plans">
@@ -3166,7 +3166,7 @@
                 $3 user/mo. (billed monthly)
               </div>
               <div class="plans-item__button">
-                <div class="btn btn--purple">Upgrade</div>
+                <div class="btn btn--purple dialog-payment">Upgrade</div>
               </div>
               <div class="plans-item__features">
                 <ul>
@@ -3184,7 +3184,7 @@
                 $10 user/mo. (billed monthly)
               </div>
               <div class="plans-item__button">
-                <div class="btn btn--purple">Upgrade</div>
+                <div class="btn btn--purple dialog-payment">Upgrade</div>
               </div>
               <div class="plans-item__features">
                 <ul>
@@ -3203,7 +3203,7 @@
                 $25 user/mo. (billed monthly)
               </div>
               <div class="plans-item__button">
-                <div class="btn btn--purple">Upgrade</div>
+                <div class="btn btn--purple dialog-payment">Upgrade</div>
               </div>
               <div class="plans-item__features">
                 <ul>
@@ -3222,7 +3222,7 @@
                 $50 user/mo. (billed monthly)
               </div>
               <div class="plans-item__button">
-                <div class="btn btn--purple">Upgrade</div>
+                <div class="btn btn--purple dialog-payment">Upgrade</div>
               </div>
               <div class="plans-item__features">
                 <ul>
@@ -3245,10 +3245,10 @@
           </div>
         </div>
       </div>
-      <!-- /Pricing Compare Dialog =================== * -->
+      <!-- /PRICING COMPARE Dialog =================== * -->
       <div class="dialog-wrap pricing-compair">
         <div class="dialog">
-          <!-- /Prices -->
+          <!-- /Prices row -->
           <div class="prices">
             <div class="plans">
               <div class="plans-item">
@@ -3258,30 +3258,30 @@
               <div class="plans-item">
                 <div class="plans-item__title">Starter</div>
                 <div class="plans-item__button">
-                  <div class="btn btn--purple">Upgrade</div>
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
                 </div>
               </div>
               <div class="plans-item">
                 <div class="plans-item__title">Freelancer</div>
                 <div class="plans-item__button">
-                  <div class="btn btn--purple">Upgrade</div>
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
                 </div>
               </div>
               <div class="plans-item">
                 <div class="plans-item__title">Professional</div>
                 <div class="plans-item__button">
-                  <div class="btn btn--purple">Upgrade</div>
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
                 </div>
               </div>
               <div class="plans-item">
                 <div class="plans-item__title">Bussiness</div>
                 <div class="plans-item__button">
-                  <div class="btn btn--purple">Upgrade</div>
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- /Comparison -->
+          <!-- /Comparison rows -->
           <div class="comparison">
             <div class="comparison__title">Editor</div>
             <div class="comparison__list">
@@ -3553,6 +3553,7 @@
               </div>
             </div>
           </div>
+          <!-- /Prices row -->
           <div class="prices">
             <div class="plans">
               <div class="plans-item">
@@ -3562,31 +3563,294 @@
               <div class="plans-item">
                 <div class="plans-item__title">Starter</div>
                 <div class="plans-item__button">
-                  <div class="btn btn--purple">Upgrade</div>
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
                 </div>
               </div>
               <div class="plans-item">
                 <div class="plans-item__title">Freelancer</div>
                 <div class="plans-item__button">
-                  <div class="btn btn--purple">Upgrade</div>
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
                 </div>
               </div>
               <div class="plans-item">
                 <div class="plans-item__title">Professional</div>
                 <div class="plans-item__button">
-                  <div class="btn btn--purple">Upgrade</div>
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
                 </div>
               </div>
               <div class="plans-item">
                 <div class="plans-item__title">Bussiness</div>
                 <div class="plans-item__button">
-                  <div class="btn btn--purple">Upgrade</div>
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="dialog__buttons">
             <div class="btn btn--transparent1 dialog-compair-close">Cancel</div>
+          </div>
+        </div>
+      </div>
+      <!-- /PAYMENT Dialog =================== * -->
+      <div class="dialog-wrap pricing-payment">
+        <div class="dialog">
+          <div class="dialog-col-wrap">
+            <div class="dialog-col2">
+              <div class="payment-options">
+                <div class="plans">
+                  <div class="plans-item active" id="payment-option1">
+                    <div class="plans-item__title">Monthly</div>
+                    <div class="plans-item__price">$25</div>
+                    <div class="plans-item__billing">Per user monthly</div>
+                  </div>
+                  <div class="plans-item" id="payment-option2">
+                    <div class="plans-item__title">Yearly</div>
+                    <div class="plans-item__price">$30</div>
+                    <div class="plans-item__billing">Per user yearly</div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-methods">
+                <div class="radio-btn">
+                  <input checked id="p-option1" name="selector" type="radio">
+                  <label for="p-option1">
+                    <img alt="Visa" src="images/credit-cards/visa.svg">
+                    <img alt="MasterCard" src="images/credit-cards/mastercard.svg">
+                    <img alt="Amex" src="images/credit-cards/amex.svg">
+                    <img alt="Diners" src="images/credit-cards/diners.svg">
+                    <img alt="JCB" src="images/credit-cards/jcb.svg">
+                  </label>
+                </div>
+                <div class="radio-btn">
+                  <input id="p-option2" name="selector" type="radio">
+                  <label for="p-option2">
+                    <img alt="PayPal" src="images/credit-cards/paypal.svg">
+                  </label>
+                </div>
+              </div>
+              <div class="payment-user-details">
+                <div class="card-row2">
+                  <div class="input-wrap first-name">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>First Name</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
+                  <div class="input-wrap last-name">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>Last Name</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-wrap credit-card">
+                <div class="mui-input">
+                  <div class="group">
+                    <input name="" required="" type="number">
+                    <span class="bar"></span>
+                    <label>Credit Card Number</label>
+                  </div>
+                  <span class="error"></span>
+                </div>
+              </div>
+              <div class="card-row3">
+                <div class="input-wrap card-date">
+                  <div class="mui-select">
+                    <select>
+                      <option selected="selected">01 - January</option>
+                      <option>02 - February</option>
+                      <option>03 - March</option>
+                      <option>04 - April</option>
+                      <option>05 - May</option>
+                      <option>06 - June</option>
+                      <option>07 - July</option>
+                      <option>08 - August</option>
+                      <option>09 - September</option>
+                      <option>10 - October</option>
+                      <option>11 - November</option>
+                      <option>12 - December</option>
+                    </select>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                <div class="input-wrap card-year">
+                  <div class="mui-select">
+                    <select>
+                      <option selected="selected">2017</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2030</option>
+                      <option>2031</option>
+                      <option>2032</option>
+                      <option>2033</option>
+                      <option>2034</option>
+                      <option>2035</option>
+                    </select>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                <div class="input-wrap card-cvv">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="number">
+                      <span class="bar"></span>
+                      <label>CVV</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-row2">
+                <div class="input-wrap state">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>State/Province</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+                <div class="input-wrap zip">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="number">
+                      <span class="bar"></span>
+                      <label>Zip/Postal Code</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-wrap country">
+                <div class="mui-select">
+                  <select>
+                    <option selected="selected">Croatia</option>
+                    <option>Bosna i Hercegovina</option>
+                    <option>Slovenia</option>
+                  </select>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+            <div class="dialog-col2">
+              <div class="payment-addons">
+                <h3 class="title--large">Addons</h3>
+                <div class="addon-item">
+                  <div class="addon-item__name">
+                    Container always on
+                  </div>
+                  <div class="addon-item__count">
+                    <input type="number" value="0">
+                  </div>
+                  <div class="addon-item__total">
+                    $60
+                  </div>
+                </div>
+                <div class="addon-item">
+                  <div class="addon-item__name">
+                    Additional 15 Connections
+                  </div>
+                  <div class="addon-item__count">
+                    <input type="number" value="0">
+                  </div>
+                  <div class="addon-item__total">
+                    $24
+                  </div>
+                </div>
+                <div class="addon-item">
+                  <div class="addon-item__name">
+                    Additional 15 Custom Domains
+                  </div>
+                  <div class="addon-item__count">
+                    <input type="number" value="0">
+                  </div>
+                  <div class="addon-item__total">
+                    $24
+                  </div>
+                </div>
+                <div class="addon-item">
+                  <div class="addon-item__name">
+                    Unlimited Revisins
+                  </div>
+                  <div class="addon-item__count">
+                    <input type="number" value="0">
+                  </div>
+                  <div class="addon-item__total">
+                    $20
+                  </div>
+                </div>
+              </div>
+              <div class="payment-coupon">
+                <div class="input-wrap coupon">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>Coupon code</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-summary">
+                <div class="summary-item">
+                  <div class="summary-item__name">ITEM</div>
+                  <div class="summary-item__months">MONTHS</div>
+                  <div class="summary-item__price">PRICE</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-item__name">Bussines Plan</div>
+                  <div class="summary-item__months">12</div>
+                  <div class="summary-item__price">$600.00</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-item__name">Addons</div>
+                  <div class="summary-item__months"></div>
+                  <div class="summary-item__price">$60.00</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-item__name">Discount</div>
+                  <div class="summary-item__months"></div>
+                  <div class="summary-item__price">-$120.00</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-item__name">Total</div>
+                  <div class="summary-item__months"></div>
+                  <div class="summary-item__price">$540.00</div>
+                </div>
+              </div>
+              <div class="payment-subscribe">
+                <div class="subscribe-tos">
+                  By clicking SUBSCRIBE, you agree to our <a href="https://codeanywhere.com/tos">Terms of service</a>
+                </div>
+                <div class="subscribe-btn">
+                  <div class="btn btn--purple">Subscribe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dialog__buttons">
+            <div class="btn btn--transparent1 dialog-payment-close">Cancel</div>
           </div>
         </div>
       </div>

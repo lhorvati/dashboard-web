@@ -22,7 +22,7 @@ $(function() {
 
 
 
-/* CONTENT TABS =================== */
+/* CONTENT TABS ========================================================= */
 
 /* Accounts button */
 $(function() {
@@ -156,7 +156,7 @@ $(function() {
 
 
 
-/* COUNTER =================== */
+/* COUNTER ========================================================= */
 
 var counter = 0;
 
@@ -178,7 +178,7 @@ $(document).ready(function() {
 
 
 
-/* NEW CUSTOM DOMAIN show/hide =================== */
+/* NEW CUSTOM DOMAIN show/hide ========================================================= */
 $(function() {
 	$(".ncd-title").click(function() {
 		$(".ncd-title").addClass("hide");
@@ -198,7 +198,7 @@ $(function() {
 
 
 
-/* ACCOUNT DETAILS =================== */
+/* ACCOUNT DETAILS ========================================================= */
 $(function() {
 	$("#account").click(function() {
 		$("#user-details-wrap").removeClass("hide");
@@ -218,7 +218,7 @@ $(function() {
 
 
 
-/* BILLING DETAILS =================== */
+/* BILLING DETAILS ========================================================= */
 $(function() {
 	$("#billing").click(function() {
 		$(".billing-information__expand").removeClass("hide");
@@ -248,7 +248,7 @@ $(function() {
 
 
 
-/* SEARCH RESULTS SECTION =================== */
+/* SEARCH RESULTS SECTION ========================================================= */
 $(function() {
 	$(".input-search").focus(function() {
 		/* Side nav */
@@ -263,7 +263,7 @@ $(function() {
 
 
 
-/* PROFILE BUTTON TOGGLE =================== */
+/* PROFILE BUTTON TOGGLE ========================================================= */
 $(function() {
 	$("#profile-btn").click(function() {
 		$("#profile").toggleClass("show");
@@ -279,6 +279,7 @@ $(function() {
 
 
 
+/* DIALOGS ============================================================================ */
 
 /* DIALOG REMOVE =================== */
 $(function() {
@@ -358,6 +359,38 @@ $(function() {
 	});
 });
 /* /DIALOG COMPAIR PRICING */
+
+
+/* DIALOG PAYMENT =================== */
+$(function() {
+	$(".dialog-payment").click(function() {
+		$(".dialog-wrap.pricing-payment").addClass("fadeIn");
+	});
+});
+
+$(function() {
+	$(".dialog-payment-close").click(function() {
+		$(".dialog-wrap.pricing-payment").removeClass("fadeIn");
+	});
+});
+/* /DIALOG PAYMENT */
+
+
+
+
+
+/* Payment options toogle =================== */
+$("#payment-option1").click(function() {
+	$(this).addClass("active");
+	$("#payment-option2").removeClass("active");
+});
+
+$("#payment-option2").click(function() {
+	$(this).addClass("active");
+	$("#payment-option1").removeClass("active");
+});
+
+/* /Payment options toogle */
 
 
 
