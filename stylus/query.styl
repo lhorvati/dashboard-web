@@ -61,7 +61,8 @@
     .card-wrap {
         margin-bottom: 50px
     }
-    .card-wrap h1 {
+    .card-wrap h1,
+    .main .card-title {
         margin-left: 10px
     }
     .card-wrap .card .card__abs-bot {
@@ -125,7 +126,7 @@
     }
 
 
-
+    // Margin remove for stacking items in row
     .main.custom-domains .main__row .main__row-item:nth-child(2n),
     .main.custom-stacks .main__row .main__row-item:nth-child(2n),
     .main.my-shares .main__row .main__row-item:nth-child(2n),
@@ -137,11 +138,113 @@
     }
 
 
+    // Space between cards (smaller then desktop)
+    .main.shared-with-me .card-wrap,
+    .main.my-shares .card-wrap,
+    .main.ssh-keys .card-wrap,
+    .main.custom-stacks .card-wrap,
+    .main.custom-domains .card-wrap,
+    .main.search-results .card-wrap {
+        margin-bottom: 10px
+    }
+
+
+
+    //MAIN SECTION - SHARED WITH ME & MY SHARES ***********************************
+    .main.shared-with-me .card-wrap .card .card__section.border-top,
+    .main.my-shares .card-wrap .card .card__section.border-top {
+        padding-bottom: 50px
+    }
+
+
     //MAIN SECTION - CUSTOM DOMAINS ***********************************
+    .new-custom-domain .ncd-title {
+        font-size: 20px
+    }
+
+    .main.custom-domains .card__section.row.border-top {
+        flex-flow: column nowrap
+    }
+    .new-custom-domain .card__section.row.border-top .card-col {
+        width: 100%
+    }
+    .main.custom-domains .card.new-custom-domain .ncd-wrap .card-col {
+        margin-bottom: 0
+    }
+    .card-wrap .card .card-col:not(:last-child) {
+        margin-right: 0
+        margin-bottom: 30px
+    }
 
 
 
+    //MAIN SECTION - REFER A FRIEND ***********************************
+    .main.refer-friend .three-steps {
+        flex-flow: column nowrap
+        justify-content: center
+        align-items: center
+        margin-bottom: 40px
+    }
+    .main.refer-friend .three-steps .card-wrap {
+        margin-bottom: 10px
+        width: 100%
+    }
 
+    .main.refer-friend .three-steps .card-wrap .card.refer {
+        width: 100%
+    }
+
+    .main.refer-friend .card.refer-share .card__section {
+        flex-flow: column nowrap
+    }
+
+    .card.refer-share .refer-share__content p {
+        padding-bottom: 10px
+    }
+    .card.refer-share .refer-share__links {
+        flex-flow: row nowrap
+        justify-content: space-around
+        align-items: center
+        width: 100%
+        margin-top: 30px
+    }
+
+    .main.refer-friend .main__row .main__row-item:last-child .main__col:first-child {
+        margin: 0
+    }
+
+
+    .main.refer-friend .main__row .main__row-item:last-child .main__col:last-child {
+        width: 100%
+    }
+
+    .main.refer-friend .card.refer-share-with .card-row {
+        align-items: center
+    }
+    .main.refer-friend .card.refer-share-with .card-col:not(:last-child) {
+        margin: 0
+        margin-right: 20px
+    }
+
+    .main.refer-friend .card.refer-share-with .card-col {
+        font-size: 12px
+    }
+    .main.refer-friend .card.refer-share-with .card-col:first-child {
+        flex: 1
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
+        width: 140px
+    }
+    .main.refer-friend .card.refer-share-with .card-col:nth-child(2) {
+        width: 70px
+        align-items: center
+    }
+    .main.refer-friend .card.refer-share-with .card-col:last-child {
+        width: 30px
+        overflow: visible
+        align-items: center
+    }
 
 
 
