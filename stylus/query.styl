@@ -41,6 +41,9 @@
         width: 100%
         padding: 30px 0
     }
+     #body .main.search-results {
+        padding: 0 0 30px 0
+    }
     .main.account,
     .main.billing,
     .main.projects,
@@ -75,7 +78,7 @@
 
 
 
-    //MAIN SECTION - ACCOUNT ***********************************
+    //ACCOUNT ***********************************
     .card-wrap .card.profile-details .card__section.row {
         flex-flow: column nowrap
     }
@@ -87,12 +90,14 @@
         flex-flow: column nowrap
     }
 
-    //MAIN SECTION - BILLING ***********************************
+    //BILLING ***********************************
     .card-wrap .card.subscription .card__section .sub-wrap {
         flex-flow: column nowrap
     }
     .card-wrap .card.subscription .card__section .sub-wrap .sub {
         width: 100%
+        max-width: 400px
+        margin: 0 auto
         padding: 0
     }
     .card-wrap .card.subscription .card__section .sub-wrap .sub:first-child {
@@ -114,7 +119,7 @@
     }
 
 
-    //MAIN SECTION - PROJECTS ***********************************
+    //PROJECTS ***********************************
     .main .main__row {
         flex-flow: column nowrap
     }
@@ -150,14 +155,14 @@
 
 
 
-    //MAIN SECTION - SHARED WITH ME & MY SHARES ***********************************
+    //SHARED WITH ME & MY SHARES ***********************************
     .main.shared-with-me .card-wrap .card .card__section.border-top,
     .main.my-shares .card-wrap .card .card__section.border-top {
         padding-bottom: 50px
     }
 
 
-    //MAIN SECTION - CUSTOM DOMAINS ***********************************
+    //CUSTOM DOMAINS ***********************************
     .new-custom-domain .ncd-title {
         font-size: 20px
     }
@@ -178,7 +183,20 @@
 
 
 
-    //MAIN SECTION - REFER A FRIEND ***********************************
+    //SEARCH RESULTS ***********************************
+    .main.search-results .card__section.row.border-top {
+        flex-flow: column nowrap
+    }
+    .search-results .card__section.row.border-top .card-col {
+        width: 100%
+    }
+    .main.custom-domains .card.search-results .ncd-wrap .card-col {
+        margin-bottom: 0
+    }
+
+
+
+    //REFER A FRIEND ***********************************
     .main.refer-friend .three-steps {
         flex-flow: column nowrap
         justify-content: center
@@ -244,6 +262,118 @@
         width: 30px
         overflow: visible
         align-items: center
+    }
+
+
+
+
+    //DIALOGS ***********************************
+    .dialog-wrap .dialog {
+        min-width: initial
+        width: 95%
+        position: relative
+    }
+
+    //Mobile buttons for plans
+    .plans-buttons-mobile {
+        display: flex
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        padding: 0 10px
+    }
+    .pricing-plans .plans-btn,
+    .pricing-compair .plans-btn {
+        font-size: 12px
+    }
+
+
+
+    .pricing-plans .plans {
+        flex-flow: column nowrap
+        margin-top: 20px
+    }
+
+    .pricing-plans .plans .plans-item {
+        display: none
+        flex-flow: column nowrap
+        width: 100%
+    }
+    .pricing-plans .plans .plans-item.active {
+        display: flex
+    }
+
+    .pricing-plans .plans .plans-item .plans-item__price {
+        margin: 20px 0 10px 0
+    }
+
+    .pricing-plans .plans .plans-item .plans-item__button {
+        margin: 20px 0
+    }
+    .pricing-plans .dialog-wrap .dialog .dialog-section {
+        margin: 15px 0
+    }
+
+
+
+    .pricing-compair .plans .plans-item {
+        display: none
+        width: 100%
+        justify-content: center
+        align-items: center
+    }
+    .pricing-compair .plans .plans-item.compair.active {
+        display: flex
+    }
+    .pricing-compair .plans .plans-item.compair.active .plans-item__button {
+        margin: 0
+    }
+    .pricing-compair .plans .plans-item.compair.active .plans-item__title {
+        display: none
+    }
+
+     .pricing-compair .comparison {
+        margin-top: 30px
+        margin-bottom: 30px
+    }
+
+    .comparison .comparison__list .comparison-feature .comparison-feature__name {
+        width: calc(100% - 70px)
+    }
+    .comparison .comparison__list .comparison-feature .comparison-feature__presence {
+        width: 70px
+    }
+
+
+    .dialog-wrap.pricing-payment {
+        align-items: flex-start
+    }
+    .dialog-wrap.pricing-payment .dialog .dialog-col-wrap {
+        flex-flow: column nowrap
+    }
+    .dialog-wrap.pricing-payment .dialog .dialog-col-wrap .dialog-col2 {
+        width: 100%
+    }
+    .dialog-wrap.pricing-payment .payment-options .plans-item {
+        width: 49%
+    }
+
+    .dialog-wrap.pricing-payment .payment-subscribe {
+        flex-flow: column nowrap
+    }
+    .dialog-wrap.pricing-payment .payment-subscribe .subscribe-btn {
+        margin: 20px 0
+    }
+
+    .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__name,
+    .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__months,
+    .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__price {
+        font-size: 12px
+    }
+    .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__months,
+    .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__price {
+        width: 60px
     }
 
 

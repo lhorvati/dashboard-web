@@ -4,6 +4,8 @@
     min-width: 1000px
     padding: 30px 30px 20px 30px
 
+
+
 .plans
     flexbox()
     flex-flow: row nowrap
@@ -53,3 +55,29 @@
                     list-style-type: circle
                     display: list-item
                     margin-bottom: 5px
+
+
+.plans-buttons-mobile
+    flexbox()
+    flex-flow: row nowrap
+    justify-content: space-between
+    display: none
+    box-sizing()
+
+    .plans-btn
+        flexbox()
+        flex-center()
+        height: 50px
+        box-sizing()
+        padding: 0 6px
+        color: colorPurple
+        font-size: 13px
+        cursor: pointer
+        opacity: .6
+        transition(.25s)
+
+        &:hover
+            opacity: .8
+
+        &.active
+            opacity: 1

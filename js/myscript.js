@@ -271,7 +271,17 @@ $(function() {
 });
 
 /* SEARCH RESULTS SECTION MOBILE ================ */
-
+$(function() {
+	$(".mobile-nav-search").click(function() {
+		/* Side nav */
+		$(".side-nav-link").removeClass("active");
+		/* Main content */
+		$(".main").removeClass("show-flex");
+		$(".main").addClass("hide");
+		$(".main.search-results").addClass("show");
+		$(".main.search-results").removeClass("hide");
+	});
+});
 
 
 
@@ -407,4 +417,118 @@ $("#payment-option2").click(function() {
 /* /Payment options toogle */
 
 
+
+
+
+
+
+
+
+
+/* PRICING MOBILE TABS ========================================================= */
+
+/* Free button */
+$(function() {
+	$(".btn-free").click(function() {
+		/* Plans buttons mobile */
+		$(".plans-btn").removeClass("active");
+		$(".plans-btn.btn-free").addClass("active");
+		/* Plans */
+		$(".plans-item.plans").removeClass("show-flex");
+		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan-free").addClass("show-flex");
+		$(".plans-item.plan-free").removeClass("hide");
+		/* Compair */
+		$(".comparison-feature__presence").addClass("hide");
+		$(".feature__presence1").removeClass("hide");
+		/* Compair plan mobile */
+		$(".plans-item.compair").addClass("hide");
+		$(".compair.plans-item1").removeClass("hide");
+		$(".compair.plans-item1").addClass("active");
+	});
+});
+
+/* Starter button */
+$(function() {
+	$(".btn-starter").click(function() {
+		/* Plans buttons mobile */
+		$(".plans-btn").removeClass("active");
+		$(".plans-btn.btn-starter").addClass("active");
+		/* Plans */
+		$(".plans-item.plans").removeClass("show-flex");
+		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan-starter").addClass("show-flex");
+		$(".plans-item.plan-starter").removeClass("hide");
+		/* Compair */
+		$(".comparison-feature__presence").addClass("hide");
+		$(".feature__presence2").removeClass("hide");
+		/* Compair plan mobile */
+		$(".plans-item.compair").addClass("hide");
+		$(".compair.plans-item2").removeClass("hide");
+		$(".compair.plans-item2").addClass("active");
+	});
+});
+
+/* Freelancer button */
+$(function() {
+	$(".btn-freelancer").click(function() {
+		/* Plans buttons mobile */
+		$(".plans-btn").removeClass("active");
+		$(".plans-btn.btn-freelancer").addClass("active");
+		/* Plans */
+		$(".plans-item.plans").removeClass("show-flex");
+		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan-freelancer").addClass("show-flex");
+		$(".plans-item.plan-freelancer").removeClass("hide");
+		/* Compair */
+		$(".comparison-feature__presence").addClass("hide");
+		$(".feature__presence3").removeClass("hide");
+		/* Compair plan mobile */
+		$(".plans-item.compair").addClass("hide");
+		$(".compair.plans-item3").removeClass("hide");
+		$(".compair.plans-item3").addClass("active");
+	});
+});
+
+/* Professional button */
+$(function() {
+	$(".btn-professional").click(function() {
+		/* Plans buttons mobile */
+		$(".plans-btn").removeClass("active");
+		$(".plans-btn.btn-professional").addClass("active");
+		/* Plans */
+		$(".plans-item.plans").removeClass("show-flex");
+		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan-professional").addClass("show-flex");
+		$(".plans-item.plan-professional").removeClass("hide");
+		/* Compair */
+		$(".comparison-feature__presence").addClass("hide");
+		$(".feature__presence4").removeClass("hide");
+		/* Compair plan mobile */
+		$(".plans-item.compair").addClass("hide");
+		$(".compair.plans-item4").removeClass("hide");
+		$(".compair.plans-item4").addClass("active");
+	});
+});
+
+/* Business button */
+$(function() {
+	$(".btn-business").click(function() {
+		/* Plans buttons mobile */
+		$(".plans-btn").removeClass("active");
+		$(".plans-btn.btn-business").addClass("active");
+		/* Plans */
+		$(".plans-item.plans").removeClass("show-flex");
+		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan-business").addClass("show-flex");
+		$(".plans-item.plan-business").removeClass("hide");
+		/* Compair */
+		$(".comparison-feature__presence").addClass("hide");
+		$(".feature__presence5").removeClass("hide");
+		/* Compair plan mobile */
+		$(".plans-item.compair").addClass("hide");
+		$(".compair.plans-item5").removeClass("hide");
+		$(".compair.plans-item5").addClass("active");
+	});
+});
 
