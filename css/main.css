@@ -95,6 +95,12 @@ input {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#e0e0e0), color-stop(38%, #e0e0e0), color-stop(44%, #eee), to(#eee));
+  background: -webkit-linear-gradient(left, #e0e0e0 0%, #e0e0e0 38%, #eee 44%, #eee 100%);
+  background: -o-linear-gradient(left, #e0e0e0 0%, #e0e0e0 38%, #eee 44%, #eee 100%);
+  background: linear-gradient(to right, #e0e0e0 0%, #e0e0e0 38%, #eee 44%, #eee 100%);
+}
 .show {
   display: block !important;
 }
@@ -2385,6 +2391,7 @@ input[type=checkbox] {
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   z-index: 10;
+  background: #fff;
 }
 .header {
   display: -webkit-box;
@@ -2500,6 +2507,8 @@ input[type=checkbox] {
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .main {
   background: #eee;
@@ -3552,7 +3561,7 @@ input[type=checkbox] {
   justify-content: space-between;
 }
 .card.refer {
-  width: 300px;
+  width: 280px;
   text-align: center;
 }
 .card.refer .card__section {

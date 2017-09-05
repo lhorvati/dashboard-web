@@ -1,6 +1,7 @@
 /* QUERY.STYL ======================================= */
 
-@media only screen and (max-width: 1241px), only screen and (max-device-width: 1241px) {
+//@media only screen and (max-width: 1241px), only screen and (max-device-width: 1241px) {
+@media only screen and (max-width: 1155px), only screen and (max-device-width: 1155px) {
 
 
     //HEADER ***********************************
@@ -282,6 +283,8 @@
         left: 0
         right: 0
         padding: 0 10px
+        max-width: 400px
+        margin: 0 auto
     }
     .pricing-plans .plans-btn,
     .pricing-compair .plans-btn {
@@ -299,6 +302,8 @@
         display: none
         flex-flow: column nowrap
         width: 100%
+        max-width: 300px
+        margin: 0 auto
     }
     .pricing-plans .plans .plans-item.active {
         display: flex
@@ -354,6 +359,10 @@
     }
     .dialog-wrap.pricing-payment .dialog .dialog-col-wrap .dialog-col2 {
         width: 100%
+    }
+    .dialog-wrap.pricing-payment .payment-options {
+        max-width: 500px
+        margin: 0 auto
     }
     .dialog-wrap.pricing-payment .payment-options .plans-item {
         width: 49%
