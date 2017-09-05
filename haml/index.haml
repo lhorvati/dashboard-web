@@ -32,15 +32,67 @@
             %title
               Find
             %path(d="M12.5 11h-.79l-.28-.27C12.41 9.59 13 8.11 13 6.5 13 2.91 10.09 0 6.5 0S0 2.91 0 6.5 2.91 13 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z" fill="#323232" fill-rule="nonzero")
+        .mobile-header__btn.profile-btn
+          .mobile-nav-profile
+          //PROFILE POPUP
+          .profile
+            .profile-wrap
+              .profile-top.percentage-10
+                .managed-row
+                .profile-row.f-center
+                  .profile-image
+                    .profile-image__center
+                      %span.profile-image__center--prim
+                        100%
+                      %span.profile-image__center--sec Profile
+                      %span.profile-image__center--sec completion
+                  .profile-pie-left
+                  .profile-pie-right
+                .profile-row
+                  .profile-details
+                    .profile-details__username Luka Horvatic
+                    .profile-details__email horvaticluka@gmail.com
+                .upgrade-wrap
+                  .profile-row
+                    .upgrade-row
+                      .subscription
+                        Subscription:
+                        %span Business Plan
+                  .profile-row
+                    .upgrade-row.percentage-8
+                      .upgrade-row__top
+                        .upgrade-row__top--bar
+                      .upgrade-row__bot
+                        .upgrade-row__bot--left.yellow
+                          24/30
+                        .upgrade-row__bot--right Containers
+                  .profile-row
+                    .upgrade-row.percentage-0
+                      .upgrade-row__top
+                        .upgrade-row__top--bar
+                      .upgrade-row__bot
+                        .upgrade-row__bot--left.yellow
+                          37/1000
+                        .upgrade-row__bot--right Remote Connections
+                  .profile-row
+                    .upgrade-message Need more resources?
+                  .profile-row.buttons-row
+                    .profile-button
+                      .btn.btn--purple.dialog-upgrade Upgrade
+                    %a(href="https://codeanywhere.com/signout")
+                      .txt-button
+                        .btn.btn--transparent1 Sign Out
+
+
       .container
         .header
           .header__dashboard
             %a(href="https://codeanywhere.com/dashboard") Dashboard
           .header__search
             %input.input-search(placeholder="Search")
-          #profile-btn.header__user
+          .profile-btn.header__user
             //PROFILE POPUP
-            #profile.profile
+            .profile
               .profile-wrap
                 .profile-top.percentage-10
                   .managed-row

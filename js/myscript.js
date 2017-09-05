@@ -289,8 +289,8 @@ $(function() {
 
 /* PROFILE BUTTON TOGGLE ========================================================= */
 $(function() {
-	$("#profile-btn").click(function() {
-		$("#profile").toggleClass("show");
+	$(".profile-btn").click(function() {
+		$(".profile").toggleClass("show");
 	});
 });
 
