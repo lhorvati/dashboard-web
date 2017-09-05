@@ -302,12 +302,12 @@
     left: 0;
     right: 0;
     padding: 0 10px;
-    max-width: 400px;
+    max-width: 480px;
     margin: 0 auto;
   }
   .pricing-plans .plans-btn,
   .pricing-compair .plans-btn {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pricing-plans .plans {
     -webkit-box-orient: vertical;
@@ -410,6 +410,9 @@
   .dialog-wrap.pricing-payment .payment-subscribe .subscribe-btn {
     margin: 20px 0;
   }
+}
+/* media end */
+@media only screen and (max-width: 481px), only screen and (max-device-width: 481px) {
   .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__name,
   .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__months,
   .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__price {
@@ -419,14 +422,9 @@
   .dialog-wrap.pricing-payment .payment-summary .summary-item .summary-item__price {
     width: 60px;
   }
-}
-/* media end */
-@media only screen and (max-width: 981px), only screen and (max-device-width: 981px) {
-  .mobile-hide {
-    display: none;
-  }
-  .mobile-show {
-    display: block;
+  .pricing-plans .plans-btn,
+  .pricing-compair .plans-btn {
+    font-size: 12px;
   }
 }
 /* media end */

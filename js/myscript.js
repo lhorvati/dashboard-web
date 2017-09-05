@@ -434,8 +434,8 @@ $(function() {
 		$(".plans-btn").removeClass("active");
 		$(".plans-btn.btn-free").addClass("active");
 		/* Plans */
-		$(".plans-item.plans").removeClass("show-flex");
-		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan").removeClass("show-flex");
+		$(".plans-item.plan").addClass("hide");
 		$(".plans-item.plan-free").addClass("show-flex");
 		$(".plans-item.plan-free").removeClass("hide");
 		/* Compair */
@@ -455,8 +455,8 @@ $(function() {
 		$(".plans-btn").removeClass("active");
 		$(".plans-btn.btn-starter").addClass("active");
 		/* Plans */
-		$(".plans-item.plans").removeClass("show-flex");
-		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan").removeClass("show-flex");
+		$(".plans-item.plan").addClass("hide");
 		$(".plans-item.plan-starter").addClass("show-flex");
 		$(".plans-item.plan-starter").removeClass("hide");
 		/* Compair */
@@ -476,8 +476,8 @@ $(function() {
 		$(".plans-btn").removeClass("active");
 		$(".plans-btn.btn-freelancer").addClass("active");
 		/* Plans */
-		$(".plans-item.plans").removeClass("show-flex");
-		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan").removeClass("show-flex");
+		$(".plans-item.plan").addClass("hide");
 		$(".plans-item.plan-freelancer").addClass("show-flex");
 		$(".plans-item.plan-freelancer").removeClass("hide");
 		/* Compair */
@@ -497,8 +497,8 @@ $(function() {
 		$(".plans-btn").removeClass("active");
 		$(".plans-btn.btn-professional").addClass("active");
 		/* Plans */
-		$(".plans-item.plans").removeClass("show-flex");
-		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan").removeClass("show-flex");
+		$(".plans-item.plan").addClass("hide");
 		$(".plans-item.plan-professional").addClass("show-flex");
 		$(".plans-item.plan-professional").removeClass("hide");
 		/* Compair */
@@ -518,8 +518,8 @@ $(function() {
 		$(".plans-btn").removeClass("active");
 		$(".plans-btn.btn-business").addClass("active");
 		/* Plans */
-		$(".plans-item.plans").removeClass("show-flex");
-		$(".plans-item.plans").addClass("hide");
+		$(".plans-item.plan").removeClass("show-flex");
+		$(".plans-item.plan").addClass("hide");
 		$(".plans-item.plan-business").addClass("show-flex");
 		$(".plans-item.plan-business").removeClass("hide");
 		/* Compair */
