@@ -132,6 +132,10 @@ section {
   margin: 0 auto;
 }
 .container-jumbo {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.container-jumbo2 {
   max-width: 1340px;
   margin: 0 auto;
 }
@@ -2414,6 +2418,10 @@ input[type=checkbox] {
   justify-content: space-between;
   height: 80px;
   background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 .header .header__dashboard {
   font-size: 20px;
@@ -3699,4 +3707,3 @@ input[type=checkbox] {
 .search-list .search-list-item:hover {
   background-color: #eee;
 }
-/* import views styl */

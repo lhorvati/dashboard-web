@@ -1,6 +1,6 @@
 /* QUERY.STYL ======================================= */
 @media only screen and (max-width: 1155px), only screen and (max-device-width: 1155px) {
-  #header .container {
+  #header .container-jumbo {
     display: none;
   }
   .mobile-header,
