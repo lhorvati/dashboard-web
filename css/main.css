@@ -3660,6 +3660,9 @@ input[type=checkbox] {
 .main.search-results .main__row .main__row-item {
   width: 100%;
 }
+.main.search-results .main__row .main__row-item:nth-child(2n) {
+  margin-left: 0;
+}
 .search-list {
   background: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -3685,6 +3688,9 @@ input[type=checkbox] {
   min-height: 50px;
   max-height: 200px;
   margin-bottom: 50px;
+}
+.search-list:empty {
+  display: none;
 }
 .search-list .search-list-item {
   height: 50px;
