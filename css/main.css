@@ -2097,7 +2097,6 @@ input[type=checkbox] {
 .pricing-compair .dialog {
   min-width: 1100px;
   padding: 30px 30px 20px 30px;
-  margin: 20px 0;
 }
 .prices .plans {
   -webkit-box-pack: end;
