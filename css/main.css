@@ -1867,6 +1867,14 @@ input[type=checkbox] {
   visibility: visible;
   opacity: 1;
 }
+.dialog-wrap.remove,
+.dialog-wrap.edit,
+.dialog-wrap.account {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 .dialog-wrap .dialog {
   min-width: 640px;
   min-height: 170px;
@@ -3334,6 +3342,7 @@ input[type=checkbox] {
 .main.billing .manage-accounts-row .manage-accounts__col,
 .main.billing .manage-accounts-row .manage-accounts__delete {
   font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   color: #757575;
   -webkit-box-sizing: border-box;
@@ -3457,6 +3466,12 @@ input[type=checkbox] {
 .main.projects .card.project .card__section .row {
   margin-bottom: 20px;
   color: #757575;
+  line-height: 16px;
+  font-size: 14px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .custom-stacks .card .m-top {
   margin-top: 20px;
@@ -3464,6 +3479,12 @@ input[type=checkbox] {
 .custom-stacks .card .card__section.col.border-top .row {
   margin-bottom: 20px;
   color: #757575;
+  line-height: 16px;
+  font-size: 14px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .main.custom-domains .main__row .main__row-item {
   width: 100%;
@@ -3471,9 +3492,10 @@ input[type=checkbox] {
 .main.custom-domains .card__section.row.border-top {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  overflow-y: auto;
 }
 .new-custom-domain {
   position: relative;
@@ -3662,6 +3684,14 @@ input[type=checkbox] {
 }
 .main.search-results .main__row .main__row-item:nth-child(2n) {
   margin-left: 0;
+}
+.main.search-results .card__section.row.border-top {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  overflow-y: auto;
 }
 .search-list {
   background: #fff;
